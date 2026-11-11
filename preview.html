@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TixDesk Expo Stickers — Presentation &amp; Quality Check</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0b0f19;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .header h1 {
+      font-size: 38px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .header p {
+      color: #94a3b8;
+      font-size: 18px;
+    }
+    .badge-bar {
+      display: inline-flex;
+      gap: 12px;
+      margin-top: 15px;
+    }
+    .badge {
+      background: #1e293b;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+      border: 1px solid #334155;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .card {
+      background: #131b2e;
+      border: 1px solid #1e293b;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 16px;
+    }
+    .card-title h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .card-title span {
+      font-size: 14px;
+      color: #64748b;
+    }
+    .specs {
+      font-size: 14px;
+      color: #38bdf8;
+      background: #0f172a;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid #1e293b;
+      font-family: monospace;
+    }
+    .preview-stage {
+      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+      border-radius: 16px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 420px;
+      position: relative;
+      overflow: hidden;
+      border: 1px dashed #334155;
+    }
+    /* Grid background to preview transparency */
+    .preview-stage::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: 
+        linear-gradient(45deg, #182234 25%, transparent 25%), 
+        linear-gradient(-45deg, #182234 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #182234 75%), 
+        linear-gradient(-45deg, transparent 75%, #182234 75%);
+      background-size: 24px 24px;
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    .preview-stage img {
+      max-width: 100%;
+      height: auto;
+      max-height: 380px;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+      transition: transform 0.3s ease;
+    }
+    .preview-stage img:hover {
+      transform: scale(1.03);
+    }
+    .card-desc {
+      margin-top: 20px;
+      color: #94a3b8;
+      font-size: 15px;
+    }
+    .download-links {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #1d4ed8; }
+    .btn-secondary {
+      background: #1e293b;
+      color: #cbd5e1;
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover { background: #334155; color: white; }
+    .btn-magenta {
+      background: #be185d;
+      border: 1px solid #f43f5e;
+    }
+    .btn-magenta:hover { background: #9d174d; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>TixDesk Expo Sticker Collection</h1>
+    <p>Official High-Craft Merchandise for Tech Expo (November 17–18, 2026)</p>
+    <div class="badge-bar">
+      <span class="badge">Target Size: ~6.5–7 cm</span>
+      <span class="badge">300 DPI CMYK-Ready</span>
+      <span class="badge">Full Die-Cut Cutline Included</span>
+      <span class="badge">Zero AI-Slop Design</span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- STICKER 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Sticker 01: The Pure Hero Die-Cut</h2>
+          <span>Universal brand icon for phone cases, laptops, and gadget lids</span>
+        </div>
+        <div class="specs">Format: ~7.0 × 6.1 cm • Die-Cut Contour</div>
+      </div>
+      <div class="preview-stage">
+        <img src="assets/png/tixdesk-sticker-01-hero-mark-300dpi.png" alt="Sticker 01 Hero Mark">
+      </div>
+      <div class="card-desc">
+        Focuses on the pure iconic silhouette of TixDesk: a support ticket combined with a speech bubble and negative space 'T'. Features the signature Royal Blue to Cyan gradient, subtle light sheen, and a 2.5mm solid white contour for effortless die-cutting.
+      </div>
+      <div class="download-links">
+        <a class="btn" href="assets/svg/tixdesk-sticker-01-hero-mark.svg" target="_blank">📄 SVG Vector</a>
+        <a class="btn btn-secondary" href="tixdesk-sticker-01-hero-mark-print.pdf" target="_blank">🖨️ Print PDF</a>
+        <a class="btn btn-secondary" href="assets/png/tixdesk-sticker-01-hero-mark-300dpi.png" target="_blank">🖼️ 300 DPI PNG</a>
+        <a class="btn btn-magenta" href="assets/print-ready-cutlines/tixdesk-sticker-01-hero-mark-cutline.svg" target="_blank">✂️ Magenta Cutline</a>
+      </div>
+    </div>
+
+    <!-- STICKER 2 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Sticker 02: Support Hero / SLA Guard (Dev Badge)</h2>
+          <span>High-tech hexagonal badge crafted for students, engineers, and ops enthusiasts</span>
+        </div>
+        <div class="specs">Format: ~6.8 × 7.8 cm • Hexagonal Badge</div>
+      </div>
+      <div class="preview-stage">
+        <img src="assets/png/tixdesk-sticker-02-support-hero-badge-300dpi.png" alt="Sticker 02 Tech Badge">
+      </div>
+      <div class="card-desc">
+        Inspired by modern developer badges (Docker, Kubernetes, Rust). Features dark slate cyber aesthetic, cyan glowing accents, glowing central TixDesk mark, the 3 feature pills (Ticket, SLA, KB), and proud slogans: "ZERO OVERDUE SLAs" and "200 OK — TICKET RESOLVED". Highly attractive for laptop stickers.
+      </div>
+      <div class="download-links">
+        <a class="btn" href="assets/svg/tixdesk-sticker-02-support-hero-badge.svg" target="_blank">📄 SVG Vector</a>
+        <a class="btn btn-secondary" href="tixdesk-sticker-02-support-hero-badge-print.pdf" target="_blank">🖨️ Print PDF</a>
+        <a class="btn btn-secondary" href="assets/png/tixdesk-sticker-02-support-hero-badge-300dpi.png" target="_blank">🖼️ 300 DPI PNG</a>
+        <a class="btn btn-magenta" href="assets/print-ready-cutlines/tixdesk-sticker-02-support-hero-badge-cutline.svg" target="_blank">✂️ Magenta Cutline</a>
+      </div>
+    </div>
+
+    <!-- STICKER 3 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <h2>Sticker 03: Executive Brand Lockup</h2>
+          <span>Clean horizontal capsule for enterprise attendees, notebooks, and B2B booths</span>
+        </div>
+        <div class="specs">Format: ~9.6 × 3.9 cm • Capsule Pill Contour</div>
+      </div>
+      <div class="preview-stage">
+        <img src="assets/png/tixdesk-sticker-03-brand-lockup-300dpi.png" alt="Sticker 03 Brand Lockup">
+      </div>
+      <div class="card-desc">
+        Presents the complete official lockup: the TixDesk mark alongside the bold PascalCase wordmark, tagline "Helpdesk &amp; Ticketing Platform", and 3 soft-tinted status chips. Clean, credible, and trustworthy.
+      </div>
+      <div class="download-links">
+        <a class="btn" href="assets/svg/tixdesk-sticker-03-brand-lockup.svg" target="_blank">📄 SVG Vector</a>
+        <a class="btn btn-secondary" href="tixdesk-sticker-03-brand-lockup-print.pdf" target="_blank">🖨️ Print PDF</a>
+        <a class="btn btn-secondary" href="assets/png/tixdesk-sticker-03-brand-lockup-300dpi.png" target="_blank">🖼️ 300 DPI PNG</a>
+        <a class="btn btn-magenta" href="assets/print-ready-cutlines/tixdesk-sticker-03-brand-lockup-cutline.svg" target="_blank">✂️ Magenta Cutline</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
