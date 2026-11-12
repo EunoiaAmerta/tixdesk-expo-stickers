@@ -47,12 +47,12 @@ tixdesk-expo-stickers/
 * **Concept:** The official TixDesk brand mark with exact horizontal Royal Blue to Cyan gradient (`#3877F6` → `#5AC1C4`), 100% solid white "T" glyph with zero dark gaps or voids, and a contour-hugging white die-cut border that curves naturally along the speech tail and baseline.
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
-### 2. Tixie • The Cyber-Bot Mascot (`~7.2 × 7.2 cm`) — Kawaii 2D Vector
-* **Concept:** The official TixDesk AI support bot mascot. Ticket/chat-bubble head with OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and holding the Golden Resolved Ticket (`✓`). Contoured die-cut border organically embraces every feature from antenna to thruster.
+### 2. Tixie • The Cyber-Bot Mascot (`~7.0 × 7.0 cm`) — Pure Iconic Head Edition
+* **Concept:** The official TixDesk AI support bot mascot portrait. Focused purely on Tixie's iconic ticket-shaped head with curved OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and antenna. The white die-cut contour is thinned down to match the exact slimness of Sticker 01.
 * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
-### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pixel Art Quest
-* **Concept:** Nostalgic 8-bit / 16-bit arcade video game sprite. Pixelated ticket character wearing pixel sunglasses ("Deal With It"), full 3 health hearts, and snug bottom banner: `★ SLA SAVED: 100% ★` with triple-scalloped contour die-cut.
+### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.2 cm`) — Crowned Achievement Edition
+* **Concept:** Nostalgic 8-bit arcade video game sprite. Features a floating top banner `★ SLA SAVED: 100% ★`, three 8-bit red hearts docked directly on the mascot's head as an authentic crown (no gap), retro sunglasses with specular glints, full XP bar, clean bottom baseline and stepped dialogue tail.
 * **Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
 
 ---

@@ -120,27 +120,28 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Contour-Hugging Die-Cut Base:** The white outer die-cut border strictly follows the natural anatomy of the design—dipping down to follow the speech bubble tail apex, ascending into the bottom crevice, and running along the baseline horizontally without crude diagonal shortcuts.
 * **Target Audience:** Universal (MacBook lids, iPads, phones, tumblers).
 
-### Sticker 02: "Tixie • The Cyber-Bot" (Enhanced Mascot Edition)
+### Sticker 02: "Tixie • The Cyber-Bot" (Pure Iconic Head Edition)
 * **File:** `assets/svg/tixdesk-sticker-02-mascot-tixie.svg`
-* **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
-* **Style:** Kawaii Chibi 2D Vector IP Mascot
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Kawaii Chibi 2D Vector IP Mascot Head
 * **Refined Anatomy:**
+  * **Iconic Head-Only Focus:** The floating robot body, limbs, and thruster have been completely removed to provide an ultra-clean, high-recognition portrait of Tixie.
   * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
-  * **Body & Prop:** Compact floating droid pod with cyan thruster particles, waving left arm, and holding the Golden Resolved Ticket (`✓`).
-  * **Pillowy Reference-Grade Die-Cut Base:** Single continuous organic bezier contour engineered according to professional vinyl die-cut standards. Smooth dome arching over the antenna and headset (eliminating narrow stalk pinches), generous filleted curves around limbs and golden ticket, and a rounded convex base beneath the thruster to prevent tearing.
+  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, ticket notches, and bottom-left speech tail.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
-### Sticker 03: "Retro 16-Bit Arcade Gamer" (Enhanced Pixel Art Quest)
+### Sticker 03: "Retro 16-Bit Arcade Gamer" (Crowned Achievement Edition)
 * **File:** `assets/svg/tixdesk-sticker-03-retro-pixel-arcade.svg`
-* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Target Size:** $\approx 7.0 \times 7.2\text{ cm}$
 * **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
 * **Refined Anatomy:**
-  * **Strict Pixel Grid:** Constructed on a consistent, uniform pixel grid without mismatched pixel resolutions (no mixels).
-  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches and stepped speech tail.
-  * **Attitude & HUD:** 8-bit "Deal With It" pixel sunglasses with white lens reflections, 3 floating red pixel health hearts (100% SLA indicator), and retro arcade banner `★ SLA SAVED: 100% ★`.
-  * **Contour-Hugging Die-Cut Base:** Distinctive triple-scalloped arches conforming over each of the 3 floating hearts, sharp inward bevels tracing the side ticket notches, and a snug contour hugging the lower SLA banner without bulky voids or edge artifacts.
+  * **Top Floating SLA Banner:** The achievement capsule `★ SLA SAVED: 100% ★` floats cleanly above the mascot's head, serving as a regal arcade banner.
+  * **Physically Attached Heart Crown:** The 3 red 8-bit hearts are docked directly on top of the mascot's head baseline ($Y = -160$), forming an authentic crown that sits solidly on the character with zero floating gap. Center heart is enlarged as the primary crown jewel.
+  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches, cool 8-bit sunglasses with white specular catchlights, blush, and full health XP bar.
+  * **Clean Baseline & Stepped Tail:** The lower portion is clean with no bottom banner crowding, showcasing the retro ticket chin and stepped dialogue tail.
+  * **Contour-Hugging Die-Cut Base:** Uniform white die-cut margin cleanly bridging the top banner into the crown and ticket body into a single tear-resistant, durable vinyl sticker.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---

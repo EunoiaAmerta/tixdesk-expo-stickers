@@ -1,50 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
-  <g id="Artwork" transform="translate(270, 290)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 540" width="520" height="540">
+  <g id="Artwork" transform="translate(260, 295)">
     <path id="WhiteBorder" d="
-  M -115 -260
-  Q -60 -230, -45 -250
-  Q 0 -280, 45 -250
-  Q 60 -230, 115 -260
-  Q 195 -220, 200 -140
-  L 200 -45
-  Q 165 -15, 200 15
-  L 200 95
-  Q 195 130, 185 160
-  A 18 18 0 0 1 167 175
-  L -167 175
-  A 18 18 0 0 1 -185 160
-  L -195 95
-  L -200 15
-  Q -165 -15, -200 -45
-  L -200 -140
-  Q -195 -220, -115 -260
+  M -160 -256
+  L 160 -256
+  A 18 18 0 0 1 178 -238
+  L 178 -212
+  A 18 18 0 0 1 160 -194
+  L 125 -194
+  Q 185 -172, 192 -130
+  L 192 -48
+  Q 165 -15, 192 18
+  L 192 110
+  A 18 18 0 0 1 174 128
+  L -85 128
+  L -155 188
+  A 12 12 0 0 1 -175 180
+  L -175 110
+  L -192 110
+  L -192 18
+  Q -165 -15, -192 -48
+  L -192 -130
+  Q -185 -172, -125 -194
+  L -160 -194
+  A 18 18 0 0 1 -178 -212
+  L -178 -238
+  A 18 18 0 0 1 -160 -256
   Z
-" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round" stroke-linecap="round" />
-    
-    <!-- 8-Bit Hearts -->
-    <g transform="translate(-115, -225) scale(3.5)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <g transform="translate(0, -235) scale(4.2)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <g transform="translate(115, -225) scale(3.5)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- Floating SLA SAVED Banner at Top -->
+    <g transform="translate(0, -225)">
+      <rect x="-155" y="-19" width="310" height="38" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
+      <text x="0" y="8" font-family="'Noto Sans Mono', monospace" font-size="18" font-weight="900" letter-spacing="2.5" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
     </g>
 
     <!-- Ticket Body -->
-    <rect x="-175" y="-160" width="350" height="265" fill="#3877F6" />
-    <rect x="0" y="-160" width="175" height="265" fill="#5AC1C4" />
-    <rect x="-35" y="-160" width="35" height="265" fill="#4CA2EA" />
+    <rect x="-175" y="-160" width="175" height="270" fill="#3877F6" />
+    <rect x="0" y="-160" width="175" height="270" fill="#5AC1C4" />
     <rect x="-195" y="-35" width="35" height="45" fill="#FFFFFF" />
     <rect x="160" y="-35" width="35" height="45" fill="#FFFFFF" />
-    <polygon points="-160,105 -160,145 -105,105" fill="#3877F6" />
-    <polygon points="-135,105 -160,145 -118,105" fill="#2563EB" />
+    <polygon points="-160,110 -160,165 -100,110" fill="#3877F6" />
+    <polygon points="-135,110 -160,165 -115,110" fill="#2563EB" />
 
-    <!-- Sunglasses -->
+    <!-- Heart Crown -->
+    <g transform="translate(-80, -170) scale(4.0)">
+      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
+      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
+    </g>
+    <g transform="translate(0, -173) scale(4.8)">
+      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
+      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
+    </g>
+    <g transform="translate(80, -170) scale(4.0)">
+      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
+      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
+    </g>
+
+    <!-- Sunglasses & XP Bar -->
     <g transform="translate(0, -45)">
       <rect x="-125" y="-20" width="105" height="45" fill="#0F172A" />
       <rect x="20" y="-20" width="105" height="45" fill="#0F172A" />
@@ -58,40 +70,39 @@
       <rect x="-80" y="38" width="24" height="12" fill="#F43F5E" />
       <rect x="56" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
-
-    <!-- XP Bar -->
     <g transform="translate(0, 80)">
       <rect x="-85" y="0" width="170" height="12" fill="#0F172A" />
       <rect x="-82" y="2" width="164" height="8" fill="#22C55E" />
     </g>
-
-    <!-- Snug SLA Banner -->
-    <g transform="translate(0, 135)">
-      <rect x="-165" y="-18" width="330" height="40" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
-      <text x="0" y="10" font-family="'Noto Sans Mono', monospace" font-size="19" font-weight="900" letter-spacing="2.5" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
-    </g>
   </g>
 
   <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(270, 290)">
+  <g id="CutContour" transform="translate(260, 295)">
     <path d="
-  M -115 -260
-  Q -60 -230, -45 -250
-  Q 0 -280, 45 -250
-  Q 60 -230, 115 -260
-  Q 195 -220, 200 -140
-  L 200 -45
-  Q 165 -15, 200 15
-  L 200 95
-  Q 195 130, 185 160
-  A 18 18 0 0 1 167 175
-  L -167 175
-  A 18 18 0 0 1 -185 160
-  L -195 95
-  L -200 15
-  Q -165 -15, -200 -45
-  L -200 -140
-  Q -195 -220, -115 -260
+  M -160 -256
+  L 160 -256
+  A 18 18 0 0 1 178 -238
+  L 178 -212
+  A 18 18 0 0 1 160 -194
+  L 125 -194
+  Q 185 -172, 192 -130
+  L 192 -48
+  Q 165 -15, 192 18
+  L 192 110
+  A 18 18 0 0 1 174 128
+  L -85 128
+  L -155 188
+  A 12 12 0 0 1 -175 180
+  L -175 110
+  L -192 110
+  L -192 18
+  Q -165 -15, -192 -48
+  L -192 -130
+  Q -185 -172, -125 -194
+  L -160 -194
+  A 18 18 0 0 1 -178 -212
+  L -178 -238
+  A 18 18 0 0 1 -160 -256
   Z
 " fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
