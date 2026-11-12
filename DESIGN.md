@@ -109,44 +109,38 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 
 ---
 
-## 6. Official Expo Sticker Quartet (4 Distinct Art Styles)
+## 6. Official Expo Sticker Trio (Final Production Pack)
 
-### Sticker 01: "The Pure Hero Die-Cut" (Approved Master Mark)
+### Sticker 01: "The Pure Hero Die-Cut" (Official Master Mark)
 * **File:** `assets/svg/tixdesk-sticker-01-hero-mark.svg`
 * **Target Size:** $\approx 7.0 \times 6.1\text{ cm}$
 * **Style:** Pure Minimalist Geometric Die-Cut
-* **Target Audience:** Universal (laptops, phones, tumblers). High contrast, iconic brand identity.
+* **Refined Anatomy:**
+  * **The "T" Glyph:** Solid pure white (`#FFFFFF`) lettermark floating with balanced margins inside the continuous blue/cyan gradient ticket.
+  * **Bottom Baseline:** Clean, seamless transition from the speech-bubble tail tip directly to the baseline with no awkward clefts or irregular indentations.
+  * **Die-Cut Contour:** Smooth, uniform $2.5\text{ mm}$ outer white border wrapping concentric to the ticket geometry and notches.
+* **Target Audience:** Universal (MacBook lids, iPads, phones, tumblers).
 
-### Sticker 02: "Tixie • The Cyber-Bot" (Official Mascot Edition)
+### Sticker 02: "Tixie • The Cyber-Bot" (Enhanced Mascot Edition)
 * **File:** `assets/svg/tixdesk-sticker-02-mascot-tixie.svg`
 * **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
-* **Style:** Kawaii Chibi Vector Mascot
-* **Anatomy:**
-  * **Head:** TixDesk ticket/speech-bubble silhouette with deep navy curved OLED visor screen.
-  * **Expression:** Sparkling anime eyes, cat-smile (`ω`), soft coral blush, and signal status antenna (`#10B981`).
-  * **Accessories:** Integrated support agent headset with boom microphone.
-  * **Prop:** Holding the Golden Resolved Ticket with a green checkmark (`✓`).
-* **Target Audience:** Designers, students, customer support teams, and anyone who loves cute tech companions.
+* **Style:** Kawaii Chibi 2D Vector IP Mascot
+* **Refined Anatomy:**
+  * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
+  * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
+  * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
+  * **Body & Prop:** Compact floating droid pod with cyan thruster particles, waving left arm, and holding the Golden Resolved Ticket (`✓`).
+* **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
-### Sticker 03: "Cyber Mecha Decal // Unit-016" (Anime Tactical HUD)
-* **File:** `assets/svg/tixdesk-sticker-03-cyber-mecha-decal.svg`
-* **Target Size:** $\approx 7.5 \times 7.5\text{ cm}$
-* **Style:** High-Tech Sci-Fi / Mecha Decal (Gundam & Evangelion aesthetic)
-* **Anatomy:**
-  * **Plate:** Chamfered heavy octagonal tactical plate in dark carbon navy.
-  * **Emblem:** TixDesk ticket emblem inside optical targeting reticles and circuit nodes.
-  * **Telemetry:** `UNIT-016 // TIM-A3`, `PROTOCOL: RESOLVED [200 OK]`, `SLA: ZERO OVERDUE`, hazard caution stripes.
-* **Target Audience:** DevOps, backend engineers, Linux users, mechanical keyboard enthusiasts, and anime fans.
-
-### Sticker 04: "Retro 16-Bit Arcade Gamer" (Pixel Art Quest)
-* **File:** `assets/svg/tixdesk-sticker-04-retro-pixel-arcade.svg`
+### Sticker 03: "Retro 16-Bit Arcade Gamer" (Enhanced Pixel Art Quest)
+* **File:** `assets/svg/tixdesk-sticker-03-retro-pixel-arcade.svg`
 * **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
 * **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
-* **Anatomy:**
-  * **Sprite:** Pixel-block TixDesk ticket character with split-tone blue/cyan shading.
-  * **Attitude:** Pixel sunglasses ("Deal With It" vibe), retro blush, and green status smile.
-  * **HUD Elements:** 3 floating red 8-bit hearts (100% full health) and retro banner: `★ SLA SAVED: 100% ★`.
-* **Target Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
+* **Refined Anatomy:**
+  * **Strict Pixel Grid:** Constructed on a consistent, uniform pixel grid without mismatched pixel resolutions (no mixels).
+  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches and stepped speech tail.
+  * **Attitude & HUD:** 8-bit "Deal With It" pixel sunglasses with white lens reflections, 3 floating red pixel health hearts (100% SLA indicator), and retro arcade banner `★ SLA SAVED: 100% ★`.
+* **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---
 

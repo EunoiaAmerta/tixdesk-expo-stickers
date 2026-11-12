@@ -21,45 +21,37 @@ tixdesk-expo-stickers/
 │   ├── svg/                                     # Source Vector Art (RGB Web & Screen)
 │   │   ├── tixdesk-sticker-01-hero-mark.svg
 │   │   ├── tixdesk-sticker-02-mascot-tixie.svg
-│   │   ├── tixdesk-sticker-03-cyber-mecha-decal.svg
-│   │   └── tixdesk-sticker-04-retro-pixel-arcade.svg
+│   │   └── tixdesk-sticker-03-retro-pixel-arcade.svg
 │   │
 │   ├── png/                                     # 300 DPI Transparent Previews (CMYK Ready)
 │   │   ├── tixdesk-sticker-01-hero-mark-300dpi.png
 │   │   ├── tixdesk-sticker-02-mascot-tixie-300dpi.png
-│   │   ├── tixdesk-sticker-03-cyber-mecha-decal-300dpi.png
-│   │   └── tixdesk-sticker-04-retro-pixel-arcade-300dpi.png
+│   │   └── tixdesk-sticker-03-retro-pixel-arcade-300dpi.png
 │   │
 │   └── print-ready-cutlines/                    # 100% Magenta (#FF00FF) Vector Die-Cut Lines
 │       ├── tixdesk-sticker-01-hero-mark-cutline.svg
 │       ├── tixdesk-sticker-02-mascot-tixie-cutline.svg
-│       ├── tixdesk-sticker-03-cyber-mecha-decal-cutline.svg
-│       └── tixdesk-sticker-04-retro-pixel-arcade-cutline.svg
+│       └── tixdesk-sticker-03-retro-pixel-arcade-cutline.svg
 │
 └── print-pdfs/ (in root for direct vendor delivery)
     ├── tixdesk-sticker-01-hero-mark-print.pdf   # Vector PDF 1.7
     ├── tixdesk-sticker-02-mascot-tixie-print.pdf
-    ├── tixdesk-sticker-03-cyber-mecha-decal-print.pdf
-    └── tixdesk-sticker-04-retro-pixel-arcade-print.pdf
+    └── tixdesk-sticker-03-retro-pixel-arcade-print.pdf
 ```
 
 ---
 
-## 🎨 The 4 Distinct Art Styles
+## 🎨 The 3 Official Expo Stickers
 
-### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`) — Minimalist Die-Cut
-* **Concept:** Standalone TixDesk logo mark with the signature Royal Blue to Cyan gradient (`#3B82F6` → `#06B6D4`), inner light sheen, and a $2.5\text{ mm}$ solid white die-cut border.
+### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`) — Minimalist Master Mark
+* **Concept:** The official TixDesk brand mark with continuous Royal Blue to Cyan gradient (`#3B82F6` → `#06B6D4`), solid white "T", seamless baseline transition, and a $2.5\text{ mm}$ solid white die-cut border.
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
 ### 2. Tixie • The Cyber-Bot Mascot (`~7.2 × 7.2 cm`) — Kawaii 2D Vector
 * **Concept:** The official TixDesk AI support bot mascot. Ticket/chat-bubble head with OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and holding the Golden Resolved Ticket (`✓`).
 * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
-### 3. Cyber Mecha Decal // Unit-016 (`~7.5 × 7.5 cm`) — Anime Sci-Fi HUD
-* **Concept:** High-tech tactical mecha decal (Gundam/Evangelion HUD style). Chamfered heavy octagonal shield, circuit nodes, optical crosshairs, `UNIT-016 // TIM-A3`, `PROTOCOL: RESOLVED [200 OK]`, and `SLA: ZERO OVERDUE`.
-* **Audience:** DevOps, backend engineers, Linux users, and anime mecha enthusiasts.
-
-### 4. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pixel Art Quest
+### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pixel Art Quest
 * **Concept:** Nostalgic 8-bit / 16-bit arcade video game sprite. Pixelated ticket character wearing pixel sunglasses ("Deal With It"), full 3 health hearts, and bottom banner: `★ SLA SAVED: 100% ★`.
 * **Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
 
