@@ -48,12 +48,11 @@ tixdesk-expo-stickers/
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
 ### 2. Tixie • The Cyber-Bot Mascot (`~7.0 × 7.0 cm`) — Pure Iconic Head Edition
-* **Concept:** The official TixDesk AI support bot mascot portrait. Focused purely on Tixie's iconic ticket-shaped head with curved OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and antenna. The ticket notches on both flanks are preserved, and the gap between each notch and earcup is filled with solid white to eliminate dark background show-through. The white die-cut contour is thinned down to match the exact slimness of Sticker 01.
+* **Concept:** The official TixDesk AI support bot mascot portrait. Focused purely on Tixie's iconic ticket-shaped head with curved OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and antenna. The ticket notches on both flanks are preserved, and all internal cavities (behind earcups and between the mic wire and speech tail) are solidly filled with pure white to eliminate dark background show-through. The white die-cut contour is slim, uniform, and seamlessly rounded.
 * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
 ### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pure Retro Character Edition
-* **Concept:** Nostalgic 8-bit arcade video game sprite. Pure character focus with gaming HUD overlays removed: split 50/50 blue/cyan pixel ticket, retro 8-bit sunglasses with white specular catchlights, coral blush, centered snout, and stepped dialogue tail.
-* **Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
+* **Concept:** Nostalgic 8-bit arcade video game sprite. Pure character focus with gaming HUD overlays removed: split 50/50 blue/cyan pixel ticket with authentic inward punch notches, cool 8-bit sunglasses with white specular catchlights, coral blush, centered snout, and stepped dialogue tail. The white die-cut contour is slim and softly rounded, running straight vertically along the sides without indenting into the notches.
 
 ---
 

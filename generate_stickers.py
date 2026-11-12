@@ -157,6 +157,8 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
       <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <!-- Solid White Bridge filling the gap between mic wire and speech body -->
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
     </g>
 
     <!-- 2. Solid White Gap Fills inside the ticket notches (stroke=none, cleanly behind earcups) -->
@@ -228,6 +230,8 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
       <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <!-- Solid White Bridge filling the gap between mic wire and speech body -->
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
     </g>
 
     <!-- Solid White Gap Fills inside the ticket notches -->
@@ -288,99 +292,119 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
 
 # ==============================================================================
 # 3. STICKER 03: RETRO PIXEL ART ARCADE (PURE RETRO CHARACTER EDITION)
-# - Extraneous gaming overlays (hearts, SLA text banner, green HP bar) REMOVED!
-# - Pure focus on the cool retro pixel arcade ticket mascot:
-#   * Symmetrical 50/50 royal blue & cyan split face
-#   * 8-bit black sunglasses with specular white catchlights
-#   * Pixel blush, centered cat mouth, and stepped dialogue tail
-#   * Sleek, contour-hugging white die-cut border with rounded corners
+# - Soft, smooth, slim uniform white die-cut border matching Sticker 01 thinness.
+# - Outer white border has NO notch indents (flush continuous contour).
+# - Authentic inward ticket punch cutouts preserved on the 50/50 blue & cyan body!
+# - Stepped dialogue tail at bottom-left, 8-bit black sunglasses with white specular
+#   catchlights, coral blush, and centered pixel snout.
 # ==============================================================================
-path_contour_03_clean = """
-  M -145 -165
-  L 145 -165
-  A 20 20 0 0 1 165 -145
-  L 165 -45
-  Q 142 -12, 165 20
-  L 165 85
-  A 20 20 0 0 1 145 105
-  L -85 105
-  L -155 165
-  A 12 12 0 0 1 -175 155
-  L -175 105
-  L -165 20
-  Q -142 -12, -165 -45
-  L -165 -145
-  A 20 20 0 0 1 -145 -165
+contour_03_smooth = """
+  M -130 -135
+  L 130 -135
+  Q 150 -135, 150 -115
+  L 150 75
+  Q 150 95, 130 95
+  L -75 95
+  L -135 140
+  Q -150 145, -150 130
+  L -150 75
+  L -150 -115
+  Q -150 -135, -130 -135
   Z
 """
 
-svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
-  <g id="Artwork" transform="translate(230, 220)">
-    <!-- 1. White die-cut contour -->
-    <path id="WhiteBorder" d="{path_contour_03_clean}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+path_03_body_left = """
+  M -130 -135
+  L 0 -135
+  L 0 95
+  L -90 95
+  L -140 135
+  L -140 95
+  L -150 95
+  L -150 20
+  L -125 20
+  L -125 -25
+  L -150 -25
+  L -150 -115
+  Q -150 -135, -130 -135
+  Z
+"""
 
-    <!-- 2. Ticket Body (Clean 50/50 Split) -->
-    <rect x="-160" y="-145" width="160" height="250" fill="#3877F6" />
-    <rect x="0" y="-145" width="160" height="250" fill="#5AC1C4" />
+path_03_body_right = """
+  M 0 -135
+  L 130 -135
+  Q 150 -135, 150 -115
+  L 150 -25
+  L 125 -25
+  L 125 20
+  L 150 20
+  L 150 75
+  Q 150 95, 130 95
+  L 0 95
+  Z
+"""
+
+svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <g id="Artwork" transform="translate(220, 205)">
+    <!-- 1. Soft, Slim, Uniform White die-cut contour (Matching Sticker 01 slimness, NO notch indent) -->
+    <path id="WhiteBorder" d="{contour_03_smooth}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- 2. Ticket Body with Authentic Inward Punch Notches -->
+    <!-- Left Half: Royal Blue #3877F6 with inward notch -->
+    <path d="{path_03_body_left}" fill="#3877F6" />
     
-    <!-- Ticket Notches -->
-    <rect x="-180" y="-35" width="30" height="45" fill="#FFFFFF" />
-    <rect x="150" y="-35" width="30" height="45" fill="#FFFFFF" />
+    <!-- Right Half: Bright Cyan #5AC1C4 with inward notch -->
+    <path d="{path_03_body_right}" fill="#5AC1C4" />
 
-    <!-- Stepped Tail at bottom-left -->
-    <polygon points="-150,105 -150,150 -95,105" fill="#3877F6" />
-    <polygon points="-128,105 -150,150 -110,105" fill="#2563EB" />
+    <!-- Stepped Tail shadow accent at bottom-left -->
+    <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
 
     <!-- 3. Pixel Sunglasses & Face -->
-    <g transform="translate(0, -25)">
-      <rect x="-120" y="-20" width="100" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="100" height="45" fill="#0F172A" />
+    <g transform="translate(0, -20)">
+      <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
+      <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />
       <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-105" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-87" y="4" width="14" height="14" fill="#FFFFFF" />
+      <rect x="-100" y="-10" width="18" height="14" fill="#FFFFFF" />
+      <rect x="-82" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
       <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
       <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-78" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="54" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="-75" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="51" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
   </g>
 </svg>"""
 
-cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
-  <g id="Artwork" transform="translate(230, 220)">
-    <path id="WhiteBorder" d="{path_contour_03_clean}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <g id="Artwork" transform="translate(220, 205)">
+    <!-- 1. Soft, Slim, Uniform White die-cut contour -->
+    <path id="WhiteBorder" d="{contour_03_smooth}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
 
-    <!-- Ticket Body -->
-    <rect x="-160" y="-145" width="160" height="250" fill="#3877F6" />
-    <rect x="0" y="-145" width="160" height="250" fill="#5AC1C4" />
-    <rect x="-180" y="-35" width="30" height="45" fill="#FFFFFF" />
-    <rect x="150" y="-35" width="30" height="45" fill="#FFFFFF" />
+    <!-- 2. Ticket Body with Inward Punch Notches -->
+    <path d="{path_03_body_left}" fill="#3877F6" />
+    <path d="{path_03_body_right}" fill="#5AC1C4" />
+    <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
 
-    <!-- Stepped Tail -->
-    <polygon points="-150,105 -150,150 -95,105" fill="#3877F6" />
-    <polygon points="-128,105 -150,150 -110,105" fill="#2563EB" />
-
-    <!-- Sunglasses & Face -->
-    <g transform="translate(0, -25)">
-      <rect x="-120" y="-20" width="100" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="100" height="45" fill="#0F172A" />
+    <!-- 3. Pixel Sunglasses & Face -->
+    <g transform="translate(0, -20)">
+      <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
+      <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />
       <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-105" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-87" y="4" width="14" height="14" fill="#FFFFFF" />
+      <rect x="-100" y="-10" width="18" height="14" fill="#FFFFFF" />
+      <rect x="-82" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
       <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
       <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-78" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="54" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="-75" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="51" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
   </g>
 
   <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(230, 220)">
-    <path d="{path_contour_03_clean}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  <g id="CutContour" transform="translate(220, 205)">
+    <path d="{contour_03_smooth}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>"""
 

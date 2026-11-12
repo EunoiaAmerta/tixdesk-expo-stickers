@@ -126,11 +126,11 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Kawaii Chibi 2D Vector IP Mascot Head
 * **Refined Anatomy:**
   * **Iconic Head-Only Focus:** The floating robot body, limbs, and thruster have been completely removed to provide an ultra-clean, high-recognition portrait of Tixie.
-  * **Preserved Ticket Notches & Solid White Gap Fill:** The characteristic ticket notches on the left and right sides are fully preserved, while the negative space between the notches and the headset earcups is filled with solid white (`#FFFFFF`), eliminating any dark background show-through or hollow holes.
+  * **Preserved Ticket Notches & Zero Negative Gaps:** The characteristic ticket notches on both flanks are fully preserved, and all negative cavities (including the area behind the earcups and between the microphone boom wire and speech bubble tail) are solidly filled with pure white (`#FFFFFF`), leaving zero dark voids or hollow holes.
   * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
-  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, and bottom-left speech tail.
+  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, and bottom-left speech tail with organic, continuous curves and zero stair-step artifacts.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
 ### Sticker 03: "Retro 16-Bit Arcade Gamer" (Pure Retro Ticket Edition)
@@ -139,9 +139,11 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
 * **Refined Anatomy:**
   * **Pure Character Focus:** All extraneous gaming HUD/overlays (floating hearts, SLA text banner, and bottom green HP bar) have been eliminated for a clean, bold retro arcade character.
-  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches, cool 8-bit sunglasses with white specular catchlights, coral blush, and centered pixel snout.
+  * **Preserved Inward Punch Notches:** Symmetrical rectangular ticket punch cutouts directly carved into the royal blue and bright cyan body fields, filled with clean solid white backing.
+  * **Smooth, Flush Die-Cut Outer Perimeter:** The outer white cutline contour runs straight and vertical along the lateral edges without indenting or dipping into the ticket notches, providing an ultra-smooth, sturdy, and peel-resistant border.
+  * **Soft, Slim Die-Cut Margins:** Uniform slim margins ($\approx 10\text{–}12\text{ px}$) on top, bottom, and both flanks, with pillowy rounded corners perfectly harmonizing with Sticker 01.
+  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket, cool 8-bit black sunglasses with specular white gleams, coral blush, and centered pixel snout.
   * **Clean Baseline & Stepped Tail:** Retro ticket chin and stepped dialogue tail on the bottom-left with dimensional shadow accent.
-  * **Contour-Hugging Die-Cut Base:** Uniform white die-cut margin cleanly outlining the retro pixel ticket with smooth rounded corners, perfectly matching Sticker 01.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---

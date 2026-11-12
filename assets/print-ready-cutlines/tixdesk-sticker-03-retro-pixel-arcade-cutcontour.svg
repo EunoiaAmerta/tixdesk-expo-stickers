@@ -1,68 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
-  <g id="Artwork" transform="translate(230, 220)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <g id="Artwork" transform="translate(220, 205)">
+    <!-- 1. Soft, Slim, Uniform White die-cut contour -->
     <path id="WhiteBorder" d="
-  M -145 -165
-  L 145 -165
-  A 20 20 0 0 1 165 -145
-  L 165 -45
-  Q 142 -12, 165 20
-  L 165 85
-  A 20 20 0 0 1 145 105
-  L -85 105
-  L -155 165
-  A 12 12 0 0 1 -175 155
-  L -175 105
-  L -165 20
-  Q -142 -12, -165 -45
-  L -165 -145
-  A 20 20 0 0 1 -145 -165
+  M -130 -135
+  L 130 -135
+  Q 150 -135, 150 -115
+  L 150 75
+  Q 150 95, 130 95
+  L -75 95
+  L -135 140
+  Q -150 145, -150 130
+  L -150 75
+  L -150 -115
+  Q -150 -135, -130 -135
   Z
-" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
 
-    <!-- Ticket Body -->
-    <rect x="-160" y="-145" width="160" height="250" fill="#3877F6" />
-    <rect x="0" y="-145" width="160" height="250" fill="#5AC1C4" />
-    <rect x="-180" y="-35" width="30" height="45" fill="#FFFFFF" />
-    <rect x="150" y="-35" width="30" height="45" fill="#FFFFFF" />
+    <!-- 2. Ticket Body with Inward Punch Notches -->
+    <path d="
+  M -130 -135
+  L 0 -135
+  L 0 95
+  L -90 95
+  L -140 135
+  L -140 95
+  L -150 95
+  L -150 20
+  L -125 20
+  L -125 -25
+  L -150 -25
+  L -150 -115
+  Q -150 -135, -130 -135
+  Z
+" fill="#3877F6" />
+    <path d="
+  M 0 -135
+  L 130 -135
+  Q 150 -135, 150 -115
+  L 150 -25
+  L 125 -25
+  L 125 20
+  L 150 20
+  L 150 75
+  Q 150 95, 130 95
+  L 0 95
+  Z
+" fill="#5AC1C4" />
+    <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
 
-    <!-- Stepped Tail -->
-    <polygon points="-150,105 -150,150 -95,105" fill="#3877F6" />
-    <polygon points="-128,105 -150,150 -110,105" fill="#2563EB" />
-
-    <!-- Sunglasses & Face -->
-    <g transform="translate(0, -25)">
-      <rect x="-120" y="-20" width="100" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="100" height="45" fill="#0F172A" />
+    <!-- 3. Pixel Sunglasses & Face -->
+    <g transform="translate(0, -20)">
+      <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
+      <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />
       <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-105" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-87" y="4" width="14" height="14" fill="#FFFFFF" />
+      <rect x="-100" y="-10" width="18" height="14" fill="#FFFFFF" />
+      <rect x="-82" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
       <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
       <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-78" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="54" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="-75" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="51" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
   </g>
 
   <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(230, 220)">
+  <g id="CutContour" transform="translate(220, 205)">
     <path d="
-  M -145 -165
-  L 145 -165
-  A 20 20 0 0 1 165 -145
-  L 165 -45
-  Q 142 -12, 165 20
-  L 165 85
-  A 20 20 0 0 1 145 105
-  L -85 105
-  L -155 165
-  A 12 12 0 0 1 -175 155
-  L -175 105
-  L -165 20
-  Q -142 -12, -165 -45
-  L -165 -145
-  A 20 20 0 0 1 -145 -165
+  M -130 -135
+  L 130 -135
+  Q 150 -135, 150 -115
+  L 150 75
+  Q 150 95, 130 95
+  L -75 95
+  L -135 140
+  Q -150 145, -150 130
+  L -150 75
+  L -150 -115
+  Q -150 -135, -130 -135
   Z
 " fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
