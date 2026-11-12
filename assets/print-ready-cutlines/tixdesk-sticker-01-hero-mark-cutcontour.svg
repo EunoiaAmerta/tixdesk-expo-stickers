@@ -7,81 +7,91 @@
     </linearGradient>
   </defs>
 
-  <g transform="translate(220, 205)">
+  <g id="Artwork" transform="translate(220, 195)">
+    <path id="WhiteBorder" d="
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 24 80
+  L -24 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" />
+    <path id="TicketBody" d="
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 24 80
+  L 24 -25
+  L 65 -25
+  A 17.5 17.5 0 0 0 65 -60
+  L -65 -60
+  A 17.5 17.5 0 0 0 -65 -25
+  L -24 -25
+  L -24 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="url(#tixdeskGrad)" />
+    <path id="TGlyph" d="
+  M -65 -60
+  L 65 -60
+  A 17.5 17.5 0 0 1 65 -25
+  L 24 -25
+  L 24 80
+  L -24 80
+  L -24 -25
+  L -65 -25
+  A 17.5 17.5 0 0 1 -65 -60
+  Z
+" fill="#FFFFFF" />
+  </g>
+
+  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
+  <g id="CutContour" transform="translate(220, 195)">
     <path d="
-      M 0 -120
-      L 128 -120
-      A 32 32 0 0 1 160 -88
-      L 160 -32
-      A 22 22 0 0 0 160 12
-      L 160 68
-      A 32 32 0 0 1 128 100
-      L -85 150
-      L -85 100
-      L -128 100
-      A 32 32 0 0 1 -160 68
-      L -160 12
-      A 22 22 0 0 0 -160 -32
-      L -160 -88
-      A 32 32 0 0 1 -128 -120
-      Z
-    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
-    <path d="
-      M 0 -120
-      L 128 -120
-      A 32 32 0 0 1 160 -88
-      L 160 -32
-      A 22 22 0 0 0 160 12
-      L 160 68
-      A 32 32 0 0 1 128 100
-      L 25 100
-      L 25 -36
-      L 70 -36
-      A 20 20 0 0 0 70 -76
-      L -70 -76
-      A 20 20 0 0 0 -70 -36
-      L -25 -36
-      L -25 100
-      L -85 150
-      L -85 100
-      L -128 100
-      A 32 32 0 0 1 -160 68
-      L -160 12
-      A 22 22 0 0 0 -160 -32
-      L -160 -88
-      A 32 32 0 0 1 -128 -120
-      Z
-    " fill="url(#tixdeskGrad)" />
-    <path d="
-      M -70 -76
-      L 70 -76
-      A 20 20 0 0 1 70 -36
-      L 25 -36
-      L 25 100
-      L -25 100
-      L -25 -36
-      L -70 -36
-      A 20 20 0 0 1 -70 -76
-      Z
-    " fill="#FFFFFF" />
-    <!-- Spot Magenta 100% Print Cutline -->
-    <path d="
-      M 0 -120
-      L 128 -120
-      A 32 32 0 0 1 160 -88
-      L 160 -32
-      A 22 22 0 0 0 160 12
-      L 160 68
-      A 32 32 0 0 1 128 100
-      L -85 150
-      L -85 100
-      L -128 100
-      A 32 32 0 0 1 -160 68
-      L -160 12
-      A 22 22 0 0 0 -160 -32
-      L -160 -88
-      A 32 32 0 0 1 -128 -120
-      Z
-    " fill="none" stroke="#FF00FF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 24 80
+  L -24 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>

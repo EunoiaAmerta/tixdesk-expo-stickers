@@ -44,15 +44,15 @@ tixdesk-expo-stickers/
 ## 🎨 The 3 Official Expo Stickers
 
 ### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`) — Minimalist Master Mark
-* **Concept:** The official TixDesk brand mark with exact horizontal Royal Blue to Cyan gradient (`#3877F6` → `#5AC1C4`), solid white "T" cutting straight through to the bottom baseline, official blue gradient tail, and a $2.5\text{ mm}$ solid white die-cut border.
+* **Concept:** The official TixDesk brand mark with exact horizontal Royal Blue to Cyan gradient (`#3877F6` → `#5AC1C4`), 100% solid white "T" glyph with zero dark gaps or voids, and a contour-hugging white die-cut border that curves naturally along the speech tail and baseline.
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
 ### 2. Tixie • The Cyber-Bot Mascot (`~7.2 × 7.2 cm`) — Kawaii 2D Vector
-* **Concept:** The official TixDesk AI support bot mascot. Ticket/chat-bubble head with OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and holding the Golden Resolved Ticket (`✓`).
+* **Concept:** The official TixDesk AI support bot mascot. Ticket/chat-bubble head with OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and holding the Golden Resolved Ticket (`✓`). Contoured die-cut border organically embraces every feature from antenna to thruster.
 * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
 ### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pixel Art Quest
-* **Concept:** Nostalgic 8-bit / 16-bit arcade video game sprite. Pixelated ticket character wearing pixel sunglasses ("Deal With It"), full 3 health hearts, and bottom banner: `★ SLA SAVED: 100% ★`.
+* **Concept:** Nostalgic 8-bit / 16-bit arcade video game sprite. Pixelated ticket character wearing pixel sunglasses ("Deal With It"), full 3 health hearts, and snug bottom banner: `★ SLA SAVED: 100% ★` with triple-scalloped contour die-cut.
 * **Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
 
 ---

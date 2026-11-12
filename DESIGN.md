@@ -116,9 +116,8 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Pure Minimalist Geometric Die-Cut
 * **Refined Anatomy:**
   * **Gradient Accuracy:** Horizontal spectrum transitioning from Deep Royal Blue (`#3877F6`) to Vibrant Cyan (`#5AC1C4`), sampled directly from the official logo asset.
-  * **The "T" Glyph:** Solid pure white (`#FFFFFF`) lettermark whose vertical stem cuts straight down all the way through to the bottom baseline.
-  * **Tail Integration:** The speech-bubble tail on the bottom-left is fully filled with the official blue gradient, sloping up diagonally to meet the bottom-left corner of the "T" stem.
-  * **Die-Cut Contour:** Solid, continuous $2.5\text{ mm}$ outer white border wrapping around the entire logo envelope with 100% internal containment.
+  * **Solid White "T" Glyph:** 100% solid pure white (`#FFFFFF`) lettermark filling the exact proportions of the official logo, with zero dark gaps, slits, or hollow voids.
+  * **Contour-Hugging Die-Cut Base:** The white outer die-cut border strictly follows the natural anatomy of the design—dipping down to follow the speech bubble tail apex, ascending into the bottom crevice, and running along the baseline horizontally without crude diagonal shortcuts.
 * **Target Audience:** Universal (MacBook lids, iPads, phones, tumblers).
 
 ### Sticker 02: "Tixie • The Cyber-Bot" (Enhanced Mascot Edition)
@@ -130,7 +129,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
   * **Body & Prop:** Compact floating droid pod with cyan thruster particles, waving left arm, and holding the Golden Resolved Ticket (`✓`).
-  * **Full Die-Cut Enclosure:** Generous, continuous solid white backing that encompasses 100% of all limbs, antenna, headset, and props with uniform 20–30px safety margins. No element protrudes outside the white border.
+  * **Contour-Hugging Die-Cut Base:** Generous, organic contour-following white border that wraps faithfully around the silhouette (antenna orb, headband arc, dual earcups, waving hand, golden ticket, and bottom thruster nozzle) with all negative spaces smoothly bridged to guarantee zero tearing.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
 ### Sticker 03: "Retro 16-Bit Arcade Gamer" (Enhanced Pixel Art Quest)
@@ -141,7 +140,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Strict Pixel Grid:** Constructed on a consistent, uniform pixel grid without mismatched pixel resolutions (no mixels).
   * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches and stepped speech tail.
   * **Attitude & HUD:** 8-bit "Deal With It" pixel sunglasses with white lens reflections, 3 floating red pixel health hearts (100% SLA indicator), and retro arcade banner `★ SLA SAVED: 100% ★`.
-  * **Smooth Capsule Die-Cut:** Outer contour is engineered as an unbroken, smooth rounded capsule envelope with zero acute internal notches, guaranteeing zero peel risk and 100% containment of all graphics within the white base.
+  * **Contour-Hugging Die-Cut Base:** Distinctive triple-scalloped arches conforming over each of the 3 floating hearts, sharp inward bevels tracing the side ticket notches, and a snug contour hugging the lower SLA banner without bulky voids or edge artifacts.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---
