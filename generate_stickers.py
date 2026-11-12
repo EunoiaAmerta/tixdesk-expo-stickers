@@ -186,7 +186,7 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -252,7 +252,7 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 
   <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
@@ -448,7 +448,7 @@ svg_04 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
 
     <!-- Steaming Coffee Mug -->
     <path d="M -18 22 C -23 10, -13 -2, -18 -15" fill="none" stroke="#E2E8F0" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
@@ -521,7 +521,7 @@ svg_05 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     </linearGradient>
   </defs>
 
-  <g id="Artwork" transform="translate(270, 290)">
+  <g id="Artwork" transform="translate(270, 375)">
     <!-- 1. White Die-Cut Contour (Encloses flames, antenna, headset, and Tixie body) -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
       <path d="M -120 -150 C -160 -190, -150 -265, -95 -290 C -75 -245, -55 -230, -45 -200 Z" stroke-width="26" />
@@ -651,7 +651,7 @@ svg_05 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#EA580C" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#78350F" />
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#1E293B" stroke-width="4" />
 
     <!-- 8. Bottom Alert Pill: "PROD ON FIRE" -->
     <g transform="translate(0, 62)">
@@ -663,7 +663,7 @@ svg_05 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
 
 cutline_05 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
   {svg_05.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">', '').replace('</svg>', '')}
-  <g id="CutContour" transform="translate(270, 290)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+  <g id="CutContour" transform="translate(270, 375)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <path d="M -120 -150 C -160 -190, -150 -265, -95 -290 C -75 -245, -55 -230, -45 -200 Z" stroke-width="26" />
     <path d="M -60 -170 C -60 -265, -15 -320, 15 -330 C 30 -275, 65 -235, 45 -180 Z" stroke-width="26" />
     <path d="M 30 -160 C 65 -215, 125 -275, 135 -225 C 140 -190, 115 -160, 100 -145 Z" stroke-width="26" />
@@ -807,7 +807,7 @@ svg_06 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
 
     <!-- Boom Mic with Neon Cyan Node -->
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#00F0FF" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="14" fill="#00F0FF" stroke="#1E293B" stroke-width="4" />
     <circle cx="-70" cy="73" r="6" fill="#FF007F" />
   </g>
 </svg>"""
