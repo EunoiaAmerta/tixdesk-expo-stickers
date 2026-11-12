@@ -1,32 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
   <defs>
-    <linearGradient id="headGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3877F6" />
-      <stop offset="50%" stop-color="#4CA2EA" />
-      <stop offset="100%" stop-color="#5AC1C4" />
-    </linearGradient>
-    <linearGradient id="screenGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080E1E" />
-      <stop offset="100%" stop-color="#111C35" />
-    </linearGradient>
-    <linearGradient id="extGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#EF4444" />
-      <stop offset="50%" stop-color="#F87171" />
-      <stop offset="100%" stop-color="#DC2626" />
-    </linearGradient>
-    <linearGradient id="sirenGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#EF4444" />
+    <!-- Ticket Head Gradient (Heated Red-Orange) -->
+    <linearGradient id="fireHeadGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="60%" stop-color="#EA580C" />
       <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Flame Layers -->
+    <linearGradient id="flameOuter5" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="50%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <linearGradient id="flameMid5" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="60%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FDE047" />
+    </linearGradient>
+
+    <linearGradient id="flameCore5" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#FEF08A" />
+    </linearGradient>
+
+    <linearGradient id="screenGradFire" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180A0A" />
+      <stop offset="100%" stop-color="#2D0C0C" />
     </linearGradient>
   </defs>
 
-  <g id="Artwork" transform="translate(260, 265)">
-    <!-- 1. White Die-Cut Contour -->
+  <g id="Artwork" transform="translate(270, 290)">
+    <!-- 1. White Die-Cut Contour (Encloses flames, antenna, headset, and Tixie body) -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <circle cx="0" cy="-230" r="26" stroke-width="24" />
-      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
-      <path d="M -38 -245 C -45 -230, -45 -215, -38 -200" fill="none" stroke-width="16" />
-      <path d="M 38 -245 C 45 -230, 45 -215, 38 -200" fill="none" stroke-width="16" />
+      <path d="M -120 -150 C -160 -190, -150 -265, -95 -290 C -75 -245, -55 -230, -45 -200 Z" stroke-width="26" />
+      <path d="M -60 -170 C -60 -265, -15 -320, 15 -330 C 30 -275, 65 -235, 45 -180 Z" stroke-width="26" />
+      <path d="M 30 -160 C 65 -215, 125 -275, 135 -225 C 140 -190, 115 -160, 100 -145 Z" stroke-width="26" />
+      
+      <path d="M -180 -120 C -225 -100, -235 -40, -210 -10 C -190 -30, -180 -60, -175 -85 Z" stroke-width="24" />
+      <path d="M 175 -120 C 220 -100, 230 -40, 205 -10 C 185 -30, 175 -60, 170 -85 Z" stroke-width="24" />
+
+      <circle cx="-135" cy="-210" r="14" stroke-width="20" />
+      <circle cx="130" cy="-240" r="12" stroke-width="20" />
+      <circle cx="155" cy="-160" r="15" stroke-width="20" />
 
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
@@ -36,90 +54,120 @@
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
       <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" stroke-width="12" />
 
-      <rect x="-25" y="45" width="55" height="80" rx="16" stroke-width="24" />
-      <rect x="-15" y="28" width="35" height="20" rx="6" stroke-width="20" />
-      <path d="M 10 35 C 35 30, 45 45, 50 35" fill="none" stroke-width="18" />
-      <circle cx="65" cy="30" r="18" stroke-width="22" />
-      <circle cx="85" cy="22" r="16" stroke-width="22" />
-      <circle cx="95" cy="38" r="16" stroke-width="22" />
-      <circle cx="75" cy="45" r="14" stroke-width="22" />
+      <rect x="-75" y="48" width="150" height="28" rx="14" stroke-width="24" />
     </g>
 
+    <!-- Solid White Gap Fills behind earcups -->
     <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
     <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
 
-    <!-- Emergency Siren on Antenna -->
-    <path d="M 0 -150 L 0 -210" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
-    <rect x="-16" y="-215" width="32" height="8" rx="3" fill="#334155" />
-    <path d="M -14 -215 L -10 -242 Q 0 -248, 10 -242 L 14 -215 Z" fill="url(#sirenGrad5)" stroke="#FFFFFF" stroke-width="3" />
-    <line x1="-5" y1="-238" x2="-5" y2="-220" stroke="#FEF08A" stroke-width="3" stroke-linecap="round" />
-    <path d="M -34 -238 C -40 -228, -40 -218, -34 -208" fill="none" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round" />
-    <path d="M 34 -238 C 40 -228, 40 -218, 34 -208" fill="none" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round" />
+    <!-- 2. Roaring Flames Behind Tixie -->
+    <path d="
+      M -125 -135
+      C -165 -180, -155 -260, -100 -285
+      C -85 -240, -55 -225, -45 -195
+      C -30 -265, -5 -325, 15 -322
+      C 28 -270, 58 -230, 42 -175
+      C 72 -205, 126 -265, 134 -215
+      C 138 -180, 110 -150, 95 -135
+      Z
+    " fill="url(#flameOuter5)" />
 
-    <!-- Head Ticket Shell -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad5)" stroke="#1D4ED8" stroke-width="2.5" />
+    <path d="
+      M -105 -140
+      C -135 -180, -130 -240, -92 -260
+      C -78 -220, -52 -210, -40 -185
+      C -24 -240, -2 -295, 14 -290
+      C 24 -245, 48 -210, 35 -165
+      C 58 -190, 102 -235, 112 -195
+      C 116 -165, 92 -145, 82 -135
+      Z
+    " fill="url(#flameMid5)" />
 
-    <!-- Visor -->
-    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad5)" stroke="#38BDF8" stroke-width="4" />
-    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
+    <path d="
+      M -80 -145
+      C -105 -175, -95 -220, -75 -235
+      C -65 -200, -45 -190, -32 -170
+      C -18 -215, 2 -260, 14 -255
+      C 22 -220, 36 -190, 28 -155
+      C 45 -175, 78 -205, 85 -175
+      C 88 -155, 70 -145, 62 -135
+      Z
+    " fill="url(#flameCore5)" />
 
-    <!-- Anime Panic (> <) Eyes -->
+    <!-- Side Flames from Headset -->
+    <path d="M -180 -115 C -220 -95, -230 -40, -205 -10 C -190 -25, -180 -55, -175 -80 Z" fill="url(#flameOuter5)" />
+    <path d="M -180 -105 C -210 -85, -218 -45, -198 -20 C -188 -35, -180 -60, -175 -75 Z" fill="url(#flameMid5)" />
+
+    <path d="M 175 -115 C 215 -95, 225 -40, 200 -10 C 185 -25, 175 -55, 170 -80 Z" fill="url(#flameOuter5)" />
+    <path d="M 175 -105 C 205 -85, 213 -45, 193 -20 C 183 -35, 175 -60, 170 -75 Z" fill="url(#flameMid5)" />
+
+    <!-- Embers -->
+    <circle cx="-135" cy="-210" r="7" fill="#F59E0B" />
+    <circle cx="-135" cy="-210" r="3.5" fill="#FEF08A" />
+    <circle cx="130" cy="-240" r="6" fill="#F97316" />
+    <circle cx="130" cy="-240" r="3" fill="#FEF08A" />
+    <circle cx="155" cy="-160" r="7.5" fill="#EF4444" />
+    <circle cx="155" cy="-160" r="4" fill="#FDE047" />
+
+    <!-- 3. Antenna (Blazing spark plug / burning wick) -->
+    <path d="M 0 -150 L 0 -220" stroke="#78350F" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-230" r="22" fill="#EF4444" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="0" cy="-230" r="11" fill="#FEF08A" />
+
+    <!-- 4. Head Ticket Shell (Heated Crimson/Orange Gradient) -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#fireHeadGrad)" stroke="#991B1B" stroke-width="2.5" />
+
+    <!-- Flame Tongues on Top Edge of Head -->
+    <path d="M -90 -160 C -105 -125, -80 -115, -88 -90 C -75 -110, -70 -135, -72 -160 Z" fill="#FDE047" opacity="0.9" />
+    <path d="M 70 -160 C 88 -125, 68 -115, 76 -90 C 62 -110, 58 -135, 60 -160 Z" fill="#FDE047" opacity="0.9" />
+
+    <!-- 5. Visor Screen -->
+    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGradFire)" stroke="#F97316" stroke-width="4" />
+
+    <!-- 6. Panicked Face: Wide Shocked Anime Eyes with Fire Reflections -->
     <g transform="translate(-55, -45)">
-      <path d="M -18 -18 L 12 0 L -18 18" fill="none" stroke="#38BDF8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M -15 -15 L 8 0 L -15 15" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="0" cy="0" r="26" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="18" fill="#0F172A" />
+      <path d="M -8 10 C -12 2, -6 -6, 0 -12 C 6 -6, 12 2, 8 10 C 4 6, -4 6, -8 10 Z" fill="#F59E0B" />
+      <circle cx="-5" cy="-6" r="4.5" fill="#FFFFFF" />
+      <circle cx="5" cy="5" r="2.5" fill="#FFFFFF" />
     </g>
+
     <g transform="translate(55, -45)">
-      <path d="M 18 -18 L -12 0 L 18 18" fill="none" stroke="#38BDF8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M 15 -15 L -8 0 L 15 15" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="0" cy="0" r="26" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="18" fill="#0F172A" />
+      <path d="M -8 10 C -12 2, -6 -6, 0 -12 C 6 -6, 12 2, 8 10 C 4 6, -4 6, -8 10 Z" fill="#F59E0B" />
+      <circle cx="-5" cy="-6" r="4.5" fill="#FFFFFF" />
+      <circle cx="5" cy="5" r="2.5" fill="#FFFFFF" />
     </g>
 
-    <!-- Sweat Drop on Visor -->
-    <path d="M -90 -85 C -98 -75, -102 -68, -102 -62 C -102 -54, -96 -48, -88 -48 C -80 -48, -74 -54, -74 -62 C -74 -68, -78 -75, -86 -85 Z" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2.5" />
+    <!-- Flying Sweat Droplets from Panic -->
+    <path d="M -95 -85 C -105 -75, -110 -68, -110 -60 C -110 -50, -102 -44, -94 -44 C -86 -44, -78 -50, -78 -60 C -78 -68, -85 -75, -95 -85 Z" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 95 -85 C 105 -75, 110 -68, 110 -60 C 110 -50, 102 -44, 94 -44 C 86 -44, 78 -50, 78 -60 C 78 -68, 85 -75, 95 -85 Z" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2.5" />
 
-    <ellipse cx="-70" cy="-15" rx="16" ry="9" fill="#F43F5E" opacity="0.9" />
-    <ellipse cx="70" cy="-15" rx="16" ry="9" fill="#F43F5E" opacity="0.9" />
+    <!-- Flushed Red Hot Cheeks -->
+    <ellipse cx="-75" cy="-10" rx="16" ry="9" fill="#DC2626" opacity="0.9" />
+    <ellipse cx="75" cy="-10" rx="16" ry="9" fill="#DC2626" opacity="0.9" />
 
-    <path d="M -14 -12 Q 0 -22 14 -12 Q 0 8 -14 -12 Z" fill="#F43F5E" stroke="#38BDF8" stroke-width="3.5" stroke-linejoin="round" />
-    <path d="M -5 -15 L 0 -11 L 5 -15 Z" fill="#FFFFFF" />
+    <!-- Open Panicked Screaming Mouth -->
+    <path d="M -14 -12 Q 0 -22 14 -12 Q 18 10 0 12 Q -18 10 -14 -12 Z" fill="#EF4444" stroke="#FEF08A" stroke-width="3" stroke-linejoin="round" />
+    <ellipse cx="0" cy="4" rx="8" ry="4" fill="#7F1D1D" />
 
-    <!-- Headset -->
+    <!-- 7. Headset -->
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
-    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
-    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#EA580C" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#EA580C" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#78350F" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#EA580C" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#78350F" />
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
     <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#FFFFFF" stroke-width="4" />
 
-    <!-- Fire Extinguisher & Frost Foam Puff -->
-    <rect x="-22" y="48" width="48" height="75" rx="14" fill="url(#extGrad5)" stroke="#991B1B" stroke-width="3" />
-    <rect x="-14" y="32" width="32" height="18" rx="5" fill="#94A3B8" stroke="#475569" stroke-width="2.5" />
-    <circle cx="2" cy="41" r="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5" />
-    <line x1="2" y1="41" x2="4" y2="38" stroke="#10B981" stroke-width="1.5" />
-    
-    <!-- Clean Unobstructed ZERO DOWNTIME Label -->
-    <rect x="-18" y="65" width="40" height="28" rx="4" fill="#FFFFFF" />
-    <text x="2" y="76" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="900" fill="#DC2626" text-anchor="middle">ZERO</text>
-    <text x="2" y="88" font-family="'Noto Sans', sans-serif" font-size="7.5" font-weight="900" fill="#1E293B" text-anchor="middle">DOWNTIME</text>
-
-    <!-- Hose & Discharge Nozzle -->
-    <path d="M 14 38 C 32 35, 42 46, 48 38" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round" />
-    <polygon points="46,34 56,38 46,42" fill="#64748B" />
-
-    <!-- Frosty Foam Cloud Puff -->
-    <g fill="#E0F2FE" stroke="#38BDF8" stroke-width="3.5">
-      <circle cx="66" cy="32" r="16" />
-      <circle cx="84" cy="24" r="14" />
-      <circle cx="96" cy="38" r="14" />
-      <circle cx="78" cy="44" r="13" />
+    <!-- 8. Bottom Alert Pill: "PROD ON FIRE" -->
+    <g transform="translate(0, 62)">
+      <rect x="-70" y="-12" width="140" height="24" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="2" />
+      <text y="4.5" font-family="'Noto Sans', monospace, sans-serif" font-size="9.5" font-weight="900" fill="#FEF08A" letter-spacing="2" text-anchor="middle">🔥 PROD ON FIRE</text>
     </g>
-    <circle cx="84" cy="24" r="3.5" fill="#FFFFFF" />
-    <circle cx="70" cy="32" r="4" fill="#FFFFFF" />
-    <circle cx="92" cy="38" r="3" fill="#FFFFFF" />
-
-    <!-- Cute Chibi Hands on SIDES of Extinguisher (Clean, Zero Text Obstruction!) -->
-    <circle cx="-25" cy="78" r="11" fill="#3877F6" stroke="#FFFFFF" stroke-width="3" />
-    <circle cx="29" cy="78" r="11" fill="#5AC1C4" stroke="#FFFFFF" stroke-width="3" />
   </g>
 </svg>

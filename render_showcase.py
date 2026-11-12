@@ -34,15 +34,12 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140"
     <!-- Card 01 -->
     <g transform="translate(0, 0)">
       <rect width="520" height="440" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
-      <!-- Top Pill Tag Centered -->
       <g transform="translate(260, 26)">
         <rect x="-55" y="-12" width="110" height="24" rx="12" fill="#3877F6" fill-opacity="0.2" stroke="#3877F6" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#60A5FA" text-anchor="middle">CORE 01</text>
       </g>
-      <!-- Title & Subtitle Centered -->
       <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">HERO MARK (PERMANENT)</text>
       <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Symmetrical 40px T • Gradient Tail Hugging Die-Cut</text>
-      <!-- Artwork Centered -->
       <g transform="translate(260, 270) scale(0.85)" filter="url(#stickerShadow)">
         <image href="assets/png/tixdesk-sticker-01-hero-mark-300dpi.png" x="-200" y="-200" width="400" height="400" />
       </g>
@@ -78,10 +75,7 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140"
   </g>
 
   <!-- =========================================================================
-       ROW 2: EXPO EXPANSION PACK (4 Cards: width 395, height 485)
-       Left margin: 60, Gap: 48 -> X = 60, 503, 946, 1389.
-       (Total span = 60 + 395*4 + 48*3 = 60 + 1580 + 144 = 1784, Right margin = 48)
-       Let's balance perfectly: Left margin 45, Gap 50 -> 45 + 395*4 + 150 = 1775.
+       ROW 2: EXPO EXPANSION PACK (4 Cards: width 398, height 485)
        ========================================================================= -->
   <g transform="translate(48, 595)">
     <!-- Card 04 -->
@@ -105,10 +99,10 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140"
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#F87171" text-anchor="middle">EXPANSION 05</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">SLA INCIDENT FIREFIGHTER</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Panic Mode &gt; &lt; • Zero Downtime Foam</text>
-      <g transform="translate(199, 285) scale(0.72)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-05-tixie-sla-firefighter-300dpi.png" x="-240" y="-240" width="480" height="480" />
+      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE ON FIRE</text>
+      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Panicked Mascot • Blazing Prod Fire</text>
+      <g transform="translate(199, 285) scale(0.68)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-05-tixie-sla-firefighter-300dpi.png" x="-270" y="-270" width="540" height="540" />
       </g>
     </g>
 
@@ -119,10 +113,10 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140"
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#EC4899" fill-opacity="0.2" stroke="#EC4899" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#F472B6" text-anchor="middle">EXPANSION 06</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">HOLOGRAPHIC CYBER DECAL</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Carbon Synthwave • Glowing PCB Mesh</text>
-      <g transform="translate(199, 285) scale(0.78)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-06-cyber-neon-decal-300dpi.png" x="-210" y="-210" width="420" height="420" />
+      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE NEON (SOFT CYBER)</text>
+      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Glowing Synthwave • Cute Anime Visor</text>
+      <g transform="translate(199, 285) scale(0.70)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-06-cyber-neon-decal-300dpi.png" x="-260" y="-260" width="520" height="520" />
       </g>
     </g>
 
@@ -130,13 +124,13 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140"
     <g transform="translate(1314, 0)">
       <rect width="398" height="485" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
       <g transform="translate(199, 26)">
-        <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#14B8A6" fill-opacity="0.2" stroke="#14B8A6" stroke-width="1.2" />
-        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#2DD4BF" text-anchor="middle">EXPANSION 07</text>
+        <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2" />
+        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#34D399" text-anchor="middle">EXPANSION 07</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">VINTAGE POSTAL BADGE</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Golden Wreath • Ticket Resolved 200 OK</text>
+      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">VINTAGE POSTAL STAMP</text>
+      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Official TixDesk Mark • High-Vis 200 OK Stamp</text>
       <g transform="translate(199, 285) scale(0.70)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-07-vintage-postal-stamp-300dpi.png" x="-210" y="-210" width="420" height="420" />
+        <image href="assets/png/tixdesk-sticker-07-vintage-postal-stamp-300dpi.png" x="-230" y="-230" width="460" height="460" />
       </g>
     </g>
   </g>

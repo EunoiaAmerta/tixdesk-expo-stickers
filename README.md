@@ -78,17 +78,17 @@ tixdesk-expo-stickers/
    * **Concept:** Chibi Tixie on late-night triage holding a steaming ceramic mug stamped with the gold "T" emblem. Features peaceful sleepy eyes, rosy cheeks, warm amber antenna beacon, and curling aromatic steam lines.
    * **Audience:** SREs, DevOps on-call engineers, nocturnal coders, and coffee enthusiasts.
 
-5. **Tixie: SLA Incident Firefighter (`~7.0 × 7.0 cm`) — P1 Incident Response Edition**
-   * **Concept:** Tixie in emergency triage mode with an amber/red revolving siren atop its antenna, sweat beads, panicked anime `> <` eyes, and holding an extinguisher labeled "ZERO DOWNTIME" blasting out thick white cooling foam.
-   * **Audience:** Production support leads, incident commanders, SRE teams, and sysadmins.
+5. **Tixie on Fire (`~7.2 × 7.2 cm`) — Burning Mascot // PROD ON FIRE Edition**
+   * **Concept:** Tixie literally enveloped in roaring multi-layered vector flames (`#DC2626` $\rightarrow$ `#EA580C` $\rightarrow$ `#FDE047`), wide panicked cartoon eyes with fire reflections, screaming mouth, flying sweat droplets, sparking antenna wick, and a bottom banner reading `🔥 PROD ON FIRE`.
+   * **Audience:** Production support leads, incident commanders, SRE teams, and developers living through the "Prod is on fire" nightmare.
 
-6. **Holographic Cyber Neon Decal (`~7.2 × 6.5 cm`) — Carbon Synthwave Edition**
-   * **Concept:** Dark matte carbon ticket plate with glowing `#00F0FF` cyan and `#FF007F` magenta PCB circuit traces, isometric cyber grid, luminous gradient "T" core, and HUD telemetry (`SYS: NOMINAL // SLA: 100%` and `UNIT-016 // CORE-OK`). Designed for specialty holographic chrome/foil paper.
-   * **Audience:** Cyberpunk lovers, hardware hackers, mecha enthusiasts, and mechanical keyboard builders.
+6. **Tixie Neon (`~7.0 × 7.0 cm`) — Soft Cyberpunk Synthwave Mascot Edition**
+   * **Concept:** Soft cyborg / neon aesthetic keeping Tixie's signature cute anime face with matching glowing cyan eyes and 4-pointed star glints, hot-pink blush, cute cat smile, sleek obsidian chassis, glowing cyan-magenta dual outlines, audio equalizer earcups, and HUD status (`SYS: NOMINAL`).
+   * **Audience:** Cyberpunk lovers, synthwave fans, hardware hackers, and frontend developers.
 
-7. **"TICKET RESOLVED • 200 OK" Vintage Postal Badge (`~6.8 × 7.8 cm`) — Official Dispatch Edition**
-   * **Concept:** Classic security banknote & postage stamp badge with genuine scalloped perforation die-cut edges, 24k golden laurel wreath, 5 CSAT stars, centered TixDesk emblem, and an authentic tilted red postmark rubber stamp reading `★ TICKET RESOLVED ★ STATUS: 200 OK`.
-   * **Audience:** Quality assurance leads, IT managers, ISO compliance officers, and vintage stationery lovers.
+7. **"TICKET RESOLVED • 200 OK" Vintage Postal Stamp (`~6.8 × 7.8 cm`) — Official Dispatch Edition**
+   * **Concept:** Classic security banknote & postage stamp badge with genuine scalloped perforation die-cut edges, 24k golden laurel wreath, 5 CSAT stars, the authentic master TixDesk logo mark, and a high-visibility shadowed emerald-green rubber cancellation stamp reading `★ TICKET RESOLVED ★ STATUS: 200 OK`.
+   * **Audience:** Quality assurance leads, IT managers, ISO compliance officers, and philatelic tech collectors.
 
 ---
 

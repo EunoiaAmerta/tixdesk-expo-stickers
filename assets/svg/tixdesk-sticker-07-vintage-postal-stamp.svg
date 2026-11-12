@@ -1,20 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
   <defs>
+    <!-- Midnight Navy Dispatch Canvas -->
     <linearGradient id="stampBg7" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A" />
       <stop offset="100%" stop-color="#1E293B" />
     </linearGradient>
 
+    <!-- 24K Gold Laurel Gradient -->
     <linearGradient id="goldGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FDE047" />
       <stop offset="50%" stop-color="#F59E0B" />
       <stop offset="100%" stop-color="#D97706" />
     </linearGradient>
 
-    <linearGradient id="cyanGold7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#34D399" />
+    <!-- Official TixDesk Master Logo Gradient (Royal Blue -> Cerulean -> Cyan) -->
+    <linearGradient id="tixdeskMasterGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
+
+    <filter id="stampTextShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#022C22" flood-opacity="0.95" />
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
   </defs>
 
   <g id="Artwork" transform="translate(230, 230)">
@@ -38,13 +47,13 @@
     <text x="0" y="-114" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="700" fill="#94A3B8" letter-spacing="2" text-anchor="middle">★ GLOBAL HELPDESK STANDARD ★</text>
 
     <!-- Nominal Value in Stamp Corners -->
-    <text x="-105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#38BDF8">200</text>
-    <text x="-105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#34D399">OK</text>
+    <text x="-105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#34D399">200</text>
+    <text x="-105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#10B981">OK</text>
     
-    <text x="105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#38BDF8" text-anchor="end">SLA</text>
-    <text x="105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#34D399" text-anchor="end">MET</text>
+    <text x="105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#34D399" text-anchor="end">SLA</text>
+    <text x="105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#10B981" text-anchor="end">MET</text>
 
-    <!-- 3. Central Medallion: Golden Wreath & TixDesk Ticket Emblem -->
+    <!-- 3. Central Medallion: Golden Wreath & EXACT MASTER TIXDESK LOGO -->
     <g transform="translate(0, -10)">
       <g fill="none" stroke="url(#goldGrad7)" stroke-width="3" stroke-linecap="round">
         <path d="M -15 65 C -65 50, -75 -25, -20 -60" />
@@ -64,38 +73,77 @@
         <ellipse cx="35" cy="52" rx="7" ry="4" transform="rotate(45, 35, 52)" />
       </g>
 
-      <g transform="scale(0.48) translate(0, -15)">
+      <!-- EXACT AUTHENTIC TIXDESK MASTER MARK (Identical to Sticker 01) -->
+      <g transform="translate(0, -6) scale(0.38)">
         <path d="
-          M 0 -75
-          L 80 -75
-          A 20 20 0 0 1 100 -55
-          L 100 -25
-          A 15 15 0 0 0 100 5
-          L 100 35
-          A 20 20 0 0 1 80 55
-          L -50 55
-          L -90 95
-          A 10 10 0 0 1 -100 90
-          L -100 55
-          A 20 20 0 0 1 -100 -55
-          L -100 -25
-          A 15 15 0 0 0 -100 5
-          Z
-        " fill="url(#cyanGold7)" stroke="#FFFFFF" stroke-width="4" />
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 20 80
+  L 20 -24
+  L 66 -24
+  A 20 20 0 0 0 66 -64
+  L -66 -64
+  A 20 20 0 0 0 -66 -24
+  L -20 -24
+  L -20 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round" />
         <path d="
-          M -45 -40
-          L 45 -40
-          A 12 12 0 0 1 45 -16
-          L 15 -16
-          L 15 45
-          L -15 45
-          L -15 -16
-          L -45 -16
-          A 12 12 0 0 1 -45 -40
-          Z
-        " fill="#FFFFFF" />
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 20 80
+  L 20 -24
+  L 66 -24
+  A 20 20 0 0 0 66 -64
+  L -66 -64
+  A 20 20 0 0 0 -66 -24
+  L -20 -24
+  L -20 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="url(#tixdeskMasterGrad7)" />
+        <path d="
+  M -66 -64
+  L 66 -64
+  A 20 20 0 0 1 66 -24
+  L 20 -24
+  L 20 80
+  L -20 80
+  L -20 -24
+  L -66 -24
+  A 20 20 0 0 1 -66 -64
+  Z
+" fill="#FFFFFF" />
       </g>
 
+      <!-- 5 CSAT Stars -->
       <g transform="translate(0, 48)" fill="url(#goldGrad7)">
         <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-44, 0) scale(1.1)" />
         <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-22, 0) scale(1.1)" />
@@ -107,21 +155,23 @@
     </g>
 
     <!-- Bottom Postal Certification Strip -->
-    <rect x="-115" y="95" width="230" height="35" rx="6" fill="#0284C7" opacity="0.2" stroke="#38BDF8" stroke-width="1.5" />
-    <text x="0" y="110" font-family="'Noto Sans', monospace, sans-serif" font-size="9" font-weight="900" fill="#38BDF8" letter-spacing="2" text-anchor="middle">BUSINESS SLA • MET</text>
+    <rect x="-115" y="95" width="230" height="35" rx="6" fill="#047857" opacity="0.25" stroke="#10B981" stroke-width="1.5" />
+    <text x="0" y="110" font-family="'Noto Sans', monospace, sans-serif" font-size="9" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">BUSINESS SLA • MET</text>
     <text x="0" y="122" font-family="'Noto Sans', sans-serif" font-size="7" font-weight="700" fill="#94A3B8" letter-spacing="1" text-anchor="middle">ISO/IEC 20000 SERVICE DESK COMPLIANT</text>
 
-    <!-- 4. OFFICIAL RUBBER POSTMARK CANCELLATION STAMP -->
+    <!-- 4. OFFICIAL EMERALD POSTMARK CANCELLATION STAMP (WITH CRISP DROP SHADOW & HIGH VISIBILITY) -->
     <g transform="rotate(-13) translate(-8, 5)">
-      <rect x="-105" y="-26" width="210" height="52" rx="10" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-width="3" stroke-dasharray="14,2" />
-      <rect x="-100" y="-21" width="200" height="42" rx="7" fill="none" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="-106" y="-27" width="212" height="54" rx="10" fill="#022C22" fill-opacity="0.85" stroke="#10B981" stroke-width="3" stroke-dasharray="14,2" />
+      <rect x="-101" y="-22" width="202" height="44" rx="7" fill="none" stroke="#34D399" stroke-width="1.5" />
 
-      <text x="0" y="-4" font-family="'Noto Sans', sans-serif" font-size="14" font-weight="900" fill="#EF4444" letter-spacing="2" text-anchor="middle">★ TICKET RESOLVED ★</text>
-      <text x="0" y="12" font-family="'Noto Sans', monospace, sans-serif" font-size="10" font-weight="900" fill="#FFFFFF" letter-spacing="2.5" text-anchor="middle">STATUS: 200 OK</text>
+      <g filter="url(#stampTextShadow)">
+        <text x="0" y="-4" font-family="'Noto Sans', sans-serif" font-size="14.5" font-weight="900" fill="#A7F3D0" letter-spacing="2.5" text-anchor="middle">★ TICKET RESOLVED ★</text>
+        <text x="0" y="13" font-family="'Noto Sans', monospace, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="3" text-anchor="middle">STATUS: 200 OK</text>
+      </g>
     </g>
 
-    <!-- Wavy Cancellation Waves -->
-    <g stroke="#EF4444" stroke-width="2" fill="none" opacity="0.75" transform="translate(50, -110) rotate(-13)">
+    <!-- Wavy Emerald Cancellation Waves -->
+    <g stroke="#10B981" stroke-width="2.5" fill="none" opacity="0.85" transform="translate(50, -110) rotate(-13)">
       <path d="M 0 0 C 10 -6, 20 6, 30 0 C 40 -6, 50 6, 60 0 C 70 -6, 80 6, 90 0" />
       <path d="M 0 8 C 10 2, 20 14, 30 8 C 40 2, 50 14, 60 8 C 70 2, 80 14, 90 8" />
       <path d="M 0 16 C 10 10, 20 22, 30 16 C 40 10, 50 22, 60 16 C 70 10, 80 22, 90 16" />

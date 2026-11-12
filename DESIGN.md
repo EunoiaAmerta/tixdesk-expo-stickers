@@ -162,37 +162,40 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Die-Cut Integration:** White contour smoothly encloses the steam wisps, coffee mug handle, and headset without micro-slits.
 * **Target Audience:** SREs, DevOps engineers, nocturnal hackers, and coffee enthusiasts.
 
-### Sticker 05: "SLA Incident Firefighter" (Emergency Incident Response)
+### Sticker 05: "Tixie on Fire" (Panicked Mascot Burning // PROD ON FIRE)
 * **File:** `assets/svg/tixdesk-sticker-05-tixie-sla-firefighter.svg`
-* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
-* **Style:** Dynamic Anime Chibi Emergency
+* **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
+* **Style:** Dynamic Anime Chibi Mascot Emergency
 * **Refined Anatomy:**
-  * **Panic Mode Expression:** High-urgency anime `> <` eyes, flying sweat beads, and a rotating red emergency beacon on the antenna with flash bursts.
-  * **Zero Downtime Extinguisher:** Crimson canister holding a crisp white label with bold red/slate text: `ZERO DOWNTIME`. Discharge nozzle releases fluffy blue/white cooling foam clouds.
-  * **Clean Side Grip:** Chibi robot hands grip the extinguisher strictly from the outer edges, ensuring the central `ZERO DOWNTIME` label is 100% unobstructed.
-* **Target Audience:** Incident response commanders, on-call teams, sysadmins, and production engineers.
+  * **Panicked Facial Expression:** Wide cartoon eyes with warm golden fire highlights and reflection catchlights, screaming mouth, flying cyan sweat droplets, and glowing red blush.
+  * **Roaring Vector Flames:** Dynamic multi-layered flame tongues erupting behind and around Tixie's chassis (crimson `#DC2626` $\rightarrow$ blaze orange `#EA580C` $\rightarrow$ lemon core `#FDE047`), complete with floating sparks and embers.
+  * **Antenna Spark Wick:** Antenna beacon glowing cherry red with a sparking core like a lit fuse.
+  * **Bottom Alert Banner:** High-contrast dark pill banner with bold yellow lettering: `🔥 PROD ON FIRE`.
+  * **Die-Cut Integration:** Continuous, smooth white die-cut border surrounding the flame peaks, headset, and chassis.
+* **Target Audience:** SREs, incident commanders, on-call developers, and sysadmins who know the feeling of production on fire.
 
-### Sticker 06: "Holographic Cyber Neon Decal" (Carbon Synthwave)
+### Sticker 06: "Tixie Neon (Soft Cyber)" (Cyberpunk Synthwave Mascot)
 * **File:** `assets/svg/tixdesk-sticker-06-cyber-neon-decal.svg`
-* **Target Size:** $\approx 7.2 \times 6.5\text{ cm}$
-* **Style:** High-Tech Cyberpunk HUD / Circuit Decal
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Soft Cyberpunk / Synthwave Glowing Mascot
 * **Refined Anatomy:**
-  * **Dark Carbon Cyberplate:** Deep slate-black brushed composite finish with subtle isometric grid traces and corner bracket accents.
-  * **Neon PCB Traces & Glowing Core:** Intersecting `#00F0FF` cyan and `#FF007F` magenta circuitry leading into a multi-layered glowing "T" glyph.
-  * **Unobstructed Stencil Telemetry:** Top terminal reads `SYS: NOMINAL // SLA: 100%`. The bottom terminal reads `UNIT-016 // CORE-OK` in neon pink monospace, positioned with generous clearance below the central "T" stem.
-  * **Material Optimization:** Engineered specifically for physical printing on holographic foil/chrome vinyl.
-* **Target Audience:** Cyberpunk fans, mechanical keyboard builders, Linux rice enthusiasts, and hardware modders.
+  * **Cute Charismatic Mascot:** Preserves Tixie's signature adorable face rather than heavy mechanical armor, featuring matching sparkling anime eyes with 4-point star glints, bright hot-pink cheek blushes, and a cute cat smile.
+  * **Glowing Synthwave Lines:** Vibrant `#00F0FF` electric cyan and `#FF007F` neon magenta dual-stroke accents along the chassis edges and headset band.
+  * **Audio Equalizer Earcups:** Sleek dark slate earcups with pulsing horizontal neon level meter lights.
+  * **Screen HUD Telemetry:** Inset translucent visor featuring subtle scanline mesh and crisp monospaced status headers (`TIXIE // NEON-016` and `SYS: NOMINAL`).
+  * **Material Optimization:** Ideal for printing on holographic rainbow vinyl or glossy UV spot coating.
+* **Target Audience:** Cyberpunk lovers, mechanical keyboard builders, synthwave fans, and frontend developers.
 
-### Sticker 07: "Vintage Postal Stamp Badge" (Official 200 OK Dispatch)
+### Sticker 07: "Vintage Postal Stamp" (Emerald 200 OK Dispatch & Master Mark)
 * **File:** `assets/svg/tixdesk-sticker-07-vintage-postal-stamp.svg`
 * **Target Size:** $\approx 6.8 \times 7.8\text{ cm}$
 * **Style:** Vintage Banknote Security Engraving & Postmark
 * **Refined Anatomy:**
-  * **Perforated Stamp Border:** Scalloped postage perforation teeth ($R = 6\text{ px}$) framing a deep navy dispatch canvas.
-  * **24K Golden Wreath & CSAT:** Symmetrical golden laurel wreath framing the TixDesk logo mark, anchored by 5 golden CSAT rating stars and `100% CSAT SATISFACTION`.
-  * **Authentic Red Postmark Stamp:** Tilted ($-13^\circ$) crimson rubber ink stamp reading `★ TICKET RESOLVED ★ STATUS: 200 OK` with wavy postal cancellation lines.
+  * **Perforated Stamp Border:** Scalloped postage perforation teeth framing a deep midnight navy dispatch canvas with guilloche border filigree.
+  * **Authentic Master Mark:** Houses the exact official TixDesk brand mark (`path_01_body` + `path_01_t`) with the genuine Royal Blue to Cyan gradient and symmetrical 40px "T", flanked by 24K gold laurel leaves and 5 CSAT rating stars.
+  * **High-Visibility Emerald Postmark Stamp:** Tilted ($-13^\circ$) emerald green (`#10B981`) cancellation stamp with dark contrast backing and dual drop-shadows, ensuring `★ TICKET RESOLVED ★` and `STATUS: 200 OK` are 100% legible against dark backgrounds.
   * **Compliance Footer:** `BUSINESS SLA • MET / ISO/IEC 20000 SERVICE DESK COMPLIANT`.
-* **Target Audience:** ITIL/ISO managers, enterprise support leads, quality assurance teams, and vintage stamp collectors.
+* **Target Audience:** ITIL/ISO managers, enterprise support leads, quality assurance teams, and philatelic tech collectors.
 
 ---
 
