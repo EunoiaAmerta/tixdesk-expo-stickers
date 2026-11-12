@@ -116,7 +116,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Pure Minimalist Geometric Die-Cut
 * **Refined Anatomy:**
   * **Gradient Accuracy:** Horizontal spectrum transitioning from Deep Royal Blue (`#3877F6`) to Vibrant Cyan (`#5AC1C4`), sampled directly from the official logo asset.
-  * **Solid White "T" Glyph:** 100% solid pure white (`#FFFFFF`) lettermark filling the exact proportions of the official logo, with zero dark gaps, slits, or hollow voids.
+  * **Symmetrical Solid White "T" Glyph:** 100% solid pure white (`#FFFFFF`) lettermark with perfectly equalized stroke weight on both axes: horizontal crossbar thickness ($40\text{px}$) == vertical stem width ($40\text{px}$). Zero dark gaps, slits, or hollow voids.
   * **Contour-Hugging Die-Cut Base:** The white outer die-cut border strictly follows the natural anatomy of the design—dipping down to follow the speech bubble tail apex, ascending into the bottom crevice, and running along the baseline horizontally without crude diagonal shortcuts.
 * **Target Audience:** Universal (MacBook lids, iPads, phones, tumblers).
 
@@ -129,7 +129,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
   * **Body & Prop:** Compact floating droid pod with cyan thruster particles, waving left arm, and holding the Golden Resolved Ticket (`✓`).
-  * **Contour-Hugging Die-Cut Base:** Generous, organic contour-following white border that wraps faithfully around the silhouette (antenna orb, headband arc, dual earcups, waving hand, golden ticket, and bottom thruster nozzle) with all negative spaces smoothly bridged to guarantee zero tearing.
+  * **Pillowy Reference-Grade Die-Cut Base:** Single continuous organic bezier contour engineered according to professional vinyl die-cut standards. Smooth dome arching over the antenna and headset (eliminating narrow stalk pinches), generous filleted curves around limbs and golden ticket, and a rounded convex base beneath the thruster to prevent tearing.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
 ### Sticker 03: "Retro 16-Bit Arcade Gamer" (Enhanced Pixel Art Quest)

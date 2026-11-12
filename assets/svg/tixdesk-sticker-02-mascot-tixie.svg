@@ -18,25 +18,25 @@
   </defs>
 
   <g id="Artwork" transform="translate(300, 305)">
-    <!-- 1. White die-cut contour that closely follows character curves -->
-    
-    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <circle cx="0" cy="-230" r="38" />
-      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="40" />
-      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="50" />
-      <rect x="-228" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-      <rect x="160" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="36" />
-      <circle cx="-70" cy="73" r="32" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="42" />
-      <ellipse cx="0" cy="160" rx="105" ry="82" stroke-width="16" />
-      <polygon points="-45,190 45,190 0,250" stroke-width="26" />
-      <circle cx="-115" cy="95" r="38" stroke-width="16" />
-      <path d="M -80 135 C -105 130, -125 110, -115 85" fill="none" stroke-width="46" />
-      <rect x="80" y="65" width="95" height="118" rx="24" stroke-width="32" transform="rotate(15 120 125)" />
-      <polygon points="60,80 160,60 160,160 60,160" />
-    </g>
-
+    <!-- 1. Pillowy White Die-Cut Contour (Continuous Smooth Silhouette) -->
+    <path id="WhiteBorder" d="
+  M 0 -268
+  C 55 -268, 85 -235, 115 -195
+  C 165 -170, 195 -135, 232 -75
+  C 255 -35, 255 15, 230 45
+  C 210 65, 188 78, 175 90
+  C 192 110, 202 135, 195 165
+  C 185 200, 150 222, 115 220
+  C 75 228, 45 258, 0 258
+  C -45 258, -75 228, -115 220
+  C -150 215, -180 180, -175 140
+  C -175 110, -155 85, -145 75
+  C -175 70, -210 55, -230 35
+  C -255 0, -255 -45, -232 -75
+  C -195 -135, -165 -170, -115 -195
+  C -85 -235, -55 -268, 0 -268
+  Z
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
 
     <!-- 2. Antenna -->
     <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />

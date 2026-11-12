@@ -13,9 +13,10 @@ for d in [SVG_DIR, PNG_DIR, CUT_DIR, PDF_DIR]:
 
 # ==============================================================================
 # 1. STICKER 01: PURE HERO MARK (OFFICIAL REVISION)
-# - White die-cut contour follows the design curves (dips into the tail crevice,
-#   no lazy straight diagonal shortcut across the bottom).
-# - 'T' glyph is 100% solid white (#FFFFFF) with zero black gaps or holes.
+# - Symmetrical 'T' glyph: Crossbar thickness == Vertical stem width == 40px!
+# - Solid pure white (#FFFFFF), zero black gaps, zero slits.
+# - Contour-hugging white die-cut border that follows the curves of the tail
+#   and baseline without straight diagonal shortcuts.
 # - Exact horizontal gradient #3877F6 -> #4CA2EA -> #5AC1C4.
 # ==============================================================================
 path_01_body = """
@@ -26,14 +27,14 @@ path_01_body = """
   A 20 20 0 0 0 148 5
   L 148 52
   A 28 28 0 0 1 120 80
-  L 24 80
-  L 24 -25
-  L 65 -25
-  A 17.5 17.5 0 0 0 65 -60
-  L -65 -60
-  A 17.5 17.5 0 0 0 -65 -25
-  L -24 -25
-  L -24 80
+  L 20 80
+  L 20 -24
+  L 66 -24
+  A 20 20 0 0 0 66 -64
+  L -66 -64
+  A 20 20 0 0 0 -66 -24
+  L -20 -24
+  L -20 80
   L -70 140
   A 10 10 0 0 1 -80 135
   L -80 80
@@ -47,15 +48,15 @@ path_01_body = """
 """
 
 path_01_t = """
-  M -65 -60
-  L 65 -60
-  A 17.5 17.5 0 0 1 65 -25
-  L 24 -25
-  L 24 80
-  L -24 80
-  L -24 -25
-  L -65 -25
-  A 17.5 17.5 0 0 1 -65 -60
+  M -66 -64
+  L 66 -64
+  A 20 20 0 0 1 66 -24
+  L 20 -24
+  L 20 80
+  L -20 80
+  L -20 -24
+  L -66 -24
+  A 20 20 0 0 1 -66 -64
   Z
 """
 
@@ -67,8 +68,8 @@ path_01_contour = """
   A 20 20 0 0 0 148 5
   L 148 52
   A 28 28 0 0 1 120 80
-  L 24 80
-  L -24 80
+  L 20 80
+  L -20 80
   L -70 140
   A 10 10 0 0 1 -80 135
   L -80 80
@@ -97,7 +98,7 @@ svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width
     <!-- 2. Official Blue/Cyan Gradient body (tail is gradient) -->
     <path id="TicketBody" d="{path_01_body}" fill="url(#tixdeskGrad)" />
 
-    <!-- 3. SOLID WHITE 'T' GLYPH (100% solid white, no black gap, exact proportions) -->
+    <!-- 3. SOLID WHITE SYMMETRICAL 'T' GLYPH (100% solid white, stem = bar = 40px) -->
     <path id="TGlyph" d="{path_01_t}" fill="#FFFFFF" />
   </g>
 </svg>"""
@@ -124,28 +125,30 @@ cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" w
 </svg>"""
 
 # ==============================================================================
-# 2. STICKER 02: KAWAII CHIBI MASCOT TIXIE (FOLLOWING CONTOURS)
-# - White die-cut contour follows the character curves closely (antenna,
-#   headset, earcups, waving hand, golden ticket, thruster).
-# - Zero artifacts or stray specks.
+# 2. STICKER 02: KAWAII CHIBI MASCOT TIXIE (PILLOWY CONTOUR REVISION)
+# - Single continuous pillowy bezier contour matching reference standards:
+#   * Smooth dome over antenna (no stalk pinch!)
+#   * Soft rounded lobes around earcups, waving hand, golden ticket
+#   * Gentle convex dome beneath thruster (no sharp spike)
+#   * Zero donut holes, 100% bridged tear-resistant base
 # ==============================================================================
-mascot_contour_group = """
-    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <circle cx="0" cy="-230" r="38" />
-      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="40" />
-      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="50" />
-      <rect x="-228" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-      <rect x="160" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="36" />
-      <circle cx="-70" cy="73" r="32" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="42" />
-      <ellipse cx="0" cy="160" rx="105" ry="82" stroke-width="16" />
-      <polygon points="-45,190 45,190 0,250" stroke-width="26" />
-      <circle cx="-115" cy="95" r="38" stroke-width="16" />
-      <path d="M -80 135 C -105 130, -125 110, -115 85" fill="none" stroke-width="46" />
-      <rect x="80" y="65" width="95" height="118" rx="24" stroke-width="32" transform="rotate(15 120 125)" />
-      <polygon points="60,80 160,60 160,160 60,160" />
-    </g>
+path_02_pillowy_contour = """
+  M 0 -268
+  C 55 -268, 85 -235, 115 -195
+  C 165 -170, 195 -135, 232 -75
+  C 255 -35, 255 15, 230 45
+  C 210 65, 188 78, 175 90
+  C 192 110, 202 135, 195 165
+  C 185 200, 150 222, 115 220
+  C 75 228, 45 258, 0 258
+  C -45 258, -75 228, -115 220
+  C -150 215, -180 180, -175 140
+  C -175 110, -155 85, -145 75
+  C -175 70, -210 55, -230 35
+  C -255 0, -255 -45, -232 -75
+  C -195 -135, -165 -170, -115 -195
+  C -85 -235, -55 -268, 0 -268
+  Z
 """
 
 svg_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="600" height="620">
@@ -168,8 +171,8 @@ svg_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width
   </defs>
 
   <g id="Artwork" transform="translate(300, 305)">
-    <!-- 1. White die-cut contour that closely follows character curves -->
-    {mascot_contour_group}
+    <!-- 1. Pillowy White Die-Cut Contour (Continuous Smooth Silhouette) -->
+    <path id="WhiteBorder" d="{path_02_pillowy_contour}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
 
     <!-- 2. Antenna -->
     <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
@@ -268,7 +271,8 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" w
   </defs>
 
   <g id="Artwork" transform="translate(300, 305)">
-    {mascot_contour_group}
+    <path id="WhiteBorder" d="{path_02_pillowy_contour}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
+
     <!-- Antenna -->
     <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
@@ -337,20 +341,15 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" w
     <circle cx="-70" cy="73" r="6" fill="#6EE7B7" />
   </g>
 
-  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(300, 305)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <circle cx="0" cy="-230" r="38" />
-    <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="40" />
-    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="50" />
-    <rect x="-228" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-    <rect x="160" y="-98" width="68" height="108" rx="30" stroke-width="12" />
-    <ellipse cx="0" cy="160" rx="105" ry="82" stroke-width="16" />
+  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt (Single Unbroken Perimeter) -->
+  <g id="CutContour" transform="translate(300, 305)">
+    <path d="{path_02_pillowy_contour}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>"""
 
 # ==============================================================================
 # 3. STICKER 03: RETRO PIXEL ART ARCADE (SNUG CONTOUR, FLAWLESS INTEGRATION)
-# - Scalloped arches over the 3 floating hearts.
+# - Triple-scalloped arches over the 3 floating hearts.
 # - Clean indentations for side notches.
 # - Snug SLA Banner directly under the ticket chin and tail.
 # - Zero awkward white blocks, zero dark glitches.
@@ -523,4 +522,4 @@ for base_name, svg_content, cutline_content in items:
     pdf_file = os.path.join(PDF_DIR, f"{base_name}-print.pdf")
     subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file], check=True)
 
-print("Official 3-sticker pack generated successfully with flawless contours and Spot Magenta CutContour!")
+print("Official 3-sticker pack generated successfully with symmetrical T and pillowy reference-style contours!")
