@@ -22,9 +22,11 @@
       <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
-      <path d="M 160 -45 A 25 25 0 0 0 160 15 L 185 15 L 185 -45 Z" />
-      <path d="M -160 -45 A 25 25 0 0 1 -160 15 L -185 15 L -185 -45 Z" />
     </g>
+
+    <!-- Solid White Gap Fills inside the ticket notches -->
+    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
 
     <!-- Antenna -->
     <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />

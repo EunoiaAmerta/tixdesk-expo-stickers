@@ -33,7 +33,7 @@
   <g transform="translate(580, 140)">
     <rect x="0" y="0" width="440" height="490" rx="20" fill="#111827" stroke="#1F2937" stroke-width="1.5" />
     <text x="220" y="42" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="800" fill="#F8FAFC" text-anchor="middle">02. CHIBI TIXIE (HEAD ONLY)</text>
-    <text x="220" y="62" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">Preserved Notches • Solid White Gap Fill</text>
+    <text x="220" y="62" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">Preserved Notches • Smooth Die-Cut Contour</text>
     <g transform="translate(220, 260) scale(0.85)" filter="url(#stickerShadow)">
       <image href="assets/png/tixdesk-sticker-02-mascot-tixie-300dpi.png" x="-247" y="-247" width="494" height="494" />
     </g>
