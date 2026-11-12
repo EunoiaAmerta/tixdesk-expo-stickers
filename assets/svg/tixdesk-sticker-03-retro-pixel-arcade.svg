@@ -1,33 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <g transform="translate(300, 300)">
-    <!-- 1. DIE-CUT WHITE BACKING CONTOUR -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 600" width="540" height="600">
+  <g transform="translate(270, 305)">
+    <!-- 1. SMOOTH DIE-CUT WHITE BACKING CONTOUR (A+ durability, 100% containment) -->
     <path d="
-      M -200 -195
-      L 200 -195
-      L 200 -60
-      L 165 -60
-      L 165 20
-      L 200 20
-      L 200 135
-      L 40 135
-      L -40 215
-      L -125 215
-      L -125 135
-      L -200 135
-      L -200 20
-      L -165 20
-      L -165 -60
-      L -200 -60
-      Z
-    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="45" stroke-linejoin="round" />
-
-    <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">
-      <rect x="-145" y="-250" width="60" height="55" rx="8" />
-      <rect x="-30" y="-260" width="60" height="55" rx="8" />
-      <rect x="85" y="-250" width="60" height="55" rx="8" />
-    </g>
-
-    <rect x="-185" y="200" width="370" height="60" rx="16" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" />
+  M -145 -255
+  Q 0 -290, 145 -255
+  Q 215 -215, 215 -140
+  L 215 190
+  Q 215 265, 140 265
+  L -140 265
+  Q -215 265, -215 190
+  L -215 -140
+  Q -215 -215, -145 -255
+  Z
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
 
     <!-- 2. FLOATING 8-BIT HEARTS -->
     <g transform="translate(-115, -225) scale(3.5)">
@@ -44,15 +29,17 @@
     </g>
 
     <!-- 3. MAIN PIXEL TICKET (Dual-tone Blue/Cyan) -->
-    <rect x="-175" y="-160" width="350" height="270" fill="#2563EB" />
-    <rect x="0" y="-160" width="175" height="270" fill="#06B6D4" />
-    <rect x="-35" y="-160" width="35" height="270" fill="#0284C7" />
+    <rect x="-175" y="-160" width="350" height="270" fill="#3877F6" />
+    <rect x="0" y="-160" width="175" height="270" fill="#5AC1C4" />
+    <rect x="-35" y="-160" width="35" height="270" fill="#4CA2EA" />
 
+    <!-- Notches -->
     <rect x="-205" y="-45" width="55" height="55" fill="#FFFFFF" />
     <rect x="150" y="-45" width="55" height="55" fill="#FFFFFF" />
     
-    <polygon points="-160,110 -160,195 -80,110" fill="#2563EB" />
-    <polygon points="-130,110 -160,195 -95,110" fill="#1D4ED8" />
+    <!-- Stepped Pixel Bubble Tail -->
+    <polygon points="-160,110 -160,195 -80,110" fill="#3877F6" />
+    <polygon points="-130,110 -160,195 -95,110" fill="#2563EB" />
 
     <!-- 4. PIXEL SUNGLASSES ('DEAL WITH IT' RETRO VIBE) -->
     <g transform="translate(0, -50)">
@@ -73,13 +60,8 @@
 
     <!-- 5. RETRO ARCADE BANNER -->
     <g transform="translate(0, 215)">
-      <rect x="-170" y="-18" width="340" height="42" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
-      <rect x="-170" y="-18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="164" y="-18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="-170" y="18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="164" y="18" width="6" height="6" fill="#FFFFFF" />
-
-      <text x="0" y="10" font-family="'Noto Sans Mono', monospace" font-size="20" font-weight="900" letter-spacing="3" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
+      <rect x="-170" y="-20" width="340" height="44" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
+      <text x="0" y="11" font-family="'Noto Sans Mono', monospace" font-size="20" font-weight="900" letter-spacing="3" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
     </g>
 
     <!-- 6. XP BAR -->

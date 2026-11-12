@@ -57,12 +57,11 @@ The official TixDesk logo mark is a single vector glyph that synthesizes **three
 ### 3.1 Primary Brand Gradient
 | Role | Color Name | Hex Code | RGB | CMYK (Print Target) |
 |---|---|---|---|---|
-| Gradient Start | Royal Electric Blue | `#3B82F6` | `59, 130, 246` | `C:75 M:48 Y:0 K:0` |
-| Gradient Mid | Cerulean Sky | `#1D9BF0` | `29, 155, 240` | `C:78 M:30 Y:0 K:0` |
-| Gradient End | Vivid Cyan / Teal | `#06B6D4` | `6, 182, 212` | `C:72 M:2 Y:12 K:0` |
+| Gradient Start | Deep Royal Electric Blue | `#3877F6` | `56, 119, 246` | `C:77 M:52 Y:0 K:0` |
+| Gradient Mid | Cerulean Sky | `#4CA2EA` | `76, 162, 234` | `C:68 M:31 Y:0 K:0` |
+| Gradient End | Vibrant Aqua / Cyan | `#5AC1C4` | `90, 193, 196` | `C:54 M:2 Y:0 K:23` |
 
-* **Gradient Vector:** Linear gradient from top-left ($0\%, 0\%$) to bottom-right ($100\%, 100\%$).
-* **Subtle Sheen Overlay:** Linear gradient pure white (`#FFFFFF`) with stops at $0\%$ (opacity $0.22$), $45\%$ (opacity $0.08$), and $100\%$ (opacity $0.00$).
+* **Gradient Direction:** Exact horizontal transition from left ($0\%$) to right ($100\%$), matching the official master mark.
 
 ### 3.2 Semantic Status Tokens (Three Pillars)
 | Feature Pillar | Semantic Meaning | Foreground / Dot | Surface Tint | Border / Accent |
@@ -116,9 +115,10 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Target Size:** $\approx 7.0 \times 6.1\text{ cm}$
 * **Style:** Pure Minimalist Geometric Die-Cut
 * **Refined Anatomy:**
-  * **The "T" Glyph:** Solid pure white (`#FFFFFF`) lettermark floating with balanced margins inside the continuous blue/cyan gradient ticket.
-  * **Bottom Baseline:** Clean, seamless transition from the speech-bubble tail tip directly to the baseline with no awkward clefts or irregular indentations.
-  * **Die-Cut Contour:** Smooth, uniform $2.5\text{ mm}$ outer white border wrapping concentric to the ticket geometry and notches.
+  * **Gradient Accuracy:** Horizontal spectrum transitioning from Deep Royal Blue (`#3877F6`) to Vibrant Cyan (`#5AC1C4`), sampled directly from the official logo asset.
+  * **The "T" Glyph:** Solid pure white (`#FFFFFF`) lettermark whose vertical stem cuts straight down all the way through to the bottom baseline.
+  * **Tail Integration:** The speech-bubble tail on the bottom-left is fully filled with the official blue gradient, sloping up diagonally to meet the bottom-left corner of the "T" stem.
+  * **Die-Cut Contour:** Solid, continuous $2.5\text{ mm}$ outer white border wrapping around the entire logo envelope with 100% internal containment.
 * **Target Audience:** Universal (MacBook lids, iPads, phones, tumblers).
 
 ### Sticker 02: "Tixie • The Cyber-Bot" (Enhanced Mascot Edition)
@@ -130,6 +130,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
   * **Body & Prop:** Compact floating droid pod with cyan thruster particles, waving left arm, and holding the Golden Resolved Ticket (`✓`).
+  * **Full Die-Cut Enclosure:** Generous, continuous solid white backing that encompasses 100% of all limbs, antenna, headset, and props with uniform 20–30px safety margins. No element protrudes outside the white border.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
 ### Sticker 03: "Retro 16-Bit Arcade Gamer" (Enhanced Pixel Art Quest)
@@ -140,6 +141,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Strict Pixel Grid:** Constructed on a consistent, uniform pixel grid without mismatched pixel resolutions (no mixels).
   * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches and stepped speech tail.
   * **Attitude & HUD:** 8-bit "Deal With It" pixel sunglasses with white lens reflections, 3 floating red pixel health hearts (100% SLA indicator), and retro arcade banner `★ SLA SAVED: 100% ★`.
+  * **Smooth Capsule Die-Cut:** Outer contour is engineered as an unbroken, smooth rounded capsule envelope with zero acute internal notches, guaranteeing zero peel risk and 100% containment of all graphics within the white base.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---

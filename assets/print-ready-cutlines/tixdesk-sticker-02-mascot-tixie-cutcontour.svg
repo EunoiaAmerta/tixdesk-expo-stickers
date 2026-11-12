@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="600" height="620">
+  <defs>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080E1E" />
+      <stop offset="100%" stop-color="#111C35" />
+    </linearGradient>
+
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(300, 310)">
+    <!-- 1. GENEROUS UNIFIED WHITE DIE-CUT BASE (100% internal containment) -->
+    <g fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-240" y="-180" width="480" height="260" rx="75" stroke-width="40" />
+      <circle cx="0" cy="-230" r="50" stroke-width="30" />
+      <rect x="-30" y="-220" width="60" height="80" stroke-width="30" />
+      <ellipse cx="0" cy="150" rx="130" ry="105" stroke-width="35" />
+      <rect x="80" y="70" width="95" height="120" rx="25" stroke-width="35" transform="rotate(15 125 130)" />
+      <circle cx="-115" cy="90" r="45" stroke-width="30" />
+      <circle cx="-70" cy="75" r="35" stroke-width="25" />
+    </g>
+
+    <!-- 2. ANTENNA -->
+    <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
+
+    <!-- 3. FLOATING CHIBI BODY -->
+    <g transform="translate(0, 140)">
+      <polygon points="-25,50 25,50 0,95" fill="#06B6D4" />
+      <polygon points="-15,50 15,50 0,80" fill="#FFFFFF" />
+
+      <ellipse cx="0" cy="20" rx="80" ry="58" fill="url(#bodyGrad)" stroke="#94A3B8" stroke-width="4" />
+      <path d="M -72 25 Q 0 45 72 25" fill="none" stroke="#0EA5E9" stroke-width="8" stroke-linecap="round" />
+      
+      <circle cx="0" cy="15" r="18" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
+      <text x="0" y="22" font-family="'Noto Sans', system-ui, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">T</text>
+
+      <!-- Left Hand Waving -->
+      <g transform="translate(-80, -5)">
+        <path d="M 0 10 C -25 5, -45 -15, -35 -40" fill="none" stroke="#CBD5E1" stroke-width="22" stroke-linecap="round" />
+        <circle cx="-35" cy="-40" r="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3.5" />
+      </g>
+
+      <!-- Right Hand holding golden ticket -->
+      <g transform="translate(80, 5)">
+        <path d="M 0 10 C 25 15, 35 25, 30 40" fill="none" stroke="#CBD5E1" stroke-width="22" stroke-linecap="round" />
+        <g transform="translate(35, 15) rotate(15)">
+          <rect x="-26" y="-36" width="52" height="72" rx="8" fill="#FEF08A" stroke="#EAB308" stroke-width="3" />
+          <circle cx="-26" cy="0" r="8" fill="#CBD5E1" />
+          <circle cx="26" cy="0" r="8" fill="#CBD5E1" />
+          <line x1="-14" y1="-18" x2="14" y2="-18" stroke="#CA8A04" stroke-width="3" stroke-linecap="round" />
+          <line x1="-14" y1="-8" x2="14" y2="-8" stroke="#CA8A04" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M -10 12 L -2 20 L 12 6" fill="none" stroke="#16A34A" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. HEAD -->
+    <g>
+      <path d="
+        M -160 -150
+        Q -160 -160, -140 -160
+        L 140 -160
+        Q 160 -160, 160 -140
+        L 160 -40
+        A 25 25 0 0 0 160 10
+        L 160 50
+        Q 160 70, 140 70
+        L -90 70
+        L -160 120
+        L -160 10
+        A 25 25 0 0 0 -160 -40
+        Z
+      " fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+
+      <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
+      <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
+
+      <g transform="translate(-55, -45)">
+        <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
+        <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
+        <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
+        <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+        <polygon points="-7,4 -5,7 -2,7 -4,9 -3,12 -6,10 -9,12 -8,9 -10,7 -7,7" fill="#E0F2FE" />
+      </g>
+
+      <g transform="translate(55, -45)">
+        <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
+        <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
+        <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
+        <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+        <polygon points="-7,4 -5,7 -2,7 -4,9 -3,12 -6,10 -9,12 -8,9 -10,7 -7,7" fill="#E0F2FE" />
+      </g>
+
+      <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
+      <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
+      <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- 5. HEADSET -->
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+    <circle cx="-70" cy="73" r="6" fill="#6EE7B7" />
+  </g>
+
+  <!-- Spot Magenta 100% Print Cutline -->
+  <g transform="translate(300, 310)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-240" y="-180" width="480" height="260" rx="75" stroke-width="40" />
+    <circle cx="0" cy="-230" r="50" stroke-width="30" />
+    <ellipse cx="0" cy="150" rx="130" ry="105" stroke-width="35" />
+  </g>
+</svg>

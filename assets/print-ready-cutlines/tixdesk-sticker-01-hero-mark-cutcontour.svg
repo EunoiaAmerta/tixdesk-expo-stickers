@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <defs>
+    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(220, 205)">
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L 25 100
+      L 25 -36
+      L 70 -36
+      A 20 20 0 0 0 70 -76
+      L -70 -76
+      A 20 20 0 0 0 -70 -36
+      L -25 -36
+      L -25 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="url(#tixdeskGrad)" />
+    <path d="
+      M -70 -76
+      L 70 -76
+      A 20 20 0 0 1 70 -36
+      L 25 -36
+      L 25 100
+      L -25 100
+      L -25 -36
+      L -70 -36
+      A 20 20 0 0 1 -70 -76
+      Z
+    " fill="#FFFFFF" />
+    <!-- Spot Magenta 100% Print Cutline -->
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="none" stroke="#FF00FF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+</svg>

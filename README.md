@@ -44,7 +44,7 @@ tixdesk-expo-stickers/
 ## 🎨 The 3 Official Expo Stickers
 
 ### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`) — Minimalist Master Mark
-* **Concept:** The official TixDesk brand mark with continuous Royal Blue to Cyan gradient (`#3B82F6` → `#06B6D4`), solid white "T", seamless baseline transition, and a $2.5\text{ mm}$ solid white die-cut border.
+* **Concept:** The official TixDesk brand mark with exact horizontal Royal Blue to Cyan gradient (`#3877F6` → `#5AC1C4`), solid white "T" cutting straight through to the bottom baseline, official blue gradient tail, and a $2.5\text{ mm}$ solid white die-cut border.
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
 ### 2. Tixie • The Cyber-Bot Mascot (`~7.2 × 7.2 cm`) — Kawaii 2D Vector

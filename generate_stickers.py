@@ -1,149 +1,216 @@
-import os, subprocess
+#!/usr/bin/env python3
+import os
+import subprocess
 
-OUTPUT_DIR = "/home/graha/tixdesk-expo-stickers"
-SVG_DIR = os.path.join(OUTPUT_DIR, "assets", "svg")
-PNG_DIR = os.path.join(OUTPUT_DIR, "assets", "png")
-CUTLINE_DIR = os.path.join(OUTPUT_DIR, "assets", "print-ready-cutlines")
-PDF_DIR = os.path.join(OUTPUT_DIR, "print-pdfs")
+REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+SVG_DIR = os.path.join(REPO_DIR, "assets", "svg")
+PNG_DIR = os.path.join(REPO_DIR, "assets", "png")
+CUT_DIR = os.path.join(REPO_DIR, "assets", "print-ready-cutlines")
+PDF_DIR = os.path.join(REPO_DIR, "print-pdfs")
 
-for d in [SVG_DIR, PNG_DIR, CUTLINE_DIR, PDF_DIR]:
+for d in [SVG_DIR, PNG_DIR, CUT_DIR, PDF_DIR]:
     os.makedirs(d, exist_ok=True)
 
 # ==============================================================================
-# STICKER 1: THE PURE HERO DIE-CUT (FLAWLESS REVISION)
-# Standalone, clean, no description, solid white T, smooth uniform die-cut contour
+# 1. STICKER 01: PURE HERO MARK (OFFICIAL REVISION)
+# Exact horizontal gradient #3877F6 -> #5AC1C4, solid white 'T' cutting through
+# to bottom baseline, blue tail, and uniform 28px white die-cut backing contour.
 # ==============================================================================
-svg_01 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="500" height="450">
+svg_01 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
   <defs>
-    <linearGradient id="brandGrad01" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="50%" stop-color="#1D9BF0" />
-      <stop offset="100%" stop-color="#06B6D4" />
+    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
   </defs>
 
-  <g transform="translate(250, 210)">
-    <!-- 1. SOLID WHITE DIE-CUT BASE CONTOUR -->
+  <g transform="translate(220, 205)">
+    <!-- 1. SOLID WHITE DIE-CUT BASE CONTOUR (100% internal containment) -->
     <path d="
-      M 0 -110
-      L 122 -110
-      A 28 28 0 0 1 150 -82
-      L 150 -30
-      A 20 20 0 0 0 150 10
-      L 150 62
-      A 28 28 0 0 1 122 90
-      L -45 90
-      L -72 140
-      L -100 90
-      L -122 90
-      A 28 28 0 0 1 -150 62
-      L -150 10
-      A 20 20 0 0 0 -150 -30
-      L -150 -82
-      A 28 28 0 0 1 -122 -110
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
       Z
-    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" />
-
-    <!-- 2. FULL TICKET BODY INCLUDING TAIL (Colored with Blue/Cyan Gradient) -->
+    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    
+    <!-- 2. OFFICIAL BLUE/CYAN GRADIENT BODY (Tail is blue gradient) -->
     <path d="
-      M 0 -110
-      L 122 -110
-      A 28 28 0 0 1 150 -82
-      L 150 -30
-      A 20 20 0 0 0 150 10
-      L 150 62
-      A 28 28 0 0 1 122 90
-      L -45 90
-      L -72 140
-      L -100 90
-      L -122 90
-      A 28 28 0 0 1 -150 62
-      L -150 10
-      A 20 20 0 0 0 -150 -30
-      L -150 -82
-      A 28 28 0 0 1 -122 -110
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L 25 100
+      L 25 -36
+      L 70 -36
+      A 20 20 0 0 0 70 -76
+      L -70 -76
+      A 20 20 0 0 0 -70 -36
+      L -25 -36
+      L -25 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
       Z
-    " fill="url(#brandGrad01)" />
+    " fill="url(#tixdeskGrad)" />
 
-    <!-- 3. SOLID WHITE 'T' INSIDE (Floating cleanly, perfectly centered) -->
+    <!-- 3. SOLID WHITE 'T' GLYPH (Cutting straight through to bottom baseline) -->
     <path d="
-      M -52 -65
-      L 52 -65
-      A 17.5 17.5 0 0 1 52 -30
-      L 18 -30
-      L 18 56
-      Q 18 64, 10 64
-      L -10 64
-      Q -18 64, -18 56
-      L -18 -30
-      L -52 -30
-      A 17.5 17.5 0 0 1 -52 -65
+      M -70 -76
+      L 70 -76
+      A 20 20 0 0 1 70 -36
+      L 25 -36
+      L 25 100
+      L -25 100
+      L -25 -36
+      L -70 -36
+      A 20 20 0 0 1 -70 -76
       Z
     " fill="#FFFFFF" />
   </g>
-</svg>'''
+</svg>"""
 
-cutline_01 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="500" height="450">
-  <g id="CutContour" transform="translate(250, 210)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <path d="
-      M 0 -110
-      L 122 -110
-      A 28 28 0 0 1 150 -82
-      L 150 -30
-      A 20 20 0 0 0 150 10
-      L 150 62
-      A 28 28 0 0 1 122 90
-      L -45 90
-      L -72 140
-      L -100 90
-      L -122 90
-      A 28 28 0 0 1 -150 62
-      L -150 10
-      A 20 20 0 0 0 -150 -30
-      L -150 -82
-      A 28 28 0 0 1 -122 -110
-      Z
-    " stroke-width="26" />
-  </g>
-</svg>'''
-
-# ==============================================================================
-# STICKER 2: TIXIE THE CYBER-BOT MASCOT (ENHANCED EDITION)
-# Standalone, clean, no description, kawaii chibi helpdesk companion
-# ==============================================================================
-svg_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+cutline_01 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
   <defs>
-    <linearGradient id="headGrad02" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="50%" stop-color="#1D9BF0" />
-      <stop offset="100%" stop-color="#06B6D4" />
+    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(220, 205)">
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L 25 100
+      L 25 -36
+      L 70 -36
+      A 20 20 0 0 0 70 -76
+      L -70 -76
+      A 20 20 0 0 0 -70 -36
+      L -25 -36
+      L -25 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="url(#tixdeskGrad)" />
+    <path d="
+      M -70 -76
+      L 70 -76
+      A 20 20 0 0 1 70 -36
+      L 25 -36
+      L 25 100
+      L -25 100
+      L -25 -36
+      L -70 -36
+      A 20 20 0 0 1 -70 -76
+      Z
+    " fill="#FFFFFF" />
+    <!-- Spot Magenta 100% Print Cutline -->
+    <path d="
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
+      Z
+    " fill="none" stroke="#FF00FF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+  </g>
+</svg>"""
+
+# ==============================================================================
+# 2. STICKER 02: KAWAII CHIBI MASCOT TIXIE (FULL 100% ENCLOSURE)
+# Generous, continuous white die-cut backing wrapping all limbs and props
+# ==============================================================================
+svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" width="600" height="620">
+  <defs>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
 
-    <linearGradient id="screenGrad02" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#080E1E" />
       <stop offset="100%" stop-color="#111C35" />
     </linearGradient>
 
-    <linearGradient id="bodyGrad02" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="100%" stop-color="#E2E8F0" />
     </linearGradient>
   </defs>
 
-  <g transform="translate(300, 290) rotate(-2)">
-    <!-- 1. SOLID WHITE DIE-CUT BASE CONTOUR -->
+  <g transform="translate(300, 310)">
+    <!-- 1. GENEROUS UNIFIED WHITE DIE-CUT BASE (100% internal containment) -->
     <g fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <rect x="-185" y="-160" width="370" height="240" rx="55" stroke-width="36" />
-      <polygon points="-180,40 -180,135 -95,50" stroke-width="36" />
-      <line x1="0" y1="-150" x2="0" y2="-235" stroke-width="46" />
-      <circle cx="0" cy="-235" r="35" />
-      <rect x="-230" y="-75" width="60" height="95" rx="25" stroke-width="28" />
-      <rect x="170" y="-75" width="60" height="95" rx="25" stroke-width="28" />
-      <path d="M -195 0 C -195 110, -85 135, -45 95" stroke-width="32" />
-      <circle cx="-40" cy="95" r="25" />
-      <ellipse cx="0" cy="145" rx="110" ry="85" stroke-width="32" />
-      <circle cx="-115" cy="90" r="35" stroke-width="28" />
-      <rect x="85" y="75" width="75" height="100" rx="15" stroke-width="32" transform="rotate(15 120 125)" />
+      <rect x="-240" y="-180" width="480" height="260" rx="75" stroke-width="40" />
+      <circle cx="0" cy="-230" r="50" stroke-width="30" />
+      <rect x="-30" y="-220" width="60" height="80" stroke-width="30" />
+      <ellipse cx="0" cy="150" rx="130" ry="105" stroke-width="35" />
+      <rect x="80" y="70" width="95" height="120" rx="25" stroke-width="35" transform="rotate(15 125 130)" />
+      <circle cx="-115" cy="90" r="45" stroke-width="30" />
+      <circle cx="-70" cy="75" r="35" stroke-width="25" />
     </g>
 
     <!-- 2. ANTENNA -->
@@ -156,8 +223,7 @@ svg_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
       <polygon points="-25,50 25,50 0,95" fill="#06B6D4" />
       <polygon points="-15,50 15,50 0,80" fill="#FFFFFF" />
 
-      <ellipse cx="0" cy="20" rx="80" ry="58" fill="url(#bodyGrad02)" stroke="#94A3B8" stroke-width="4" />
-      
+      <ellipse cx="0" cy="20" rx="80" ry="58" fill="url(#bodyGrad)" stroke="#94A3B8" stroke-width="4" />
       <path d="M -72 25 Q 0 45 72 25" fill="none" stroke="#0EA5E9" stroke-width="8" stroke-linecap="round" />
       
       <circle cx="0" cy="15" r="18" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5" />
@@ -169,7 +235,7 @@ svg_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
         <circle cx="-35" cy="-40" r="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3.5" />
       </g>
 
-      <!-- Right Hand holding ticket -->
+      <!-- Right Hand holding golden ticket -->
       <g transform="translate(80, 5)">
         <path d="M 0 10 C 25 15, 35 25, 30 40" fill="none" stroke="#CBD5E1" stroke-width="22" stroke-linecap="round" />
         <g transform="translate(35, 15) rotate(15)">
@@ -199,10 +265,9 @@ svg_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
         L -160 10
         A 25 25 0 0 0 -160 -40
         Z
-      " fill="url(#headGrad02)" stroke="#1D4ED8" stroke-width="2.5" />
+      " fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
-      <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad02)" stroke="#38BDF8" stroke-width="4" />
-
+      <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
       <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
 
       <g transform="translate(-55, -45)">
@@ -223,76 +288,52 @@ svg_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
 
       <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
       <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
-
       <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
     </g>
 
     <!-- 5. HEADSET -->
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
-
     <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-
     <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
     <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
     <circle cx="-70" cy="73" r="6" fill="#6EE7B7" />
   </g>
-</svg>'''
+</svg>"""
 
-cutline_02 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <g id="CutContour" transform="translate(300, 290) rotate(-2)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <rect x="-185" y="-160" width="370" height="240" rx="55" stroke-width="36" />
-    <polygon points="-180,40 -180,135 -95,50" stroke-width="36" />
-    <line x1="0" y1="-150" x2="0" y2="-235" stroke-width="46" />
-    <circle cx="0" cy="-235" r="35" />
-    <rect x="-230" y="-75" width="60" height="95" rx="25" stroke-width="28" />
-    <rect x="170" y="-75" width="60" height="95" rx="25" stroke-width="28" />
-    <path d="M -195 0 C -195 110, -85 135, -45 95" stroke-width="32" />
-    <circle cx="-40" cy="95" r="25" />
-    <ellipse cx="0" cy="145" rx="110" ry="85" stroke-width="32" />
-    <circle cx="-115" cy="90" r="35" stroke-width="28" />
-    <rect x="85" y="75" width="75" height="100" rx="15" stroke-width="32" transform="rotate(15 120 125)" />
+cutline_02 = svg_02.replace("</svg>", """
+  <!-- Spot Magenta 100% Print Cutline -->
+  <g transform="translate(300, 310)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="-240" y="-180" width="480" height="260" rx="75" stroke-width="40" />
+    <circle cx="0" cy="-230" r="50" stroke-width="30" />
+    <ellipse cx="0" cy="150" rx="130" ry="105" stroke-width="35" />
   </g>
-</svg>'''
+</svg>""")
 
 # ==============================================================================
-# STICKER 3: RETRO 16-BIT ARCADE GAMER (ENHANCED EDITION)
-# Standalone, clean, no description, uniform pixel grid, 100% SLA hearts & banner
+# 3. STICKER 03: RETRO PIXEL ART ARCADE (SMOOTH CAPSULE DIE-CUT)
+# A+ production feasibility, zero peel risk, 100% internal containment
 # ==============================================================================
-svg_03 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <g transform="translate(300, 300)">
-    <!-- 1. DIE-CUT WHITE BACKING CONTOUR -->
-    <path d="
-      M -200 -195
-      L 200 -195
-      L 200 -60
-      L 165 -60
-      L 165 20
-      L 200 20
-      L 200 135
-      L 40 135
-      L -40 215
-      L -125 215
-      L -125 135
-      L -200 135
-      L -200 20
-      L -165 20
-      L -165 -60
-      L -200 -60
-      Z
-    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="45" stroke-linejoin="round" />
+path_smooth_pixel_base = """
+  M -145 -255
+  Q 0 -290, 145 -255
+  Q 215 -215, 215 -140
+  L 215 190
+  Q 215 265, 140 265
+  L -140 265
+  Q -215 265, -215 190
+  L -215 -140
+  Q -215 -215, -145 -255
+  Z
+"""
 
-    <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">
-      <rect x="-145" y="-250" width="60" height="55" rx="8" />
-      <rect x="-30" y="-260" width="60" height="55" rx="8" />
-      <rect x="85" y="-250" width="60" height="55" rx="8" />
-    </g>
-
-    <rect x="-185" y="200" width="370" height="60" rx="16" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" />
+svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 600" width="540" height="600">
+  <g transform="translate(270, 305)">
+    <!-- 1. SMOOTH DIE-CUT WHITE BACKING CONTOUR (A+ durability, 100% containment) -->
+    <path d="{path_smooth_pixel_base}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
 
     <!-- 2. FLOATING 8-BIT HEARTS -->
     <g transform="translate(-115, -225) scale(3.5)">
@@ -309,15 +350,17 @@ svg_03 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
     </g>
 
     <!-- 3. MAIN PIXEL TICKET (Dual-tone Blue/Cyan) -->
-    <rect x="-175" y="-160" width="350" height="270" fill="#2563EB" />
-    <rect x="0" y="-160" width="175" height="270" fill="#06B6D4" />
-    <rect x="-35" y="-160" width="35" height="270" fill="#0284C7" />
+    <rect x="-175" y="-160" width="350" height="270" fill="#3877F6" />
+    <rect x="0" y="-160" width="175" height="270" fill="#5AC1C4" />
+    <rect x="-35" y="-160" width="35" height="270" fill="#4CA2EA" />
 
+    <!-- Notches -->
     <rect x="-205" y="-45" width="55" height="55" fill="#FFFFFF" />
     <rect x="150" y="-45" width="55" height="55" fill="#FFFFFF" />
     
-    <polygon points="-160,110 -160,195 -80,110" fill="#2563EB" />
-    <polygon points="-130,110 -160,195 -95,110" fill="#1D4ED8" />
+    <!-- Stepped Pixel Bubble Tail -->
+    <polygon points="-160,110 -160,195 -80,110" fill="#3877F6" />
+    <polygon points="-130,110 -160,195 -95,110" fill="#2563EB" />
 
     <!-- 4. PIXEL SUNGLASSES ('DEAL WITH IT' RETRO VIBE) -->
     <g transform="translate(0, -50)">
@@ -338,13 +381,8 @@ svg_03 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
 
     <!-- 5. RETRO ARCADE BANNER -->
     <g transform="translate(0, 215)">
-      <rect x="-170" y="-18" width="340" height="42" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
-      <rect x="-170" y="-18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="164" y="-18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="-170" y="18" width="6" height="6" fill="#FFFFFF" />
-      <rect x="164" y="18" width="6" height="6" fill="#FFFFFF" />
-
-      <text x="0" y="10" font-family="'Noto Sans Mono', monospace" font-size="20" font-weight="900" letter-spacing="3" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
+      <rect x="-170" y="-20" width="340" height="44" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
+      <text x="0" y="11" font-family="'Noto Sans Mono', monospace" font-size="20" font-weight="900" letter-spacing="3" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
     </g>
 
     <!-- 6. XP BAR -->
@@ -353,35 +391,15 @@ svg_03 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width=
       <rect x="-82" y="2" width="164" height="8" fill="#22C55E" />
     </g>
   </g>
-</svg>'''
+</svg>"""
 
-cutline_03 = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <g id="CutContour" transform="translate(300, 300)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round">
-    <path d="
-      M -200 -195
-      L 200 -195
-      L 200 -60
-      L 165 -60
-      L 165 20
-      L 200 20
-      L 200 135
-      L 40 135
-      L -40 215
-      L -125 215
-      L -125 135
-      L -200 135
-      L -200 20
-      L -165 20
-      L -165 -60
-      L -200 -60
-      Z
-    " />
-    <rect x="-145" y="-250" width="60" height="55" rx="8" />
-    <rect x="-30" y="-260" width="60" height="55" rx="8" />
-    <rect x="85" y="-250" width="60" height="55" rx="8" />
-    <rect x="-185" y="200" width="370" height="60" rx="16" />
+cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 600" width="540" height="600">
+  <g transform="translate(270, 305)">
+    <path d="{path_smooth_pixel_base}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+    <!-- Spot Magenta 100% Print Cutline -->
+    <path d="{path_smooth_pixel_base}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" />
   </g>
-</svg>'''
+</svg>"""
 
 items = [
     ("tixdesk-sticker-01-hero-mark", svg_01, cutline_01),
@@ -397,15 +415,15 @@ for base_name, svg_content, cutline_content in items:
     
     # 2. Transparent 300 DPI PNG
     png_file = os.path.join(PNG_DIR, f"{base_name}-300dpi.png")
-    subprocess.run(["rsvg-convert", "-z", "2.0", svg_file, "-o", png_file])
+    subprocess.run(["rsvg-convert", "-w", "1000", svg_file, "-o", png_file], check=True)
 
     # 3. Cutline SVG
-    cutline_file = os.path.join(CUTLINE_DIR, f"{base_name}-cutline.svg")
+    cutline_file = os.path.join(CUT_DIR, f"{base_name}-cutcontour.svg")
     with open(cutline_file, "w") as f:
         f.write(cutline_content)
 
     # 4. Print-ready PDF
     pdf_file = os.path.join(PDF_DIR, f"{base_name}-print.pdf")
-    subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file])
+    subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file], check=True)
 
-print("Final 3 stickers generated successfully!")
+print("Official 3-sticker pack generated successfully!")

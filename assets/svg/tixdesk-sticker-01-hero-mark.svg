@@ -1,68 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="500" height="450">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
   <defs>
-    <linearGradient id="brandGrad01" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="50%" stop-color="#1D9BF0" />
-      <stop offset="100%" stop-color="#06B6D4" />
+    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
   </defs>
 
-  <g transform="translate(250, 210)">
-    <!-- 1. SOLID WHITE DIE-CUT BASE CONTOUR -->
+  <g transform="translate(220, 205)">
+    <!-- 1. SOLID WHITE DIE-CUT BASE CONTOUR (100% internal containment) -->
     <path d="
-      M 0 -110
-      L 122 -110
-      A 28 28 0 0 1 150 -82
-      L 150 -30
-      A 20 20 0 0 0 150 10
-      L 150 62
-      A 28 28 0 0 1 122 90
-      L -45 90
-      L -72 140
-      L -100 90
-      L -122 90
-      A 28 28 0 0 1 -150 62
-      L -150 10
-      A 20 20 0 0 0 -150 -30
-      L -150 -82
-      A 28 28 0 0 1 -122 -110
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
       Z
-    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" />
-
-    <!-- 2. FULL TICKET BODY INCLUDING TAIL (Colored with Blue/Cyan Gradient) -->
+    " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    
+    <!-- 2. OFFICIAL BLUE/CYAN GRADIENT BODY (Tail is blue gradient) -->
     <path d="
-      M 0 -110
-      L 122 -110
-      A 28 28 0 0 1 150 -82
-      L 150 -30
-      A 20 20 0 0 0 150 10
-      L 150 62
-      A 28 28 0 0 1 122 90
-      L -45 90
-      L -72 140
-      L -100 90
-      L -122 90
-      A 28 28 0 0 1 -150 62
-      L -150 10
-      A 20 20 0 0 0 -150 -30
-      L -150 -82
-      A 28 28 0 0 1 -122 -110
+      M 0 -120
+      L 128 -120
+      A 32 32 0 0 1 160 -88
+      L 160 -32
+      A 22 22 0 0 0 160 12
+      L 160 68
+      A 32 32 0 0 1 128 100
+      L 25 100
+      L 25 -36
+      L 70 -36
+      A 20 20 0 0 0 70 -76
+      L -70 -76
+      A 20 20 0 0 0 -70 -36
+      L -25 -36
+      L -25 100
+      L -85 150
+      L -85 100
+      L -128 100
+      A 32 32 0 0 1 -160 68
+      L -160 12
+      A 22 22 0 0 0 -160 -32
+      L -160 -88
+      A 32 32 0 0 1 -128 -120
       Z
-    " fill="url(#brandGrad01)" />
+    " fill="url(#tixdeskGrad)" />
 
-    <!-- 3. SOLID WHITE 'T' INSIDE (Floating cleanly, perfectly centered) -->
+    <!-- 3. SOLID WHITE 'T' GLYPH (Cutting straight through to bottom baseline) -->
     <path d="
-      M -52 -65
-      L 52 -65
-      A 17.5 17.5 0 0 1 52 -30
-      L 18 -30
-      L 18 56
-      Q 18 64, 10 64
-      L -10 64
-      Q -18 64, -18 56
-      L -18 -30
-      L -52 -30
-      A 17.5 17.5 0 0 1 -52 -65
+      M -70 -76
+      L 70 -76
+      A 20 20 0 0 1 70 -36
+      L 25 -36
+      L 25 100
+      L -25 100
+      L -25 -36
+      L -70 -36
+      A 20 20 0 0 1 -70 -76
       Z
     " fill="#FFFFFF" />
   </g>
