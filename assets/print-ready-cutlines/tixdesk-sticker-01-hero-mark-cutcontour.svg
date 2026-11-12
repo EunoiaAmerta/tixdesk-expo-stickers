@@ -1,35 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  
   <defs>
-    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="blueCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3877F6" />
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
   </defs>
-
-  <g id="Artwork" transform="translate(220, 195)">
+  <g id="Artwork" transform="translate(200, 195)">
     <path id="WhiteBorder" d="
-  M 0 -105
-  L 120 -105
-  A 28 28 0 0 1 148 -77
-  L 148 -35
-  A 20 20 0 0 0 148 5
-  L 148 52
-  A 28 28 0 0 1 120 80
-  L 20 80
-  L -20 80
-  L -70 140
-  A 10 10 0 0 1 -80 135
-  L -80 80
-  L -120 80
-  A 28 28 0 0 1 -148 52
-  L -148 5
-  A 20 20 0 0 0 -148 -35
-  L -148 -77
-  A 28 28 0 0 1 -120 -105
-  Z
-" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" />
-    <path id="TicketBody" d="
   M 0 -105
   L 120 -105
   A 28 28 0 0 1 148 -77
@@ -55,8 +34,35 @@
   L -148 -77
   A 28 28 0 0 1 -120 -105
   Z
-" fill="url(#tixdeskGrad)" />
-    <path id="TGlyph" d="
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    <path id="LogoBody" d="
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L 20 80
+  L 20 -24
+  L 66 -24
+  A 20 20 0 0 0 66 -64
+  L -66 -64
+  A 20 20 0 0 0 -66 -24
+  L -20 -24
+  L -20 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+" fill="url(#blueCyanGrad)" />
+    <path id="LetterT" d="
   M -66 -64
   L 66 -64
   A 20 20 0 0 1 66 -24
@@ -70,7 +76,7 @@
 " fill="#FFFFFF" />
   </g>
 
-  <g id="CutContour" transform="translate(220, 195)">
+  <g id="CutContour" transform="translate(200, 195)">
     <path d="
   M 0 -105
   L 120 -105
@@ -80,6 +86,12 @@
   L 148 52
   A 28 28 0 0 1 120 80
   L 20 80
+  L 20 -24
+  L 66 -24
+  A 20 20 0 0 0 66 -64
+  L -66 -64
+  A 20 20 0 0 0 -66 -24
+  L -20 -24
   L -20 80
   L -70 140
   A 10 10 0 0 1 -80 135

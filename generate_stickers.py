@@ -12,8 +12,8 @@ for d in [SVG_DIR, PNG_DIR, CUT_DIR, PDF_DIR]:
     os.makedirs(d, exist_ok=True)
 
 # ==============================================================================
-# 1. STICKER 01: PURE HERO MARK (LOCKED PERMANENT - DO NOT MODIFY)
-# ==============================================================================
+# 01. HERO MARK
+# ------------------------------------------------------------------------------
 path_01_body = """
   M 0 -105
   L 120 -105
@@ -41,7 +41,6 @@ path_01_body = """
   A 28 28 0 0 1 -120 -105
   Z
 """
-
 path_01_t = """
   M -66 -64
   L 66 -64
@@ -54,68 +53,31 @@ path_01_t = """
   A 20 20 0 0 1 -66 -64
   Z
 """
-
-path_01_contour = """
-  M 0 -105
-  L 120 -105
-  A 28 28 0 0 1 148 -77
-  L 148 -35
-  A 20 20 0 0 0 148 5
-  L 148 52
-  A 28 28 0 0 1 120 80
-  L 20 80
-  L -20 80
-  L -70 140
-  A 10 10 0 0 1 -80 135
-  L -80 80
-  L -120 80
-  A 28 28 0 0 1 -148 52
-  L -148 5
-  A 20 20 0 0 0 -148 -35
-  L -148 -77
-  A 28 28 0 0 1 -120 -105
-  Z
-"""
-
-svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="blueCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3877F6" />
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
   </defs>
-
-  <g id="Artwork" transform="translate(220, 195)">
-    <path id="WhiteBorder" d="{path_01_contour}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" />
-    <path id="TicketBody" d="{path_01_body}" fill="url(#tixdeskGrad)" />
-    <path id="TGlyph" d="{path_01_t}" fill="#FFFFFF" />
+  <g id="Artwork" transform="translate(200, 195)">
+    <path id="WhiteBorder" d="{path_01_body}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    <path id="LogoBody" d="{path_01_body}" fill="url(#blueCyanGrad)" />
+    <path id="LetterT" d="{path_01_t}" fill="#FFFFFF" />
   </g>
 </svg>"""
 
-cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
-  <defs>
-    <linearGradient id="tixdeskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3877F6" />
-      <stop offset="50%" stop-color="#4CA2EA" />
-      <stop offset="100%" stop-color="#5AC1C4" />
-    </linearGradient>
-  </defs>
-
-  <g id="Artwork" transform="translate(220, 195)">
-    <path id="WhiteBorder" d="{path_01_contour}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" />
-    <path id="TicketBody" d="{path_01_body}" fill="url(#tixdeskGrad)" />
-    <path id="TGlyph" d="{path_01_t}" fill="#FFFFFF" />
-  </g>
-
-  <g id="CutContour" transform="translate(220, 195)">
-    <path d="{path_01_contour}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  {svg_01.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">', '').replace('</svg>', '')}
+  <g id="CutContour" transform="translate(200, 195)">
+    <path d="{path_01_body}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>"""
 
-# ==============================================================================
-# 2. STICKER 02: KAWAII CHIBI MASCOT HEAD (LOCKED PERMANENT - DO NOT MODIFY)
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 02. CHIBI TIXIE MASCOT
+# ------------------------------------------------------------------------------
 svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
   <defs>
     <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -123,15 +85,12 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
-
     <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#080E1E" />
       <stop offset="100%" stop-color="#111C35" />
     </linearGradient>
   </defs>
-
   <g id="Artwork" transform="translate(260, 275)">
-    <!-- 1. Tight White Die-Cut Contour matching Sticker 01 (Clean seamless contour) -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
       <circle cx="0" cy="-230" r="22" stroke-width="24" />
       <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
@@ -141,44 +100,31 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
       <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
-      <!-- Solid White Bridge filling the gap between mic wire and speech body -->
-      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" stroke-width="12" />
     </g>
-
-    <!-- 2. Solid White Gap Fills inside the ticket notches (stroke=none, cleanly behind earcups) -->
     <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
     <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
-
-    <!-- 3. Antenna -->
-    <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
+    <path d="M 0 -150 L 0 -220" stroke="#334155" stroke-width="12" stroke-linecap="round" />
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
-    <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
-
-    <!-- 4. Head Ticket Shell (Preserves iconic ticket notches!) -->
+    <circle cx="0" cy="-230" r="11" fill="#34D399" />
     <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
-
-    <!-- 5. Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
-    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
-
-    <!-- 6. Eyes & Expression -->
+    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.22" />
     <g transform="translate(-55, -45)">
       <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+      <ellipse cx="0" cy="0" rx="19" ry="25" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7.5" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
     </g>
     <g transform="translate(55, -45)">
       <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+      <ellipse cx="0" cy="0" rx="19" ry="25" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7.5" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
     </g>
     <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
     <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
     <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-
-    <!-- 7. Headset -->
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
@@ -191,71 +137,7 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
 </svg>"""
 
 cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
-  <defs>
-    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3877F6" />
-      <stop offset="50%" stop-color="#4CA2EA" />
-      <stop offset="100%" stop-color="#5AC1C4" />
-    </linearGradient>
-
-    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080E1E" />
-      <stop offset="100%" stop-color="#111C35" />
-    </linearGradient>
-  </defs>
-
-  <g id="Artwork" transform="translate(260, 275)">
-    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <circle cx="0" cy="-230" r="22" stroke-width="24" />
-      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
-      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
-      <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
-      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
-      <circle cx="-70" cy="73" r="14" stroke-width="24" />
-      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
-    </g>
-
-    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
-    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
-
-    <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
-    <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
-    <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
-
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
-
-    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
-    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
-
-    <g transform="translate(-55, -45)">
-      <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
-    </g>
-    <g transform="translate(55, -45)">
-      <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
-    </g>
-    <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
-    <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
-    <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-
-    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
-    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
-    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
-  </g>
-
-  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
+  {svg_02.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">', '').replace('</svg>', '')}
   <g id="CutContour" transform="translate(260, 275)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <circle cx="0" cy="-230" r="22" stroke-width="24" />
     <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
@@ -267,113 +149,199 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
   </g>
 </svg>"""
 
-# ==============================================================================
-# 3. STICKER 03: RETRO PIXEL ART ARCADE (LOCKED PERMANENT - DO NOT MODIFY)
-# ==============================================================================
-contour_03_smooth = """
-  M -130 -135
-  L 130 -135
-  Q 150 -135, 150 -115
-  L 150 75
-  Q 150 95, 130 95
-  L -75 95
-  L -135 140
-  Q -150 145, -150 130
-  L -150 75
-  L -150 -115
-  Q -150 -135, -130 -135
-  Z
-"""
 
-path_03_body_left = """
-  M -130 -135
-  L 0 -135
-  L 0 95
-  L -90 95
-  L -140 135
-  L -140 95
-  L -150 95
-  L -150 20
-  L -125 20
-  L -125 -25
-  L -150 -25
-  L -150 -115
-  Q -150 -135, -130 -135
-  Z
-"""
+# ------------------------------------------------------------------------------
+# 03. DETECTIVE TIXIE (BUG HUNTER)
+# ------------------------------------------------------------------------------
+svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  <defs>
+    <linearGradient id="headGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
 
-path_03_body_right = """
-  M 0 -135
-  L 130 -135
-  Q 150 -135, 150 -115
-  L 150 -25
-  L 125 -25
-  L 125 20
-  L 150 20
-  L 150 75
-  Q 150 95, 130 95
-  L 0 95
-  Z
-"""
+    <linearGradient id="screenGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080E1E" />
+      <stop offset="100%" stop-color="#111C35" />
+    </linearGradient>
 
-svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
-  <g id="Artwork" transform="translate(220, 205)">
-    <!-- 1. Soft, Slim, Uniform White die-cut contour -->
-    <path id="WhiteBorder" d="{contour_03_smooth}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
+    <linearGradient id="capGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A16207" />
+      <stop offset="50%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
 
-    <!-- 2. Ticket Body with Authentic Inward Punch Notches -->
-    <path d="{path_03_body_left}" fill="#3877F6" />
-    <path d="{path_03_body_right}" fill="#5AC1C4" />
-    <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
+    <linearGradient id="lensGlass3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
 
-    <!-- 3. Pixel Sunglasses & Face -->
-    <g transform="translate(0, -20)">
-      <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />
-      <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-100" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-82" y="4" width="14" height="14" fill="#FFFFFF" />
-      <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
-      <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
-      <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-75" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="51" y="38" width="24" height="12" fill="#F43F5E" />
+  <g id="Artwork" transform="translate(270, 275)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <!-- Detective Cap Outline -->
+      <path d="M -115 -145 C -120 -235, 120 -235, 115 -145 Z" stroke-width="26" />
+      <path d="M -135 -145 Q 0 -170 135 -145 Q 145 -135 125 -135 L -125 -135 Q -145 -135 -135 -145 Z" stroke-width="24" />
+      <!-- Headset & Head Body Contour -->
+      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
+      <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" stroke-width="12" />
+
+      <!-- Magnifying Glass & Handle Contour -->
+      <circle cx="85" cy="40" r="58" stroke-width="24" />
+      <path d="M 125 80 L 165 125" stroke-width="38" />
+
+      <!-- Bottom Tag Pill -->
+      <rect x="-85" y="52" width="170" height="26" rx="13" stroke-width="24" />
+    </g>
+
+    <!-- Solid White Gap Fills behind earcups -->
+    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
+
+    <!-- 2. Antenna (Peeking from behind the cap) -->
+    <path d="M 0 -150 L 0 -225" stroke="#334155" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-225" r="16" fill="#F59E0B" stroke="#FFFFFF" stroke-width="4" />
+
+    <!-- 3. Head Ticket Shell -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad3)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- 4. Screen Visor -->
+    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad3)" stroke="#38BDF8" stroke-width="4" />
+    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.22" />
+
+    <!-- 5. Detective Expression: Left eye calculating, right eye magnified looking through glass -->
+    <!-- Left Eye (Analytical Squint / Detective Focus) -->
+    <g transform="translate(-55, -45)">
+      <ellipse cx="0" cy="0" rx="22" ry="28" fill="#38BDF8" />
+      <ellipse cx="0" cy="0" rx="18" ry="24" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7" fill="#FFFFFF" />
+      <circle cx="6" cy="8" r="4" fill="#FFFFFF" />
+      <!-- Analytical Brow Line -->
+      <path d="M -22 -22 Q 0 -26 22 -16" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+    </g>
+
+    <!-- Right Eye (Slightly larger, peering at the bug) -->
+    <g transform="translate(55, -45)">
+      <ellipse cx="0" cy="0" rx="25" ry="31" fill="#38BDF8" />
+      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
+      <circle cx="-7" cy="-9" r="8" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
+    </g>
+
+    <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.75" />
+    <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.75" />
+
+    <!-- Clever Detective Smirk (:3) -->
+    <path d="M -16 -4 Q -8 7 0 0 Q 8 7 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- 6. Detective Deerstalker Cap (Sherlock Hat) on Head -->
+    <g transform="translate(0, -155)">
+      <!-- Main Cap Dome -->
+      <path d="M -105 10 C -115 -75, 115 -75, 105 10 Z" fill="url(#capGrad3)" stroke="#292524" stroke-width="3" />
+      <!-- Tweed Houndstooth / Plaid Lines -->
+      <path d="M -60 10 C -65 -50, -35 -65, 0 -70 C 35 -65, 65 -50, 60 10" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4" opacity="0.7" />
+      <line x1="-90" y1="-25" x2="90" y2="-25" stroke="#D97706" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7" />
+      <line x1="-70" y1="-50" x2="70" y2="-50" stroke="#D97706" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7" />
+      <!-- Front Visor Brim -->
+      <path d="M -125 10 Q 0 -10 125 10 Q 135 22 115 22 L -115 22 Q -135 22 -125 10 Z" fill="#78350F" stroke="#292524" stroke-width="2.5" />
+      <!-- Ribbon Bow at the peak -->
+      <circle cx="0" cy="-68" r="8" fill="#B45309" stroke="#292524" stroke-width="2" />
+      <path d="M -14 -64 Q 0 -75 14 -64 Q 0 -58 -14 -64 Z" fill="#F59E0B" />
+    </g>
+
+    <!-- 7. Headset (Continuous headband with dark mic joint) -->
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    
+    <!-- Boom Mic (Dark slate joint ring like boom arm) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
+
+    <!-- 8. Magnifying Glass & Trapped Cute Bug -->
+    <g transform="translate(85, 38)">
+      <!-- Handle -->
+      <path d="M 40 40 L 78 82" stroke="#78350F" stroke-width="16" stroke-linecap="round" />
+      <path d="M 40 40 L 78 82" stroke="#B45309" stroke-width="10" stroke-linecap="round" />
+      <circle cx="82" cy="86" r="6" fill="#F59E0B" />
+
+      <!-- Chibi Hand Gripping Handle -->
+      <circle cx="50" cy="52" r="14" fill="#3877F6" stroke="#FFFFFF" stroke-width="3.5" />
+
+      <!-- Metallic Lens Frame -->
+      <circle cx="0" cy="0" r="54" fill="none" stroke="#D97706" stroke-width="9" />
+      <circle cx="0" cy="0" r="54" fill="none" stroke="#FEF08A" stroke-width="3" />
+
+      <!-- Glass Circle -->
+      <circle cx="0" cy="0" r="49" fill="url(#lensGlass3)" stroke="#E0F2FE" stroke-width="1.5" />
+
+      <!-- THE CUTE BUG (Inside the lens focus!) -->
+      <g transform="translate(0, 4) scale(1.15)">
+        <!-- Bug Legs -->
+        <path d="M -16 -6 L -24 -12 M 16 -6 L 24 -12" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M -18 2 L -26 2 M 18 2 L 26 2" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M -16 10 L -24 16 M 16 10 L 24 16" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
+
+        <!-- Ladybug / Tech Bug Shell (Emerald-Lime Green // 200 OK Bug!) -->
+        <ellipse cx="0" cy="4" rx="18" ry="16" fill="#10B981" stroke="#064E3B" stroke-width="2" />
+        <line x1="0" y1="-12" x2="0" y2="20" stroke="#064E3B" stroke-width="2" />
+        <circle cx="-8" cy="-2" r="3" fill="#047857" />
+        <circle cx="8" cy="-2" r="3" fill="#047857" />
+        <circle cx="-7" cy="10" r="2.5" fill="#047857" />
+        <circle cx="7" cy="10" r="2.5" fill="#047857" />
+
+        <!-- Bug Head & Cute Eyes -->
+        <ellipse cx="0" cy="-12" rx="10" ry="7" fill="#064E3B" />
+        <circle cx="-4" cy="-13" r="2.2" fill="#FFFFFF" />
+        <circle cx="4" cy="-13" r="2.2" fill="#FFFFFF" />
+        <circle cx="-4" cy="-13" r="1.1" fill="#000000" />
+        <circle cx="4" cy="-13" r="1.1" fill="#000000" />
+
+        <!-- Antennas with curly tips -->
+        <path d="M -4 -18 Q -10 -26 -14 -22" fill="none" stroke="#064E3B" stroke-width="2" stroke-linecap="round" />
+        <path d="M 4 -18 Q 10 -26 14 -22" fill="none" stroke="#064E3B" stroke-width="2" stroke-linecap="round" />
+      </g>
+
+      <!-- Glass Glare Reflex -->
+      <path d="M -30 -30 A 42 42 0 0 1 25 -36" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" opacity="0.8" />
+      <circle cx="32" cy="-25" r="3.5" fill="#FFFFFF" opacity="0.8" />
+    </g>
+
+    <!-- 9. Tagline Banner: BUG HUNTER -->
+    <g transform="translate(0, 65)">
+      <rect x="-80" y="-13" width="160" height="26" rx="13" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5" />
+      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="10" font-weight="900" fill="#FDE047" letter-spacing="2" text-anchor="middle">🔍 BUG HUNTER</text>
     </g>
   </g>
 </svg>"""
 
-cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
-  <g id="Artwork" transform="translate(220, 205)">
-    <path id="WhiteBorder" d="{contour_03_smooth}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
-    <path d="{path_03_body_left}" fill="#3877F6" />
-    <path d="{path_03_body_right}" fill="#5AC1C4" />
-    <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
-
-    <g transform="translate(0, -20)">
-      <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />
-      <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-100" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-82" y="4" width="14" height="14" fill="#FFFFFF" />
-      <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
-      <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
-      <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-75" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="51" y="38" width="24" height="12" fill="#F43F5E" />
-    </g>
-  </g>
-
-  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(220, 205)">
-    <path d="{contour_03_smooth}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  {svg_03.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">', '').replace('</svg>', '')}
+  <g id="CutContour" transform="translate(270, 275)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -115 -145 C -120 -235, 120 -235, 115 -145 Z" stroke-width="26" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <circle cx="85" cy="40" r="58" stroke-width="24" />
+    <path d="M 125 80 L 165 125" stroke-width="38" />
+    <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>"""
 
-# ==============================================================================
-# 4. STICKER 04: TIXIE NIGHT SHIFT / POWERED BY CAFFEINE
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 04. CAFFEINE NIGHT SHIFT
+# ------------------------------------------------------------------------------
 svg_04 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
   <defs>
     <linearGradient id="headGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -471,7 +439,7 @@ svg_04 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
 
 cutline_04 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
   {svg_04.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">', '').replace('</svg>', '')}
-  <g id="CutContour" transform="translate(260, 270)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+  <g id="CutContour" transform="translate(260, 265)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <circle cx="0" cy="-230" r="22" stroke-width="24" />
     <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
@@ -483,10 +451,9 @@ cutline_04 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
   </g>
 </svg>"""
 
-# ==============================================================================
-# ==============================================================================
-# 5. STICKER 05: TIXIE ON FIRE (BURNING MASCOT // PROD ON FIRE)
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 05. TIXIE ON FIRE
+# ------------------------------------------------------------------------------
 svg_05 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
   <defs>
     <!-- Ticket Head Gradient (Heated Red-Orange) -->
@@ -673,15 +640,13 @@ cutline_05 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" w
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" stroke-width="26" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
-    <rect x="-75" y="48" width="150" height="28" rx="14" stroke-width="24" />
   </g>
 </svg>"""
 
-# ==============================================================================
-# 6. STICKER 06: TIXIE NEON (SOFT CYBERPUNK SYNTHWAVE MASCOT)
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 06. TIXIE NEON (SOFT CYBER)
+# ------------------------------------------------------------------------------
 svg_06 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
   <defs>
     <!-- Dark Cyber-Slate Body Gradient -->
@@ -821,148 +786,472 @@ cutline_06 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" stroke-width="26" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>"""
 
-# ==============================================================================
-# 7. STICKER 07: VINTAGE POSTAL STAMP (EMERALD 200 OK • ACCURATE MASTER MARK)
-# ==============================================================================
-svg_07 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+# ------------------------------------------------------------------------------
+# 07. ROCKET TIXIE (LGTM // SHIP IT!)
+# ------------------------------------------------------------------------------
+svg_07 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
   <defs>
-    <!-- Midnight Navy Dispatch Canvas -->
-    <linearGradient id="stampBg7" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#1E293B" />
+    <linearGradient id="rocketBody7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
     </linearGradient>
 
-    <!-- 24K Gold Laurel Gradient -->
-    <linearGradient id="goldGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="rocketCone7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+
+    <linearGradient id="rocketFlame7" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FDE047" />
-      <stop offset="50%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EF4444" />
     </linearGradient>
 
-    <!-- Official TixDesk Master Logo Gradient (Royal Blue -> Cerulean -> Cyan) -->
-    <linearGradient id="tixdeskMasterGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="headGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(280, 275) rotate(-15)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <!-- Big Rocket Booster Flame Contour -->
+      <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
+      <!-- Rocket Fins -->
+      <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
+      <polygon points="75,100 120,135 65,70" stroke-width="24" />
+      <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
+      <path d="M -60 -30 Q 0 -130 60 -30 Z" stroke-width="26" />
+
+      <!-- Tixie Head & Headset Contour -->
+      <circle cx="0" cy="-240" r="22" stroke-width="24" />
+      <line x1="0" y1="-160" x2="0" y2="-240" stroke-width="32" />
+      <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke-width="46" />
+      <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
+      <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="63" r="14" stroke-width="24" />
+
+      <!-- Thumbs Up Hand Contour -->
+      <circle cx="160" cy="-20" r="28" stroke-width="24" />
+      <!-- Pill Tag Contour -->
+      <rect x="-85" y="80" width="170" height="28" rx="14" stroke-width="24" />
+    </g>
+
+    <path d="M 160 -50 A 25 25 0 0 0 160 0 L 175 0 L 175 -50 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -50 A 25 25 0 0 1 -160 0 L -175 0 L -175 -50 Z" fill="#FFFFFF" stroke="none" />
+
+    <!-- 2. Rocket Flame Blast -->
+    <path d="M -40 105 C -75 190, -10 240, 0 260 C 10 240, 75 190, 40 105 Z" fill="url(#rocketFlame7)" />
+    <path d="M -25 105 C -45 160, -5 195, 0 215 C 5 195, 45 160, 25 105 Z" fill="#FEF08A" />
+
+    <!-- 3. Rocket Body & Fins -->
+    <!-- Left & Right Fins -->
+    <polygon points="-55,90 -115,125 -55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
+    <polygon points="55,90 115,125 55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
+    <!-- Main Cylinder -->
+    <rect x="-55" y="-30" width="110" height="135" rx="30" fill="url(#rocketBody7)" stroke="#475569" stroke-width="3" />
+    <!-- Rocket Exhaust Nozzle -->
+    <polygon points="-35,105 35,105 25,122 -25,122" fill="#334155" />
+    <line x1="-55" y1="35" x2="55" y2="35" stroke="#38BDF8" stroke-width="5" />
+    
+    <!-- Rocket Porthole Window with TixDesk 'T' -->
+    <circle cx="0" cy="55" r="22" fill="#0F172A" stroke="#38BDF8" stroke-width="4" />
+    <text x="0" y="63" font-family="'Noto Sans', sans-serif" font-size="20" font-weight="900" fill="#38BDF8" text-anchor="middle">T</text>
+
+    <!-- 4. Mascot Tixie Riding Rocket -->
+    <!-- Antenna -->
+    <path d="M 0 -160 L 0 -230" stroke="#334155" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-240" r="20" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
+    <!-- Speed streaks on antenna -->
+    <line x1="-12" y1="-265" x2="-22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+    <line x1="12" y1="-265" x2="22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Head Ticket Shell -->
+    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" fill="url(#headGrad7)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- Visor -->
+    <rect x="-125" y="-135" width="250" height="160" rx="35" fill="#080E1E" stroke="#38BDF8" stroke-width="4" />
+    <path d="M -115 -115 Q 0 -135 115 -115 L 115 -100 Q 0 -120 -115 -100 Z" fill="#FFFFFF" opacity="0.22" />
+
+    <!-- Super Happy Proud Expression: Left Wink, Right Sparkling Anime Eye -->
+    <!-- Left Eye (Playful Confident Wink ;) -->
+    <path d="M -70 -55 Q -55 -40 -40 -55" fill="none" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Right Eye (Sparkling Giant Eye) -->
+    <g transform="translate(55, -55)">
+      <ellipse cx="0" cy="0" rx="25" ry="31" fill="#38BDF8" />
+      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
+      <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#FFFFFF" transform="translate(-6, -7) scale(0.65)" />
+      <circle cx="-6" cy="-8" r="7" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="-75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+    <ellipse cx="75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+
+    <!-- Big Ecstatic Open Mouth (:D) -->
+    <path d="M -18 -18 Q 0 -26 18 -18 Q 20 6 0 10 Q -20 6 -18 -18 Z" fill="#F43F5E" stroke="#38BDF8" stroke-width="3" stroke-linejoin="round" />
+    <ellipse cx="0" cy="4" rx="9" ry="4" fill="#9F1239" />
+
+    <!-- Headset (with black mic joint ring) -->
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
+    
+    <!-- Boom mic with dark slate joint ring -->
+    <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="63" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
+
+    
+    <!-- 5. Thumbs Up Hand (Prominently extended forward!) -->
+    <g id="ThumbsUp" transform="translate(95, -20) rotate(15)">
+      <!-- Big White Die-Cut Backing for Hand -->
+      <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" />
+      <path d="M 0 0 L 0 -26 A 10 10 0 0 1 20 -26 L 20 0 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+
+      <!-- Glove Body -->
+      <circle cx="0" cy="0" r="18" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" />
+      <!-- Extended Thumbs Up -->
+      <path d="M -5 -8 L -5 -28 A 9 9 0 0 1 14 -28 L 14 -6 Z" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" stroke-linejoin="round" />
+      <line x1="4" y1="-24" x2="4" y2="-12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+
+    <!-- 6. Tagline Banner: LGTM // SHIP IT! -->
+    <g transform="translate(0, 95)">
+      <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0F172A" stroke="#10B981" stroke-width="2.5" />
+      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="11" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">🚀 LGTM // SHIP IT!</text>
+    </g>
+  </g>
+</svg>"""
+
+cutline_07 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
+  {svg_07.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">', '').replace('</svg>', '')}
+  <g id="CutContour" transform="translate(280, 275) rotate(-15)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
+    <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
+    <polygon points="75,100 120,135 65,70" stroke-width="24" />
+    <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" stroke-width="46" />
+    <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
+    <circle cx="-70" cy="63" r="14" stroke-width="24" />
+  </g>
+</svg>"""
+
+# ------------------------------------------------------------------------------
+# 08. TIXIE OFF & ON
+# ------------------------------------------------------------------------------
+svg_08 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  <defs>
+    <linearGradient id="headGrad8" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3877F6" />
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
 
-    <filter id="stampTextShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#022C22" flood-opacity="0.95" />
-      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.8" />
-    </filter>
+    <linearGradient id="screenGrad8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080E1E" />
+      <stop offset="100%" stop-color="#111C35" />
+    </linearGradient>
   </defs>
 
-  <g id="Artwork" transform="translate(230, 230)">
-    <!-- 1. White Die-Cut Base -->
-    <rect x="-150" y="-175" width="300" height="350" rx="20" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+  <g id="Artwork" transform="translate(270, 270)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="0" cy="-230" r="22" stroke-width="24" />
+      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
+      <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="73" r="14" stroke-width="24" />
 
-    <!-- 2. Main Postage Stamp Inner Canvas -->
-    <rect x="-140" y="-165" width="280" height="330" rx="14" fill="url(#stampBg7)" stroke="#F59E0B" stroke-width="3" />
+      <!-- Power Plug & Cable Contour -->
+      <path d="M 0 60 C 20 80, 50 110, 80 85 C 95 70, 110 50, 130 50" fill="none" stroke-width="32" />
+      <rect x="125" y="32" width="45" height="36" rx="10" stroke-width="24" />
+      <line x1="170" y1="40" x2="195" y2="40" stroke-width="24" />
+      <line x1="170" y1="60" x2="195" y2="60" stroke-width="24" />
 
-    <!-- Vintage Engraved Banknote Guilloche Double Border -->
-    <rect x="-132" y="-157" width="264" height="314" rx="10" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.8" />
-    <rect x="-126" y="-151" width="252" height="302" rx="8" fill="none" stroke="#64748B" stroke-width="1" opacity="0.5" />
+      <!-- Bottom Pill Tag Contour -->
+      <rect x="-105" y="85" width="210" height="28" rx="14" stroke-width="24" />
+    </g>
 
-    <circle cx="-122" cy="-147" r="3" fill="#F59E0B" />
-    <circle cx="122" cy="-147" r="3" fill="#F59E0B" />
-    <circle cx="-122" cy="147" r="3" fill="#F59E0B" />
-    <circle cx="122" cy="147" r="3" fill="#F59E0B" />
+    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
 
-    <!-- Top Postal Header -->
-    <text x="0" y="-128" font-family="'Noto Sans', serif, sans-serif" font-size="11" font-weight="900" fill="#F8FAFC" letter-spacing="3" text-anchor="middle">TIXDESK OFFICIAL DISPATCH</text>
-    <text x="0" y="-114" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="700" fill="#94A3B8" letter-spacing="2" text-anchor="middle">★ GLOBAL HELPDESK STANDARD ★</text>
+    <!-- 2. Antenna with Playful Yellow Light -->
+    <path d="M 0 -150 L 0 -220" stroke="#334155" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-230" r="22" fill="#F59E0B" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="0" cy="-230" r="11" fill="#FEF08A" />
 
-    <!-- Nominal Value in Stamp Corners -->
-    <text x="-105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#34D399">200</text>
-    <text x="-105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#10B981">OK</text>
+    <!-- 3. Head Ticket Shell -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad8)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- 4. Visor Screen -->
+    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad8)" stroke="#38BDF8" stroke-width="4" />
+    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.22" />
+
+    <!-- 5. Innocent "Did You Try Turning It Off & On?" Face: Winking & Cheeky Smile -->
+    <!-- Left Eye (Playful Wink) -->
+    <path d="M -70 -45 Q -55 -32 -40 -45" fill="none" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Right Eye (Big Innocent Anime Eye) -->
+    <g transform="translate(55, -45)">
+      <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
+      <ellipse cx="0" cy="0" rx="19" ry="25" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7.5" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- Cute Blush -->
+    <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
+    <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
+
+    <!-- Cheeky Tongue Out / Smug Smile -->
+    <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- 6. Headset with dark mic joint ring -->
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
-    <text x="105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#34D399" text-anchor="end">SLA</text>
-    <text x="105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#10B981" text-anchor="end">MET</text>
+    <!-- Boom mic with dark slate joint ring -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
 
-    <!-- 3. Central Medallion: Golden Wreath & EXACT MASTER TIXDESK LOGO -->
-    <g transform="translate(0, -10)">
-      <g fill="none" stroke="url(#goldGrad7)" stroke-width="3" stroke-linecap="round">
-        <path d="M -15 65 C -65 50, -75 -25, -20 -60" />
-        <path d="M 15 65 C 65 50, 75 -25, 20 -60" />
-      </g>
-      <g fill="url(#goldGrad7)">
-        <ellipse cx="-35" cy="-50" rx="7" ry="4" transform="rotate(35, -35, -50)" />
-        <ellipse cx="-55" cy="-28" rx="8" ry="4.5" transform="rotate(15, -55, -28)" />
-        <ellipse cx="-62" cy="0" rx="8" ry="4.5" transform="rotate(-5, -62, 0)" />
-        <ellipse cx="-55" cy="28" rx="8" ry="4.5" transform="rotate(-25, -55, 28)" />
-        <ellipse cx="-35" cy="52" rx="7" ry="4" transform="rotate(-45, -35, 52)" />
+    <!-- 7. Disconnected AC Power Cable & Plug (With Sparks!) -->
+    <!-- Heavy Rubber Cable curving from behind Tixie -->
+    <path d="M -20 65 C 10 85, 45 95, 75 75 C 95 62, 110 50, 130 50" fill="none" stroke="#0F172A" stroke-width="14" stroke-linecap="round" />
 
-        <ellipse cx="35" cy="-50" rx="7" ry="4" transform="rotate(-35, 35, -50)" />
-        <ellipse cx="55" cy="-28" rx="8" ry="4.5" transform="rotate(-15, 55, -28)" />
-        <ellipse cx="62" cy="0" rx="8" ry="4.5" transform="rotate(5, 62, 0)" />
-        <ellipse cx="55" cy="28" rx="8" ry="4.5" transform="rotate(25, 55, 28)" />
-        <ellipse cx="35" cy="52" rx="7" ry="4" transform="rotate(45, 35, 52)" />
-      </g>
+    <!-- Chibi Hand Holding Plug -->
+    <circle cx="115" cy="50" r="15" fill="#3877F6" stroke="#FFFFFF" stroke-width="3.5" />
 
-      <!-- EXACT AUTHENTIC TIXDESK MASTER MARK (Identical to Sticker 01) -->
-      <g transform="translate(0, -6) scale(0.38)">
-        <path d="{path_01_body}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round" />
-        <path d="{path_01_body}" fill="url(#tixdeskMasterGrad7)" />
-        <path d="{path_01_t}" fill="#FFFFFF" />
-      </g>
+    <!-- AC Plug Head -->
+    <rect x="130" y="32" width="40" height="36" rx="8" fill="#1E293B" stroke="#64748B" stroke-width="2.5" />
+    <!-- Two Metallic Prongs -->
+    <rect x="170" y="38" width="24" height="7" rx="2" fill="#CBD5E1" stroke="#475569" stroke-width="1.5" />
+    <rect x="170" y="55" width="24" height="7" rx="2" fill="#CBD5E1" stroke="#475569" stroke-width="1.5" />
+    <circle cx="186" cy="41.5" r="1.5" fill="#1E293B" />
+    <circle cx="186" cy="58.5" r="1.5" fill="#1E293B" />
 
-      <!-- 5 CSAT Stars -->
-      <g transform="translate(0, 48)" fill="url(#goldGrad7)">
-        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-44, 0) scale(1.1)" />
-        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-22, 0) scale(1.1)" />
-        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(0, 0) scale(1.3)" />
-        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(22, 0) scale(1.1)" />
-        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(44, 0) scale(1.1)" />
-      </g>
-      <text x="0" y="68" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="800" fill="#FDE047" letter-spacing="1.5" text-anchor="middle">100% CSAT SATISFACTION</text>
-    </g>
+    <!-- Electric Sparks around plug! ⚡ -->
+    <path d="M 198 32 L 208 40 L 202 44 L 214 54" fill="none" stroke="#FDE047" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="206" cy="28" r="2.5" fill="#38BDF8" />
+    <circle cx="218" cy="45" r="2" fill="#FEF08A" />
 
-    <!-- Bottom Postal Certification Strip -->
-    <rect x="-115" y="95" width="230" height="35" rx="6" fill="#047857" opacity="0.25" stroke="#10B981" stroke-width="1.5" />
-    <text x="0" y="110" font-family="'Noto Sans', monospace, sans-serif" font-size="9" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">BUSINESS SLA • MET</text>
-    <text x="0" y="122" font-family="'Noto Sans', sans-serif" font-size="7" font-weight="700" fill="#94A3B8" letter-spacing="1" text-anchor="middle">ISO/IEC 20000 SERVICE DESK COMPLIANT</text>
-
-    <!-- 4. OFFICIAL EMERALD POSTMARK CANCELLATION STAMP (WITH CRISP DROP SHADOW & HIGH VISIBILITY) -->
-    <g transform="rotate(-13) translate(-8, 5)">
-      <rect x="-106" y="-27" width="212" height="54" rx="10" fill="#022C22" fill-opacity="0.85" stroke="#10B981" stroke-width="3" stroke-dasharray="14,2" />
-      <rect x="-101" y="-22" width="202" height="44" rx="7" fill="none" stroke="#34D399" stroke-width="1.5" />
-
-      <g filter="url(#stampTextShadow)">
-        <text x="0" y="-4" font-family="'Noto Sans', sans-serif" font-size="14.5" font-weight="900" fill="#A7F3D0" letter-spacing="2.5" text-anchor="middle">★ TICKET RESOLVED ★</text>
-        <text x="0" y="13" font-family="'Noto Sans', monospace, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="3" text-anchor="middle">STATUS: 200 OK</text>
-      </g>
-    </g>
-
-    <!-- Wavy Emerald Cancellation Waves -->
-    <g stroke="#10B981" stroke-width="2.5" fill="none" opacity="0.85" transform="translate(50, -110) rotate(-13)">
-      <path d="M 0 0 C 10 -6, 20 6, 30 0 C 40 -6, 50 6, 60 0 C 70 -6, 80 6, 90 0" />
-      <path d="M 0 8 C 10 2, 20 14, 30 8 C 40 2, 50 14, 60 8 C 70 2, 80 14, 90 8" />
-      <path d="M 0 16 C 10 10, 20 22, 30 16 C 40 10, 50 22, 60 16 C 70 10, 80 22, 90 16" />
+    <!-- 8. Tagline Banner: HAVE YOU TRIED TURNING IT OFF & ON? -->
+    <g transform="translate(0, 98)">
+      <rect x="-105" y="-13" width="210" height="26" rx="13" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5" />
+      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="8.8" font-weight="900" fill="#38BDF8" letter-spacing="1" text-anchor="middle">🔌 TRY TURNING IT OFF &amp; ON?</text>
     </g>
   </g>
 </svg>"""
 
-cutline_07 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
-  {svg_07.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">', '').replace('</svg>', '')}
-  <g id="CutContour" transform="translate(230, 230)">
-    <rect x="-150" y="-175" width="300" height="350" rx="20" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" />
+cutline_08 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  {svg_08.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">', '').replace('</svg>', '')}
+  <g id="CutContour" transform="translate(270, 270)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="0" cy="-230" r="22" stroke-width="24" />
+    <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <rect x="125" y="32" width="45" height="36" rx="10" stroke-width="24" />
+    <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>"""
-# BATCH GENERATION FOR ALL 7 STICKERS
+
+# ------------------------------------------------------------------------------
+# 09. HACKER TIXIE (SUDO RESOLVE)
+# ------------------------------------------------------------------------------
+svg_09 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  <defs>
+    <linearGradient id="hoodieGrad9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="headGrad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+
+    <linearGradient id="termGrad9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#022C22" />
+      <stop offset="100%" stop-color="#050C0A" />
+    </linearGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(270, 270)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="0" cy="-230" r="22" stroke-width="24" />
+      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
+      <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="73" r="14" stroke-width="24" />
+
+      <!-- Keyboard & Typing Hands Contour -->
+      <rect x="-115" y="25" width="230" height="60" rx="16" stroke-width="26" />
+
+      <!-- Bottom Tag Pill -->
+      <rect x="-85" y="78" width="170" height="28" rx="14" stroke-width="24" />
+    </g>
+
+    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
+
+    <!-- 2. Antenna with Terminal Green Node -->
+    <path d="M 0 -150 L 0 -220" stroke="#334155" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="0" cy="-230" r="11" fill="#34D399" />
+
+    <!-- 3. Head Ticket Shell -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad9)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- 4. Linux Terminal Visor (Matrix Black/Green Theme) -->
+    <rect x="-125" y="-125" width="250" height="150" rx="35" fill="url(#termGrad9)" stroke="#10B981" stroke-width="3.5" />
+
+    <!-- Terminal Titlebar dots -->
+    <circle cx="-100" cy="-105" r="4.5" fill="#EF4444" />
+    <circle cx="-88" cy="-105" r="4.5" fill="#F59E0B" />
+    <circle cx="-76" cy="-105" r="4.5" fill="#10B981" />
+    <text x="-60" y="-101" font-family="'Noto Sans', monospace, sans-serif" font-size="7.5" font-weight="700" fill="#6EE7B7">bash - tixdesk@prod</text>
+
+    <!-- Terminal Code / Command Prompt on Visor -->
+    <g font-family="'Noto Sans', monospace, sans-serif" font-size="10.5" font-weight="900">
+      <text x="-105" y="-76" fill="#34D399">$ sudo resolve --all</text>
+      <text x="-105" y="-56" fill="#6EE7B7">&gt; [OK] 0 INCIDENTS</text>
+      <text x="-105" y="-36" fill="#FDE047">&gt; SLA: 100% MET</text>
+      <text x="-105" y="-16" fill="#34D399">&gt; STATUS: 200 OK<tspan fill="#10B981" font-weight="900">_</tspan></text>
+    </g>
+
+    <!-- Cute Hacker Anime Eyes (Glowing Green Glint Reflecting Terminal!) -->
+    <g transform="translate(68, -48)">
+      <!-- Cool Hacker Pixel / Matrix Sunglasses or Eyes -->
+      <polygon points="0,-10 3,-2 10,0 3,2 0,10 -3,2 -10,0 -3,-2" fill="#34D399" transform="scale(0.8)" />
+      <circle cx="-4" cy="-5" r="3" fill="#FFFFFF" />
+    </g>
+
+    <!-- 5. Headset with dark mic joint ring -->
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#10B981" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    
+    <!-- Boom mic with dark slate joint ring -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
+
+    
+    <!-- 6. Mechanical Keyboard & High-Speed Typing Action -->
+    <g transform="translate(0, 48)">
+      <rect x="-105" y="-18" width="210" height="42" rx="10" fill="#0F172A" stroke="#334155" stroke-width="3" />
+      
+      <!-- Keycaps Grid -->
+      <g fill="#1E293B" stroke="#10B981" stroke-width="1.2" rx="3">
+        <rect x="-95" y="-12" width="14" height="10" rx="2" />
+        <rect x="-76" y="-12" width="14" height="10" rx="2" fill="#065F46" />
+        <rect x="-57" y="-12" width="14" height="10" rx="2" />
+        <rect x="-38" y="-12" width="14" height="10" rx="2" fill="#047857" />
+        <rect x="-19" y="-12" width="14" height="10" rx="2" />
+        <rect x="0" y="-12" width="14" height="10" rx="2" fill="#047857" />
+        <rect x="19" y="-12" width="14" height="10" rx="2" />
+        <rect x="38" y="-12" width="14" height="10" rx="2" fill="#065F46" />
+        <rect x="57" y="-12" width="14" height="10" rx="2" />
+        <rect x="76" y="-12" width="19" height="10" rx="2" fill="#047857" />
+
+        <rect x="-95" y="2" width="18" height="10" rx="2" />
+        <rect x="-72" y="2" width="14" height="10" rx="2" />
+        <rect x="-53" y="2" width="14" height="10" rx="2" />
+        <rect x="-34" y="2" width="30" height="10" rx="2" fill="#065F46" />
+        <rect x="1" y="2" width="14" height="10" rx="2" />
+        <rect x="20" y="2" width="14" height="10" rx="2" fill="#047857" />
+        <rect x="39" y="2" width="14" height="10" rx="2" />
+        <rect x="58" y="2" width="14" height="10" rx="2" />
+        <rect x="77" y="2" width="18" height="10" rx="2" />
+      </g>
+
+      <!-- Prominent Typing Speed Lines & Motion Blur -->
+      <g stroke="#34D399" stroke-width="2.5" stroke-linecap="round">
+        <line x1="-58" y1="-28" x2="-45" y2="-12" />
+        <line x1="-32" y1="-30" x2="-25" y2="-12" />
+        <line x1="25" y1="-30" x2="32" y2="-12" />
+        <line x1="45" y1="-28" x2="58" y2="-12" />
+      </g>
+
+      <!-- Fast Blurring Chibi Hands -->
+      <!-- Left Hand -->
+      <circle cx="-40" cy="-6" r="16" fill="#3877F6" stroke="#FFFFFF" stroke-width="3.5" />
+      <circle cx="-44" cy="-10" r="4" fill="#FFFFFF" opacity="0.6" />
+      <!-- Right Hand -->
+      <circle cx="40" cy="-6" r="16" fill="#5AC1C4" stroke="#FFFFFF" stroke-width="3.5" />
+      <circle cx="36" cy="-10" r="4" fill="#FFFFFF" opacity="0.6" />
+
+      <!-- Spark particles of pure speed -->
+      <polygon points="-62,-16 -58,-14 -60,-10 -64,-12" fill="#FDE047" />
+      <polygon points="62,-16 66,-12 60,-10 58,-14" fill="#FDE047" />
+    </g>
+<!-- 7. Tagline Banner: SUDO RESOLVE -->
+    <g transform="translate(0, 92)">
+      <rect x="-80" y="-13" width="160" height="26" rx="13" fill="#022C22" stroke="#10B981" stroke-width="2.5" />
+      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="10.5" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">⚡ SUDO RESOLVE</text>
+    </g>
+  </g>
+</svg>"""
+
+cutline_09 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">
+  {svg_09.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">', '').replace('</svg>', '')}
+  <g id="CutContour" transform="translate(270, 270)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="0" cy="-230" r="22" stroke-width="24" />
+    <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <rect x="-115" y="25" width="230" height="60" rx="16" stroke-width="26" />
+    <circle cx="-70" cy="73" r="14" stroke-width="24" />
+  </g>
+</svg>"""
+
+# ==============================================================================
+# BATCH GENERATION FOR ALL 9 STICKERS
 # ==============================================================================
 items = [
     ("tixdesk-sticker-01-hero-mark", svg_01, cutline_01),
     ("tixdesk-sticker-02-mascot-tixie", svg_02, cutline_02),
-    ("tixdesk-sticker-03-retro-pixel-arcade", svg_03, cutline_03),
+    ("tixdesk-sticker-03-detective-bug-hunter", svg_03, cutline_03),
     ("tixdesk-sticker-04-tixie-caffeine-nightshift", svg_04, cutline_04),
-    ("tixdesk-sticker-05-tixie-sla-firefighter", svg_05, cutline_05),
-    ("tixdesk-sticker-06-cyber-neon-decal", svg_06, cutline_06),
-    ("tixdesk-sticker-07-vintage-postal-stamp", svg_07, cutline_07),
+    ("tixdesk-sticker-05-tixie-on-fire", svg_05, cutline_05),
+    ("tixdesk-sticker-06-tixie-neon", svg_06, cutline_06),
+    ("tixdesk-sticker-07-tixie-rocket-lgtm", svg_07, cutline_07),
+    ("tixdesk-sticker-08-tixie-off-and-on", svg_08, cutline_08),
+    ("tixdesk-sticker-09-tixie-sudo-resolve", svg_09, cutline_09),
 ]
 
 for base_name, svg_content, cutline_content in items:
@@ -984,4 +1273,4 @@ for base_name, svg_content, cutline_content in items:
     pdf_file = os.path.join(PDF_DIR, f"{base_name}-print.pdf")
     subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file], check=True)
 
-print("Generated full 7-sticker collection successfully!")
+print("Generated full 9-sticker collection successfully!")

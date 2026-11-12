@@ -93,7 +93,7 @@
     <circle cx="42" cy="72" r="13" fill="#5AC1C4" stroke="#FFFFFF" stroke-width="3" />
   </g>
 
-  <g id="CutContour" transform="translate(260, 270)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+  <g id="CutContour" transform="translate(260, 265)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <circle cx="0" cy="-230" r="22" stroke-width="24" />
     <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />

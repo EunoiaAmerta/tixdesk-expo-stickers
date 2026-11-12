@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
+  
+  <defs>
+    <linearGradient id="rocketBody7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <linearGradient id="rocketCone7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+
+    <linearGradient id="rocketFlame7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+
+    <linearGradient id="headGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(280, 275) rotate(-15)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <!-- Big Rocket Booster Flame Contour -->
+      <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
+      <!-- Rocket Fins -->
+      <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
+      <polygon points="75,100 120,135 65,70" stroke-width="24" />
+      <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
+      <path d="M -60 -30 Q 0 -130 60 -30 Z" stroke-width="26" />
+
+      <!-- Tixie Head & Headset Contour -->
+      <circle cx="0" cy="-240" r="22" stroke-width="24" />
+      <line x1="0" y1="-160" x2="0" y2="-240" stroke-width="32" />
+      <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke-width="46" />
+      <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
+      <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="63" r="14" stroke-width="24" />
+
+      <!-- Thumbs Up Hand Contour -->
+      <circle cx="160" cy="-20" r="28" stroke-width="24" />
+      <!-- Pill Tag Contour -->
+      <rect x="-85" y="80" width="170" height="28" rx="14" stroke-width="24" />
+    </g>
+
+    <path d="M 160 -50 A 25 25 0 0 0 160 0 L 175 0 L 175 -50 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -50 A 25 25 0 0 1 -160 0 L -175 0 L -175 -50 Z" fill="#FFFFFF" stroke="none" />
+
+    <!-- 2. Rocket Flame Blast -->
+    <path d="M -40 105 C -75 190, -10 240, 0 260 C 10 240, 75 190, 40 105 Z" fill="url(#rocketFlame7)" />
+    <path d="M -25 105 C -45 160, -5 195, 0 215 C 5 195, 45 160, 25 105 Z" fill="#FEF08A" />
+
+    <!-- 3. Rocket Body & Fins -->
+    <!-- Left & Right Fins -->
+    <polygon points="-55,90 -115,125 -55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
+    <polygon points="55,90 115,125 55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
+    <!-- Main Cylinder -->
+    <rect x="-55" y="-30" width="110" height="135" rx="30" fill="url(#rocketBody7)" stroke="#475569" stroke-width="3" />
+    <!-- Rocket Exhaust Nozzle -->
+    <polygon points="-35,105 35,105 25,122 -25,122" fill="#334155" />
+    <line x1="-55" y1="35" x2="55" y2="35" stroke="#38BDF8" stroke-width="5" />
+    
+    <!-- Rocket Porthole Window with TixDesk 'T' -->
+    <circle cx="0" cy="55" r="22" fill="#0F172A" stroke="#38BDF8" stroke-width="4" />
+    <text x="0" y="63" font-family="'Noto Sans', sans-serif" font-size="20" font-weight="900" fill="#38BDF8" text-anchor="middle">T</text>
+
+    <!-- 4. Mascot Tixie Riding Rocket -->
+    <!-- Antenna -->
+    <path d="M 0 -160 L 0 -230" stroke="#334155" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-240" r="20" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
+    <!-- Speed streaks on antenna -->
+    <line x1="-12" y1="-265" x2="-22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+    <line x1="12" y1="-265" x2="22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Head Ticket Shell -->
+    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" fill="url(#headGrad7)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- Visor -->
+    <rect x="-125" y="-135" width="250" height="160" rx="35" fill="#080E1E" stroke="#38BDF8" stroke-width="4" />
+    <path d="M -115 -115 Q 0 -135 115 -115 L 115 -100 Q 0 -120 -115 -100 Z" fill="#FFFFFF" opacity="0.22" />
+
+    <!-- Super Happy Proud Expression: Left Wink, Right Sparkling Anime Eye -->
+    <!-- Left Eye (Playful Confident Wink ;) -->
+    <path d="M -70 -55 Q -55 -40 -40 -55" fill="none" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Right Eye (Sparkling Giant Eye) -->
+    <g transform="translate(55, -55)">
+      <ellipse cx="0" cy="0" rx="25" ry="31" fill="#38BDF8" />
+      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
+      <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#FFFFFF" transform="translate(-6, -7) scale(0.65)" />
+      <circle cx="-6" cy="-8" r="7" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="-75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+    <ellipse cx="75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+
+    <!-- Big Ecstatic Open Mouth (:D) -->
+    <path d="M -18 -18 Q 0 -26 18 -18 Q 20 6 0 10 Q -20 6 -18 -18 Z" fill="#F43F5E" stroke="#38BDF8" stroke-width="3" stroke-linejoin="round" />
+    <ellipse cx="0" cy="4" rx="9" ry="4" fill="#9F1239" />
+
+    <!-- Headset (with black mic joint ring) -->
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
+    
+    <!-- Boom mic with dark slate joint ring -->
+    <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="63" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
+
+    
+    <!-- 5. Thumbs Up Hand (Prominently extended forward!) -->
+    <g id="ThumbsUp" transform="translate(95, -20) rotate(15)">
+      <!-- Big White Die-Cut Backing for Hand -->
+      <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" />
+      <path d="M 0 0 L 0 -26 A 10 10 0 0 1 20 -26 L 20 0 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+
+      <!-- Glove Body -->
+      <circle cx="0" cy="0" r="18" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" />
+      <!-- Extended Thumbs Up -->
+      <path d="M -5 -8 L -5 -28 A 9 9 0 0 1 14 -28 L 14 -6 Z" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" stroke-linejoin="round" />
+      <line x1="4" y1="-24" x2="4" y2="-12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+
+    <!-- 6. Tagline Banner: LGTM // SHIP IT! -->
+    <g transform="translate(0, 95)">
+      <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0F172A" stroke="#10B981" stroke-width="2.5" />
+      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="11" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">🚀 LGTM // SHIP IT!</text>
+    </g>
+  </g>
+
+  <g id="CutContour" transform="translate(280, 275) rotate(-15)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
+    <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
+    <polygon points="75,100 120,135 65,70" stroke-width="24" />
+    <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
+    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" stroke-width="46" />
+    <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
+    <circle cx="-70" cy="63" r="14" stroke-width="24" />
+  </g>
+</svg>

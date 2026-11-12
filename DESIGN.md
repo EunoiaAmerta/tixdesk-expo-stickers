@@ -1,6 +1,6 @@
 # TixDesk Design System & Brand Identity Guide (DESIGN.md)
 
-> **Document Version:** 1.0.0  
+> **Document Version:** 1.1.0  
 > **Status:** Active / Production Standard  
 > **Target Release:** Physical Swag, Tech Expo (Nov 17–18, 2026), Web & Mobile Applications  
 > **Maintainers:** Hiro (Product Owner & Tech Lead) & Zero Two (Design & Architecture Partner)
@@ -108,9 +108,9 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 
 ---
 
-## 6. Official Expo Sticker Suite (Complete 7-Piece Collection)
+## 6. Official Expo Sticker Suite (Complete 9-Piece Collection)
 
-### Section 6A: Core Official Pack (Stickers 01–03)
+### Section 6A: Core Brand Essentials (Stickers 01–03)
 
 ### Sticker 01: "The Pure Hero Die-Cut" (Official Master Mark)
 * **File:** `assets/svg/tixdesk-sticker-01-hero-mark.svg`
@@ -128,29 +128,25 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Kawaii Chibi 2D Vector IP Mascot Head
 * **Refined Anatomy:**
   * **Iconic Head-Only Focus:** The floating robot body, limbs, and thruster have been completely removed to provide an ultra-clean, high-recognition portrait of Tixie.
-  * **Preserved Ticket Notches & Zero Negative Gaps:** The characteristic ticket notches on both flanks are fully preserved, and all negative cavities (including the area behind the earcups and between the microphone boom wire and speech bubble tail) are solidly filled with pure white (`#FFFFFF`), leaving zero dark voids or hollow holes.
-  * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
+  * **Preserved Ticket Notches & Zero Negative Gaps:** The characteristic ticket notches on both flanks are fully preserved, and all negative cavities are solidly filled with pure white (`#FFFFFF`).
+  * **Slate Microphone Joint:** Outer ring of microphone capsule is styled in matching slate-black (`#1E293B`), cleanly connecting to the boom arm without disruptive white ring gaps.
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
-  * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
-  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, and bottom-left speech tail with organic, continuous curves and zero stair-step artifacts.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
-### Sticker 03: "Retro 16-Bit Arcade Gamer" (Pure Retro Ticket Edition)
-* **File:** `assets/svg/tixdesk-sticker-03-retro-pixel-arcade.svg`
+### Sticker 03: "Detective Tixie • Bug Hunter" (QA & Debugging Edition)
+* **File:** `assets/svg/tixdesk-sticker-03-detective-bug-hunter.svg`
 * **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
-* **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
+* **Style:** Narrative Chibi Detective Mascot
 * **Refined Anatomy:**
-  * **Pure Character Focus:** All extraneous gaming HUD/overlays (floating hearts, SLA text banner, and bottom green HP bar) have been eliminated for a clean, bold retro arcade character.
-  * **Preserved Inward Punch Notches:** Symmetrical rectangular ticket punch cutouts directly carved into the royal blue and bright cyan body fields, filled with clean solid white backing.
-  * **Smooth, Flush Die-Cut Outer Perimeter:** The outer white cutline contour runs straight and vertical along the lateral edges without indenting or dipping into the ticket notches, providing an ultra-smooth, sturdy, and peel-resistant border.
-  * **Soft, Slim Die-Cut Margins:** Uniform slim margins ($\approx 10\text{–}12\text{ px}$) on top, bottom, and both flanks, with pillowy rounded corners perfectly harmonizing with Sticker 01.
-  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket, cool 8-bit black sunglasses with specular white gleams, coral blush, and centered pixel snout.
-  * **Clean Baseline & Stepped Tail:** Retro ticket chin and stepped dialogue tail on the bottom-left with dimensional shadow accent.
-* **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
+  * **Sherlock Holmes Aesthetic:** Classic tweed deerstalker cap with brim and top ribbon tie.
+  * **Magnifying Glass Inspection:** Angled brass magnifying glass focusing on an illuminated captured green bug.
+  * **Analytical Expression:** Focused yet adorable eyes, pink blush, and cute mouth.
+  * **Bottom Tagline Badge:** Golden alert banner reading `🔍 BUG HUNTER`.
+* **Target Audience:** QA engineers, SDETs, security researchers, and software testers.
 
 ---
 
-### Section 6B: Expo Expansion Pack (Stickers 04–07)
+### Section 6B: Incident & Ops Pack (Stickers 04–06)
 
 ### Sticker 04: "Powered by Caffeine" (Night Shift On-Call Mascot)
 * **File:** `assets/svg/tixdesk-sticker-04-tixie-caffeine-nightshift.svg`
@@ -163,19 +159,18 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Target Audience:** SREs, DevOps engineers, nocturnal hackers, and coffee enthusiasts.
 
 ### Sticker 05: "Tixie on Fire" (Panicked Mascot Burning // PROD ON FIRE)
-* **File:** `assets/svg/tixdesk-sticker-05-tixie-sla-firefighter.svg`
+* **File:** `assets/svg/tixdesk-sticker-05-tixie-on-fire.svg`
 * **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
 * **Style:** Dynamic Anime Chibi Mascot Emergency
 * **Refined Anatomy:**
-  * **Panicked Facial Expression:** Wide cartoon eyes with warm golden fire highlights and reflection catchlights, screaming mouth, flying cyan sweat droplets, and glowing red blush.
-  * **Roaring Vector Flames:** Dynamic multi-layered flame tongues erupting behind and around Tixie's chassis (crimson `#DC2626` $\rightarrow$ blaze orange `#EA580C` $\rightarrow$ lemon core `#FDE047`), complete with floating sparks and embers.
+  * **Panicked Facial Expression:** Wide cartoon eyes with warm golden fire highlights, screaming mouth, flying cyan sweat droplets, and glowing red blush.
+  * **Unclipped Flame Peaks:** Fully unclipped flame tips with $\approx 59\text{px}$ clearance at top margin, multi-layered vector flames (`#DC2626` $\rightarrow$ `#EA580C` $\rightarrow$ `#FDE047`), floating sparks and embers.
   * **Antenna Spark Wick:** Antenna beacon glowing cherry red with a sparking core like a lit fuse.
   * **Bottom Alert Banner:** High-contrast dark pill banner with bold yellow lettering: `🔥 PROD ON FIRE`.
-  * **Die-Cut Integration:** Continuous, smooth white die-cut border surrounding the flame peaks, headset, and chassis.
-* **Target Audience:** SREs, incident commanders, on-call developers, and sysadmins who know the feeling of production on fire.
+* **Target Audience:** SREs, incident commanders, on-call developers, and sysadmins.
 
 ### Sticker 06: "Tixie Neon (Soft Cyber)" (Cyberpunk Synthwave Mascot)
-* **File:** `assets/svg/tixdesk-sticker-06-cyber-neon-decal.svg`
+* **File:** `assets/svg/tixdesk-sticker-06-tixie-neon.svg`
 * **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
 * **Style:** Soft Cyberpunk / Synthwave Glowing Mascot
 * **Refined Anatomy:**
@@ -183,19 +178,41 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Glowing Synthwave Lines:** Vibrant `#00F0FF` electric cyan and `#FF007F` neon magenta dual-stroke accents along the chassis edges and headset band.
   * **Audio Equalizer Earcups:** Sleek dark slate earcups with pulsing horizontal neon level meter lights.
   * **Screen HUD Telemetry:** Inset translucent visor featuring subtle scanline mesh and crisp monospaced status headers (`TIXIE // NEON-016` and `SYS: NOMINAL`).
-  * **Material Optimization:** Ideal for printing on holographic rainbow vinyl or glossy UV spot coating.
 * **Target Audience:** Cyberpunk lovers, mechanical keyboard builders, synthwave fans, and frontend developers.
 
-### Sticker 07: "Vintage Postal Stamp" (Emerald 200 OK Dispatch & Master Mark)
-* **File:** `assets/svg/tixdesk-sticker-07-vintage-postal-stamp.svg`
-* **Target Size:** $\approx 6.8 \times 7.8\text{ cm}$
-* **Style:** Vintage Banknote Security Engraving & Postmark
+---
+
+### Section 6C: Dev Culture & Operations (Stickers 07–09)
+
+### Sticker 07: "Rocket Tixie • LGTM // SHIP IT!" (Deployment Speed Edition)
+* **File:** `assets/svg/tixdesk-sticker-07-tixie-rocket-lgtm.svg`
+* **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
+* **Style:** Dynamic High-Speed Mascot Action
 * **Refined Anatomy:**
-  * **Perforated Stamp Border:** Scalloped postage perforation teeth framing a deep midnight navy dispatch canvas with guilloche border filigree.
-  * **Authentic Master Mark:** Houses the exact official TixDesk brand mark (`path_01_body` + `path_01_t`) with the genuine Royal Blue to Cyan gradient and symmetrical 40px "T", flanked by 24K gold laurel leaves and 5 CSAT rating stars.
-  * **High-Visibility Emerald Postmark Stamp:** Tilted ($-13^\circ$) emerald green (`#10B981`) cancellation stamp with dark contrast backing and dual drop-shadows, ensuring `★ TICKET RESOLVED ★` and `STATUS: 200 OK` are 100% legible against dark backgrounds.
-  * **Compliance Footer:** `BUSINESS SLA • MET / ISO/IEC 20000 SERVICE DESK COMPLIANT`.
-* **Target Audience:** ITIL/ISO managers, enterprise support leads, quality assurance teams, and philatelic tech collectors.
+  * **Orbital Rocket Thruster:** Tixie dynamically angled at $25^\circ$ ascent riding a high-speed orbital rocket with orange/yellow propulsion flames.
+  * **Wink & Thumbs-Up:** Confident winking anime expression and a distinct robotic thumbs-up hand gesture.
+  * **Bottom Emerald Banner:** Emerald green banner stamped with `🚀 LGTM // SHIP IT!`.
+* **Target Audience:** CI/CD engineers, release engineers, fullstack developers, and DevOps leads.
+
+### Sticker 08: "IT Support Tixie • Off & On" (The Universal Helpdesk Meme)
+* **File:** `assets/svg/tixdesk-sticker-08-tixie-off-and-on.svg`
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Sassy & Sarcastic Support Meme Mascot
+* **Refined Anatomy:**
+  * **Unplugged Power Cable:** Tixie holding a severed black AC power cord with yellow electrical sparks radiating from metal prongs.
+  * **Knowing Winking Expression:** Cheeky wink and confident grin delivering the ultimate IT solution.
+  * **Bottom Banner:** Dark navy banner with bold white text: `🔌 TRY TURNING IT OFF & ON?`.
+* **Target Audience:** IT helpdesk agents, sysadmins, tech support veterans, and network technicians.
+
+### Sticker 09: "Hacker Tixie • Sudo Resolve" (Linux CLI & Terminal Wizard)
+* **File:** `assets/svg/tixdesk-sticker-09-tixie-sudo-resolve.svg`
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Cyber Terminal & Mechanical Keyboard Action
+* **Refined Anatomy:**
+  * **Active Bash Terminal Visor:** OLED visor styled as a Linux terminal window with Mac/GNOME traffic light dots, running `$ sudo resolve --all` with outputs `> [OK] 0 INCIDENTS` and `> SLA: 100% MET`.
+  * **Illuminated Keyboard & Rapid Hands:** Pair of robotic hands furiously typing across a glowing cyan mechanical keyboard.
+  * **Bottom Badge:** Mint green badge with terminal prompt: `>_ SUDO RESOLVE`.
+* **Target Audience:** Linux power users, terminal geeks, backend engineers, and sysadmins.
 
 ---
 

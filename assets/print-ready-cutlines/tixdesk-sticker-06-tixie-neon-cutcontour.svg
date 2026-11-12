@@ -135,7 +135,6 @@
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" stroke-width="26" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>

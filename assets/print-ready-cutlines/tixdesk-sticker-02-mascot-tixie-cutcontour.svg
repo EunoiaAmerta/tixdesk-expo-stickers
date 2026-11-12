@@ -1,17 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
+  
   <defs>
     <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3877F6" />
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
-
     <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#080E1E" />
       <stop offset="100%" stop-color="#111C35" />
     </linearGradient>
   </defs>
-
   <g id="Artwork" transform="translate(260, 275)">
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
       <circle cx="0" cy="-230" r="22" stroke-width="24" />
@@ -22,37 +21,31 @@
       <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
-      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" />
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" stroke-width="12" />
     </g>
-
     <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
     <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
-
-    <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
+    <path d="M 0 -150 L 0 -220" stroke="#334155" stroke-width="12" stroke-linecap="round" />
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
-    <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
-
+    <circle cx="0" cy="-230" r="11" fill="#34D399" />
     <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
-
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
-    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
-
+    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.22" />
     <g transform="translate(-55, -45)">
       <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+      <ellipse cx="0" cy="0" rx="19" ry="25" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7.5" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
     </g>
     <g transform="translate(55, -45)">
       <ellipse cx="0" cy="0" rx="24" ry="30" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <circle cx="-7" cy="-10" r="8" fill="#FFFFFF" />
-      <circle cx="8" cy="10" r="4.5" fill="#FFFFFF" />
+      <ellipse cx="0" cy="0" rx="19" ry="25" fill="#0284C7" />
+      <circle cx="-6" cy="-8" r="7.5" fill="#FFFFFF" />
+      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
     </g>
     <ellipse cx="-75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
     <ellipse cx="75" cy="-5" rx="14" ry="8" fill="#F43F5E" opacity="0.8" />
     <path d="M -16 -4 Q -8 8 0 0 Q 8 8 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
@@ -63,7 +56,6 @@
     <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 
-  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
   <g id="CutContour" transform="translate(260, 275)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <circle cx="0" cy="-230" r="22" stroke-width="24" />
     <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />

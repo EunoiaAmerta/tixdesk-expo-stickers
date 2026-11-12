@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1140" width="1800" height="1140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1620" width="1800" height="1620">
   <defs>
     <radialGradient id="bgGrad" cx="50%" cy="50%" r="75%">
       <stop offset="0%" stop-color="#1E293B" />
-      <stop offset="100%" stop-color="#090D16" />
+      <stop offset="100%" stop-color="#070A11" />
     </radialGradient>
     <filter id="stickerShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.55" />
@@ -14,117 +14,149 @@
   <rect width="100%" height="100%" fill="url(#bgGrad)" />
 
   <!-- Expo Header Badge -->
-  <g transform="translate(900, 58)" text-anchor="middle">
-    <rect x="-360" y="-30" width="720" height="60" rx="30" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+  <g transform="translate(900, 56)" text-anchor="middle">
+    <rect x="-380" y="-30" width="760" height="60" rx="30" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
     <text y="-4" font-family="'Noto Sans', sans-serif" font-size="21" font-weight="900" letter-spacing="3" fill="#38BDF8">TIXDESK OFFICIAL EXPO STICKER COLLECTION</text>
-    <text y="18" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1.5">FULL 7-PIECE PREPRESS SUITE • 300 DPI • SPOT MAGENTA DIE-CUT CONTOURS</text>
+    <text y="18" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1.5">FULL 9-PIECE MASTER SUITE • 300 DPI • SPOT MAGENTA DIE-CUT CONTOURS</text>
   </g>
 
   <!-- =========================================================================
-       ROW 1: CORE OFFICIAL PACK (3 Cards: width 520, height 440)
-       Left margin: 60, Gap: 60 -> X = 60, 640, 1220.
+       ROW 1: CORE ESSENTIALS (Cards 01, 02, 03) - Y = 115
        ========================================================================= -->
   <g transform="translate(60, 115)">
     <!-- Card 01 -->
     <g transform="translate(0, 0)">
-      <rect width="520" height="440" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
       <g transform="translate(260, 26)">
         <rect x="-55" y="-12" width="110" height="24" rx="12" fill="#3877F6" fill-opacity="0.2" stroke="#3877F6" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#60A5FA" text-anchor="middle">CORE 01</text>
       </g>
       <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">HERO MARK (PERMANENT)</text>
       <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Symmetrical 40px T • Gradient Tail Hugging Die-Cut</text>
-      <g transform="translate(260, 270) scale(0.85)" filter="url(#stickerShadow)">
+      <g transform="translate(260, 280) scale(0.85)" filter="url(#stickerShadow)">
         <image href="assets/png/tixdesk-sticker-01-hero-mark-300dpi.png" x="-200" y="-200" width="400" height="400" />
       </g>
     </g>
 
     <!-- Card 02 -->
     <g transform="translate(580, 0)">
-      <rect width="520" height="440" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
       <g transform="translate(260, 26)">
         <rect x="-55" y="-12" width="110" height="24" rx="12" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#34D399" text-anchor="middle">CORE 02</text>
       </g>
       <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">CHIBI TIXIE MASCOT</text>
-      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Preserved Notches • Solid White Gap Fills • Smooth Earcup</text>
-      <g transform="translate(260, 270) scale(0.72)" filter="url(#stickerShadow)">
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Preserved Notches • Slate Mic Joint • Smooth Earcup</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
         <image href="assets/png/tixdesk-sticker-02-mascot-tixie-300dpi.png" x="-240" y="-240" width="480" height="480" />
       </g>
     </g>
 
     <!-- Card 03 -->
     <g transform="translate(1160, 0)">
-      <rect width="520" height="440" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
       <g transform="translate(260, 26)">
-        <rect x="-55" y="-12" width="110" height="24" rx="12" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.2" />
-        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#FBBF24" text-anchor="middle">CORE 03</text>
+        <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.2" />
+        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#FBBF24" text-anchor="middle">EXPANSION 03</text>
       </g>
-      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">RETRO PIXEL ARCADE</text>
-      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Straight Flush Side Die-Cut • Inward Notched 8-Bit Body</text>
-      <g transform="translate(260, 270) scale(0.85)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-03-retro-pixel-arcade-300dpi.png" x="-200" y="-200" width="400" height="400" />
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">DETECTIVE BUG HUNTER</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Sherlock Cap • Magnifying Glass • BUG HUNTER</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-03-detective-bug-hunter-300dpi.png" x="-250" y="-250" width="500" height="500" />
       </g>
     </g>
   </g>
 
   <!-- =========================================================================
-       ROW 2: EXPO EXPANSION PACK (4 Cards: width 398, height 485)
+       ROW 2: INCIDENT & OPS EXPANSION (Cards 04, 05, 06) - Y = 610
        ========================================================================= -->
-  <g transform="translate(48, 595)">
+  <g transform="translate(60, 610)">
     <!-- Card 04 -->
     <g transform="translate(0, 0)">
-      <rect width="398" height="485" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
-      <g transform="translate(199, 26)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#A78BFA" text-anchor="middle">EXPANSION 04</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">POWERED BY CAFFEINE</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Night Shift On-Call • Steaming Mug</text>
-      <g transform="translate(199, 285) scale(0.72)" filter="url(#stickerShadow)">
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">POWERED BY CAFFEINE</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Night Shift On-Call • Steaming Mug</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
         <image href="assets/png/tixdesk-sticker-04-tixie-caffeine-nightshift-300dpi.png" x="-240" y="-240" width="480" height="480" />
       </g>
     </g>
 
     <!-- Card 05 -->
-    <g transform="translate(438, 0)">
-      <rect width="398" height="485" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
-      <g transform="translate(199, 26)">
+    <g transform="translate(580, 0)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#EF4444" fill-opacity="0.2" stroke="#EF4444" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#F87171" text-anchor="middle">EXPANSION 05</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE ON FIRE</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Panicked Mascot • Blazing Prod Fire</text>
-      <g transform="translate(199, 285) scale(0.68)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-05-tixie-sla-firefighter-300dpi.png" x="-270" y="-270" width="540" height="540" />
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE ON FIRE</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Panicked Mascot • Blazing Prod Fire • Unclipped</text>
+      <g transform="translate(260, 280) scale(0.70)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-05-tixie-on-fire-300dpi.png" x="-270" y="-270" width="540" height="540" />
       </g>
     </g>
 
     <!-- Card 06 -->
-    <g transform="translate(876, 0)">
-      <rect width="398" height="485" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
-      <g transform="translate(199, 26)">
+    <g transform="translate(1160, 0)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#EC4899" fill-opacity="0.2" stroke="#EC4899" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#F472B6" text-anchor="middle">EXPANSION 06</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE NEON (SOFT CYBER)</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Glowing Synthwave • Cute Anime Visor</text>
-      <g transform="translate(199, 285) scale(0.70)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-06-cyber-neon-decal-300dpi.png" x="-260" y="-260" width="520" height="520" />
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">TIXIE NEON (SOFT CYBER)</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Glowing Synthwave • Cute Anime Visor</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-06-tixie-neon-300dpi.png" x="-260" y="-260" width="520" height="520" />
       </g>
     </g>
+  </g>
 
+  <!-- =========================================================================
+       ROW 3: DEV CULTURE & DEPLOY EXPANSION (Cards 07, 08, 09) - Y = 1105
+       ========================================================================= -->
+  <g transform="translate(60, 1105)">
     <!-- Card 07 -->
-    <g transform="translate(1314, 0)">
-      <rect width="398" height="485" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
-      <g transform="translate(199, 26)">
+    <g transform="translate(0, 0)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#34D399" text-anchor="middle">EXPANSION 07</text>
       </g>
-      <text x="199" y="66" font-family="'Noto Sans', sans-serif" font-size="15" font-weight="900" fill="#F8FAFC" text-anchor="middle">VINTAGE POSTAL STAMP</text>
-      <text x="199" y="86" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Official TixDesk Mark • High-Vis 200 OK Stamp</text>
-      <g transform="translate(199, 285) scale(0.70)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-07-vintage-postal-stamp-300dpi.png" x="-230" y="-230" width="460" height="460" />
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">ROCKET TIXIE (LGTM)</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Speed Rocket • Thumbs Up • LGTM // SHIP IT!</text>
+      <g transform="translate(260, 280) scale(0.70)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-07-tixie-rocket-lgtm-300dpi.png" x="-270" y="-270" width="540" height="540" />
+      </g>
+    </g>
+
+    <!-- Card 08 -->
+    <g transform="translate(580, 0)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
+        <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#0EA5E9" fill-opacity="0.2" stroke="#0EA5E9" stroke-width="1.2" />
+        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#38BDF8" text-anchor="middle">EXPANSION 08</text>
+      </g>
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">IT SUPPORT TIXIE (OFF &amp; ON)</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Unplugged Cable &amp; Sparks • TRY TURNING OFF &amp; ON?</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-08-tixie-off-and-on-300dpi.png" x="-250" y="-250" width="500" height="500" />
+      </g>
+    </g>
+
+    <!-- Card 09 -->
+    <g transform="translate(1160, 0)">
+      <rect width="520" height="460" rx="18" fill="#111827" stroke="#1E293B" stroke-width="1.5" />
+      <g transform="translate(260, 26)">
+        <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#14B8A6" fill-opacity="0.2" stroke="#14B8A6" stroke-width="1.2" />
+        <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#2DD4BF" text-anchor="middle">EXPANSION 09</text>
+      </g>
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">HACKER TIXIE (SUDO RESOLVE)</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Linux CLI Terminal • Fast Typing • SUDO RESOLVE</text>
+      <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
+        <image href="assets/png/tixdesk-sticker-09-tixie-sudo-resolve-300dpi.png" x="-250" y="-250" width="500" height="500" />
       </g>
     </g>
   </g>
