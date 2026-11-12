@@ -125,10 +125,10 @@ cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" w
 </svg>"""
 
 # ==============================================================================
-# 2. STICKER 02: KAWAII CHIBI MASCOT HEAD (SEAMLESS INTEGRATED HEADSET EDITION)
-# - Floating robot body removed for iconic focus on the character face!
-# - Dark gaps near the headset/notches eliminated completely:
-#   Head contour extends smoothly behind earcups with 100% solid white border.
+# 2. STICKER 02: KAWAII CHIBI MASCOT HEAD (NOTCHES PRESERVED, WHITE GAP FILL)
+# - Iconic ticket-shaped head with notches preserved adjacent to headset!
+# - Gap between notch and headset earcups is filled with solid white (#FFFFFF),
+#   eliminating dark background show-through while retaining ticket notches.
 # - Thinned-down white die-cut border closely hugging the antenna, headset,
 #   earcups, mic, and speech tail (matching Sticker 01 thinness).
 # ==============================================================================
@@ -147,16 +147,19 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
   </defs>
 
   <g id="Artwork" transform="translate(260, 275)">
-    <!-- 1. Seamless White Die-Cut Contour (Zero Gaps, bridges solidly behind earcups) -->
+    <!-- 1. Tight White Die-Cut Contour matching Sticker 01 (Zero Gaps, bridges solidly behind earcups) -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
       <circle cx="0" cy="-230" r="22" stroke-width="24" />
       <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
       <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <!-- Solid white bridge in the gaps between ticket notches and headset earcups -->
+      <path d="M 160 -45 A 25 25 0 0 0 160 15 L 185 15 L 185 -45 Z" />
+      <path d="M -160 -45 A 25 25 0 0 1 -160 15 L -185 15 L -185 -45 Z" />
     </g>
 
     <!-- 2. Antenna -->
@@ -164,8 +167,8 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
     <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
 
-    <!-- 3. Head Ticket Shell (Clean seamless connection behind earcups) -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+    <!-- 3. Head Ticket Shell (Preserves iconic ticket notches!) -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
     <!-- 4. Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
@@ -221,9 +224,11 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
       <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <path d="M 160 -45 A 25 25 0 0 0 160 15 L 185 15 L 185 -45 Z" />
+      <path d="M -160 -45 A 25 25 0 0 1 -160 15 L -185 15 L -185 -45 Z" />
     </g>
 
     <!-- Antenna -->
@@ -232,7 +237,7 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
 
     <!-- Head Ticket Shell -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
     <!-- Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
@@ -273,7 +278,7 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>"""
@@ -401,4 +406,4 @@ for base_name, svg_content, cutline_content in items:
     pdf_file = os.path.join(PDF_DIR, f"{base_name}-print.pdf")
     subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file], check=True)
 
-print("Generated full pack with permanent Sticker 01, seamless Mascot Head Sticker 02, and pure Retro Arcade Sticker 03!")
+print("Generated full pack with permanent Sticker 01, notch-preserved white-gap Mascot Sticker 02, and pure Retro Arcade Sticker 03!")

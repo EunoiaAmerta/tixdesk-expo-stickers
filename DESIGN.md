@@ -126,7 +126,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Kawaii Chibi 2D Vector IP Mascot Head
 * **Refined Anatomy:**
   * **Iconic Head-Only Focus:** The floating robot body, limbs, and thruster have been completely removed to provide an ultra-clean, high-recognition portrait of Tixie.
-  * **Seamless Side Connection:** Zero dark gaps near the headset. The ticket body contour extends cleanly behind both earcups, creating an unbroken solid silhouette.
+  * **Preserved Ticket Notches & Solid White Gap Fill:** The characteristic ticket notches on the left and right sides are fully preserved, while the negative space between the notches and the headset earcups is filled with solid white (`#FFFFFF`), eliminating any dark background show-through or hollow holes.
   * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.

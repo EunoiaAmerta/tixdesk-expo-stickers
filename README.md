@@ -48,7 +48,7 @@ tixdesk-expo-stickers/
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
 ### 2. Tixie • The Cyber-Bot Mascot (`~7.0 × 7.0 cm`) — Pure Iconic Head Edition
-* **Concept:** The official TixDesk AI support bot mascot portrait. Focused purely on Tixie's iconic ticket-shaped head with curved OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and antenna. The side contours behind the earcups are fully seamless with zero dark gaps, and the white die-cut contour is thinned down to match the exact slimness of Sticker 01.
+* **Concept:** The official TixDesk AI support bot mascot portrait. Focused purely on Tixie's iconic ticket-shaped head with curved OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and antenna. The ticket notches on both flanks are preserved, and the gap between each notch and earcup is filled with solid white to eliminate dark background show-through. The white die-cut contour is thinned down to match the exact slimness of Sticker 01.
 * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
 ### 3. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pure Retro Character Edition
