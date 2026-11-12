@@ -70,7 +70,6 @@
 " fill="#FFFFFF" />
   </g>
 
-  <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
   <g id="CutContour" transform="translate(220, 195)">
     <path d="
   M 0 -105

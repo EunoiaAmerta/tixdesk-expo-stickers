@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <defs>
+    <linearGradient id="cyberNeon6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#FF007F" />
+    </linearGradient>
+
+    <radialGradient id="carbonPlate6" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="70%" stop-color="#070A12" />
+      <stop offset="100%" stop-color="#020408" />
+    </radialGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(230, 215)">
+    <!-- 1. White Die-Cut Contour -->
+    <path id="WhiteBorder" d="
+  M 0 -115
+  L 125 -115
+  A 26 26 0 0 1 151 -89
+  L 151 -35
+  A 20 20 0 0 0 151 5
+  L 151 55
+  A 26 26 0 0 1 125 81
+  L 20 81
+  L -20 81
+  L -70 142
+  A 12 12 0 0 1 -82 136
+  L -82 81
+  L -125 81
+  A 26 26 0 0 1 -151 55
+  L -151 5
+  A 20 20 0 0 0 -151 -35
+  L -151 -89
+  A 26 26 0 0 1 -125 -115
+  Z
+" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- 2. Dark Carbon Cyberplate Ticket Body -->
+    <path id="CyberBody" d="
+  M 0 -115
+  L 125 -115
+  A 26 26 0 0 1 151 -89
+  L 151 -35
+  A 20 20 0 0 0 151 5
+  L 151 55
+  A 26 26 0 0 1 125 81
+  L 20 81
+  L -20 81
+  L -70 142
+  A 12 12 0 0 1 -82 136
+  L -82 81
+  L -125 81
+  A 26 26 0 0 1 -151 55
+  L -151 5
+  A 20 20 0 0 0 -151 -35
+  L -151 -89
+  A 26 26 0 0 1 -125 -115
+  Z
+" fill="url(#carbonPlate6)" stroke="url(#cyberNeon6)" stroke-width="3.5" />
+
+    <!-- 3. Isometric Cyber Mesh Lines -->
+    <g opacity="0.18" stroke="#00F0FF" stroke-width="1">
+      <line x1="-130" y1="-80" x2="130" y2="-80" />
+      <line x1="-130" y1="-40" x2="130" y2="-40" />
+      <line x1="-130" y1="0" x2="130" y2="0" />
+      <line x1="-130" y1="40" x2="130" y2="40" />
+      <line x1="-90" y1="-100" x2="-90" y2="70" />
+      <line x1="-45" y1="-100" x2="-45" y2="70" />
+      <line x1="45" y1="-100" x2="45" y2="70" />
+      <line x1="90" y1="-100" x2="90" y2="70" />
+    </g>
+
+    <!-- 4. Glowing PCB Circuit Traces -->
+    <path d="M -135 -70 L -95 -70 L -75 -50 L -45 -50" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="-135" cy="-70" r="4" fill="#00F0FF" />
+    <circle cx="-45" cy="-50" r="3.5" fill="#A855F7" />
+
+    <path d="M -135 40 L -95 40 L -70 15 L -35 15" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="-135" cy="40" r="3.5" fill="#00F0FF" />
+
+    <path d="M -75 110 L -65 95 L -35 95" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="-75" cy="110" r="3" fill="#00F0FF" />
+
+    <path d="M 135 -70 L 95 -70 L 75 -50 L 45 -50" fill="none" stroke="#FF007F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="135" cy="-70" r="4" fill="#FF007F" />
+    <circle cx="45" cy="-50" r="3.5" fill="#A855F7" />
+
+    <path d="M 135 40 L 95 40 L 70 15 L 35 15" fill="none" stroke="#FF007F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="135" cy="40" r="3.5" fill="#FF007F" />
+
+    <!-- 5. RADIANT CENTRAL 'T' CORE -->
+    <path d="M -65 -60 L 65 -60 A 18 18 0 0 1 65 -24 L 20 -24 L 20 46 L -20 46 L -20 -24 L -65 -24 A 18 18 0 0 1 -65 -60 Z" fill="none" stroke="#00F0FF" stroke-width="7" opacity="0.4" stroke-linejoin="round" />
+    <path d="M -65 -60 L 65 -60 A 18 18 0 0 1 65 -24 L 20 -24 L 20 46 L -20 46 L -20 -24 L -65 -24 A 18 18 0 0 1 -65 -60 Z" fill="url(#cyberNeon6)" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" />
+    
+    <line x1="-50" y1="-42" x2="50" y2="-42" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    <line x1="0" y1="-42" x2="0" y2="36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    <circle cx="0" cy="-42" r="4" fill="#FFFFFF" />
+
+    <!-- 6. Stencil Tech HUD Typography -->
+    <text x="0" y="-95" font-family="'Noto Sans', monospace, sans-serif" font-size="8.5" font-weight="800" fill="#00F0FF" letter-spacing="2" text-anchor="middle">SYS: NOMINAL // SLA: 100%</text>
+    <text x="0" y="68" font-family="'Noto Sans', monospace, sans-serif" font-size="8.5" font-weight="800" fill="#FF007F" letter-spacing="2" text-anchor="middle">UNIT-016 // CORE-OK</text>
+
+    <path d="M -125 -95 L -138 -95 L -138 -82" fill="none" stroke="#00F0FF" stroke-width="2" />
+    <path d="M 125 -95 L 138 -95 L 138 -82" fill="none" stroke="#FF007F" stroke-width="2" />
+    <path d="M 125 65 L 138 65 L 138 52" fill="none" stroke="#FF007F" stroke-width="2" />
+
+    <text x="-136" y="-10" font-family="monospace" font-size="6" font-weight="700" fill="#64748B">0101</text>
+    <text x="122" y="-10" font-family="monospace" font-size="6" font-weight="700" fill="#64748B">1010</text>
+  </g>
+</svg>

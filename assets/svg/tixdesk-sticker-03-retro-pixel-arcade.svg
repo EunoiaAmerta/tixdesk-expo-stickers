@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
   <g id="Artwork" transform="translate(220, 205)">
-    <!-- 1. Soft, Slim, Uniform White die-cut contour (Matching Sticker 01 slimness, NO notch indent) -->
+    <!-- 1. Soft, Slim, Uniform White die-cut contour -->
     <path id="WhiteBorder" d="
   M -130 -135
   L 130 -135
@@ -17,7 +17,6 @@
 " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
 
     <!-- 2. Ticket Body with Authentic Inward Punch Notches -->
-    <!-- Left Half: Royal Blue #3877F6 with inward notch -->
     <path d="
   M -130 -135
   L 0 -135
@@ -34,8 +33,6 @@
   Q -150 -135, -130 -135
   Z
 " fill="#3877F6" />
-    
-    <!-- Right Half: Bright Cyan #5AC1C4 with inward notch -->
     <path d="
   M 0 -135
   L 130 -135
@@ -49,8 +46,6 @@
   L 0 95
   Z
 " fill="#5AC1C4" />
-
-    <!-- Stepped Tail shadow accent at bottom-left -->
     <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
 
     <!-- 3. Pixel Sunglasses & Face -->

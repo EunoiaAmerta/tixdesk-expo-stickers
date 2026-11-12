@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
   <g id="Artwork" transform="translate(220, 205)">
-    <!-- 1. Soft, Slim, Uniform White die-cut contour -->
     <path id="WhiteBorder" d="
   M -130 -135
   L 130 -135
@@ -15,8 +14,6 @@
   Q -150 -135, -130 -135
   Z
 " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
-
-    <!-- 2. Ticket Body with Inward Punch Notches -->
     <path d="
   M -130 -135
   L 0 -135
@@ -48,7 +45,6 @@
 " fill="#5AC1C4" />
     <polygon points="-120,95 -140,135 -102,95" fill="#2563EB" />
 
-    <!-- 3. Pixel Sunglasses & Face -->
     <g transform="translate(0, -20)">
       <rect x="-115" y="-20" width="95" height="45" fill="#0F172A" />
       <rect x="20" y="-20" width="95" height="45" fill="#0F172A" />

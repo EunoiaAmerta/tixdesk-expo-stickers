@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  
+  <defs>
+    <linearGradient id="stampBg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="cyanGold7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(230, 230)">
+    <!-- 1. White Die-Cut Base -->
+    <rect x="-150" y="-175" width="300" height="350" rx="20" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+
+    <!-- 2. Main Postage Stamp Inner Canvas -->
+    <rect x="-140" y="-165" width="280" height="330" rx="14" fill="url(#stampBg7)" stroke="#F59E0B" stroke-width="3" />
+
+    <!-- Vintage Engraved Banknote Guilloche Double Border -->
+    <rect x="-132" y="-157" width="264" height="314" rx="10" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.8" />
+    <rect x="-126" y="-151" width="252" height="302" rx="8" fill="none" stroke="#64748B" stroke-width="1" opacity="0.5" />
+
+    <circle cx="-122" cy="-147" r="3" fill="#F59E0B" />
+    <circle cx="122" cy="-147" r="3" fill="#F59E0B" />
+    <circle cx="-122" cy="147" r="3" fill="#F59E0B" />
+    <circle cx="122" cy="147" r="3" fill="#F59E0B" />
+
+    <!-- Top Postal Header -->
+    <text x="0" y="-128" font-family="'Noto Sans', serif, sans-serif" font-size="11" font-weight="900" fill="#F8FAFC" letter-spacing="3" text-anchor="middle">TIXDESK OFFICIAL DISPATCH</text>
+    <text x="0" y="-114" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="700" fill="#94A3B8" letter-spacing="2" text-anchor="middle">★ GLOBAL HELPDESK STANDARD ★</text>
+
+    <!-- Nominal Value in Stamp Corners -->
+    <text x="-105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#38BDF8">200</text>
+    <text x="-105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#34D399">OK</text>
+    
+    <text x="105" y="-90" font-family="'Noto Sans', monospace, sans-serif" font-size="14" font-weight="900" fill="#38BDF8" text-anchor="end">SLA</text>
+    <text x="105" y="-78" font-family="'Noto Sans', monospace, sans-serif" font-size="8" font-weight="800" fill="#34D399" text-anchor="end">MET</text>
+
+    <!-- 3. Central Medallion: Golden Wreath & TixDesk Ticket Emblem -->
+    <g transform="translate(0, -10)">
+      <g fill="none" stroke="url(#goldGrad7)" stroke-width="3" stroke-linecap="round">
+        <path d="M -15 65 C -65 50, -75 -25, -20 -60" />
+        <path d="M 15 65 C 65 50, 75 -25, 20 -60" />
+      </g>
+      <g fill="url(#goldGrad7)">
+        <ellipse cx="-35" cy="-50" rx="7" ry="4" transform="rotate(35, -35, -50)" />
+        <ellipse cx="-55" cy="-28" rx="8" ry="4.5" transform="rotate(15, -55, -28)" />
+        <ellipse cx="-62" cy="0" rx="8" ry="4.5" transform="rotate(-5, -62, 0)" />
+        <ellipse cx="-55" cy="28" rx="8" ry="4.5" transform="rotate(-25, -55, 28)" />
+        <ellipse cx="-35" cy="52" rx="7" ry="4" transform="rotate(-45, -35, 52)" />
+
+        <ellipse cx="35" cy="-50" rx="7" ry="4" transform="rotate(-35, 35, -50)" />
+        <ellipse cx="55" cy="-28" rx="8" ry="4.5" transform="rotate(-15, 55, -28)" />
+        <ellipse cx="62" cy="0" rx="8" ry="4.5" transform="rotate(5, 62, 0)" />
+        <ellipse cx="55" cy="28" rx="8" ry="4.5" transform="rotate(25, 55, 28)" />
+        <ellipse cx="35" cy="52" rx="7" ry="4" transform="rotate(45, 35, 52)" />
+      </g>
+
+      <g transform="scale(0.48) translate(0, -15)">
+        <path d="
+          M 0 -75
+          L 80 -75
+          A 20 20 0 0 1 100 -55
+          L 100 -25
+          A 15 15 0 0 0 100 5
+          L 100 35
+          A 20 20 0 0 1 80 55
+          L -50 55
+          L -90 95
+          A 10 10 0 0 1 -100 90
+          L -100 55
+          A 20 20 0 0 1 -100 -55
+          L -100 -25
+          A 15 15 0 0 0 -100 5
+          Z
+        " fill="url(#cyanGold7)" stroke="#FFFFFF" stroke-width="4" />
+        <path d="
+          M -45 -40
+          L 45 -40
+          A 12 12 0 0 1 45 -16
+          L 15 -16
+          L 15 45
+          L -15 45
+          L -15 -16
+          L -45 -16
+          A 12 12 0 0 1 -45 -40
+          Z
+        " fill="#FFFFFF" />
+      </g>
+
+      <g transform="translate(0, 48)" fill="url(#goldGrad7)">
+        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-44, 0) scale(1.1)" />
+        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(-22, 0) scale(1.1)" />
+        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(0, 0) scale(1.3)" />
+        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(22, 0) scale(1.1)" />
+        <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" transform="translate(44, 0) scale(1.1)" />
+      </g>
+      <text x="0" y="68" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="800" fill="#FDE047" letter-spacing="1.5" text-anchor="middle">100% CSAT SATISFACTION</text>
+    </g>
+
+    <!-- Bottom Postal Certification Strip -->
+    <rect x="-115" y="95" width="230" height="35" rx="6" fill="#0284C7" opacity="0.2" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="0" y="110" font-family="'Noto Sans', monospace, sans-serif" font-size="9" font-weight="900" fill="#38BDF8" letter-spacing="2" text-anchor="middle">BUSINESS SLA • MET</text>
+    <text x="0" y="122" font-family="'Noto Sans', sans-serif" font-size="7" font-weight="700" fill="#94A3B8" letter-spacing="1" text-anchor="middle">ISO/IEC 20000 SERVICE DESK COMPLIANT</text>
+
+    <!-- 4. OFFICIAL RUBBER POSTMARK CANCELLATION STAMP -->
+    <g transform="rotate(-13) translate(-8, 5)">
+      <rect x="-105" y="-26" width="210" height="52" rx="10" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-width="3" stroke-dasharray="14,2" />
+      <rect x="-100" y="-21" width="200" height="42" rx="7" fill="none" stroke="#EF4444" stroke-width="1.5" />
+
+      <text x="0" y="-4" font-family="'Noto Sans', sans-serif" font-size="14" font-weight="900" fill="#EF4444" letter-spacing="2" text-anchor="middle">★ TICKET RESOLVED ★</text>
+      <text x="0" y="12" font-family="'Noto Sans', monospace, sans-serif" font-size="10" font-weight="900" fill="#FFFFFF" letter-spacing="2.5" text-anchor="middle">STATUS: 200 OK</text>
+    </g>
+
+    <!-- Wavy Cancellation Waves -->
+    <g stroke="#EF4444" stroke-width="2" fill="none" opacity="0.75" transform="translate(50, -110) rotate(-13)">
+      <path d="M 0 0 C 10 -6, 20 6, 30 0 C 40 -6, 50 6, 60 0 C 70 -6, 80 6, 90 0" />
+      <path d="M 0 8 C 10 2, 20 14, 30 8 C 40 2, 50 14, 60 8 C 70 2, 80 14, 90 8" />
+      <path d="M 0 16 C 10 10, 20 22, 30 16 C 40 10, 50 22, 60 16 C 70 10, 80 22, 90 16" />
+    </g>
+  </g>
+
+  <g id="CutContour" transform="translate(230, 230)">
+    <rect x="-150" y="-175" width="300" height="350" rx="20" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" />
+  </g>
+</svg>

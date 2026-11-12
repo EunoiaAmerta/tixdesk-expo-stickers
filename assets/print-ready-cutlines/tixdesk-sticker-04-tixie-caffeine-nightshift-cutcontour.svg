@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
+  
+  <defs>
+    <linearGradient id="headGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3877F6" />
+      <stop offset="50%" stop-color="#4CA2EA" />
+      <stop offset="100%" stop-color="#5AC1C4" />
+    </linearGradient>
+    <linearGradient id="screenGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080E1E" />
+      <stop offset="100%" stop-color="#111C35" />
+    </linearGradient>
+    <linearGradient id="mugGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="coffeeGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+  </defs>
+
+  <g id="Artwork" transform="translate(260, 270)">
+    <!-- 1. White Die-Cut Contour -->
+    <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="0" cy="-230" r="22" stroke-width="24" />
+      <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+      <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
+      <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
+      <circle cx="-70" cy="73" r="14" stroke-width="24" />
+      <path d="M -190 -10 C -190 60, -160 70, -160 70 L -160 10 L -160 -10 Z" stroke-width="12" />
+      <rect x="-45" y="35" width="90" height="75" rx="18" stroke-width="24" />
+      <path d="M 40 45 C 68 45, 68 85, 40 85" fill="none" stroke-width="22" />
+      <path d="M -20 25 C -25 10, -15 -5, -20 -20" fill="none" stroke-width="18" />
+      <path d="M 0 25 C -5 5, 10 -10, 0 -25" fill="none" stroke-width="20" />
+      <path d="M 20 25 C 15 10, 25 -5, 20 -20" fill="none" stroke-width="18" />
+    </g>
+
+    <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
+    <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
+
+    <!-- Antenna with Warm Amber Beacon -->
+    <path d="M 0 -150 L 0 -220" stroke="#64748B" stroke-width="12" stroke-linecap="round" />
+    <circle cx="0" cy="-230" r="22" fill="#F59E0B" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="0" cy="-230" r="11" fill="#FCD34D" />
+
+    <!-- Head Ticket Shell -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad4)" stroke="#1D4ED8" stroke-width="2.5" />
+
+    <!-- Visor -->
+    <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad4)" stroke="#38BDF8" stroke-width="4" />
+    <path d="M -115 -105 Q 0 -125 115 -105 L 115 -90 Q 0 -110 -115 -90 Z" fill="#FFFFFF" opacity="0.24" />
+
+    <!-- Night Shift Sleepy-Cute Eyes & Smile -->
+    <path d="M -75 -42 Q -55 -22, -35 -42" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <path d="M -65 -30 Q -55 -22, -45 -30" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+    
+    <path d="M 35 -42 Q 55 -22, 75 -42" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <path d="M 45 -30 Q 55 -22, 65 -30" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+
+    <ellipse cx="-70" cy="-15" rx="16" ry="9" fill="#F43F5E" opacity="0.85" />
+    <ellipse cx="70" cy="-15" rx="16" ry="9" fill="#F43F5E" opacity="0.85" />
+    <path d="M -16 -12 Q -8 0 0 -8 Q 8 0 16 -12" fill="none" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Headset -->
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
+    <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#FFFFFF" stroke-width="4" />
+
+    <!-- Steaming Coffee Mug -->
+    <path d="M -18 22 C -23 10, -13 -2, -18 -15" fill="none" stroke="#E2E8F0" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
+    <path d="M 0 20 C -6 6, 8 -6, 0 -20" fill="none" stroke="#E2E8F0" stroke-width="5.5" stroke-linecap="round" opacity="0.85" />
+    <path d="M 18 22 C 13 10, 23 -2, 18 -15" fill="none" stroke="#E2E8F0" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
+
+    <rect x="-42" y="38" width="84" height="70" rx="16" fill="url(#mugGrad4)" stroke="#38BDF8" stroke-width="4" />
+    <path d="M 40 48 C 65 48, 65 80, 40 80" fill="none" stroke="#38BDF8" stroke-width="7" stroke-linecap="round" />
+    
+    <ellipse cx="0" cy="38" rx="36" ry="8" fill="url(#coffeeGrad4)" stroke="#38BDF8" stroke-width="3" />
+    <path d="M 0 34 C -6 38, -6 44, 0 45 C 6 44, 6 38, 0 34 Z" fill="#FEF08A" />
+
+    <polygon points="0,58 12,65 12,79 0,86 -12,79 -12,65" fill="#F59E0B" />
+    <text x="0" y="77" font-family="'Noto Sans', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">T</text>
+
+    <circle cx="-42" cy="72" r="13" fill="#3877F6" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="42" cy="72" r="13" fill="#5AC1C4" stroke="#FFFFFF" stroke-width="3" />
+  </g>
+
+  <g id="CutContour" transform="translate(260, 270)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="0" cy="-230" r="22" stroke-width="24" />
+    <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
+    <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
+    <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <circle cx="-70" cy="73" r="14" stroke-width="24" />
+    <rect x="-45" y="35" width="90" height="75" rx="18" stroke-width="24" />
+  </g>
+</svg>

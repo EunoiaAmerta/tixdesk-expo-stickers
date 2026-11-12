@@ -108,7 +108,9 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 
 ---
 
-## 6. Official Expo Sticker Trio (Final Production Pack)
+## 6. Official Expo Sticker Suite (Complete 7-Piece Collection)
+
+### Section 6A: Core Official Pack (Stickers 01–03)
 
 ### Sticker 01: "The Pure Hero Die-Cut" (Official Master Mark)
 * **File:** `assets/svg/tixdesk-sticker-01-hero-mark.svg`
@@ -145,6 +147,52 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
   * **Pixel Sprite:** Split-tone blue/cyan pixel ticket, cool 8-bit black sunglasses with specular white gleams, coral blush, and centered pixel snout.
   * **Clean Baseline & Stepped Tail:** Retro ticket chin and stepped dialogue tail on the bottom-left with dimensional shadow accent.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
+
+---
+
+### Section 6B: Expo Expansion Pack (Stickers 04–07)
+
+### Sticker 04: "Powered by Caffeine" (Night Shift On-Call Mascot)
+* **File:** `assets/svg/tixdesk-sticker-04-tixie-caffeine-nightshift.svg`
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Cute Chibi Narrative Mascot
+* **Refined Anatomy:**
+  * **Sleepy-Sweet Expression:** Curved restful closed eyes with delicate fatigue accent lines and a peaceful smile, capturing the relatable developer night shift mood.
+  * **Amber Beacon & Ceramic Coffee Mug:** Warm amber glowing antenna light, paired with a dark slate mug featuring a golden TixDesk "T" badge and aromatic rising steam waves.
+  * **Die-Cut Integration:** White contour smoothly encloses the steam wisps, coffee mug handle, and headset without micro-slits.
+* **Target Audience:** SREs, DevOps engineers, nocturnal hackers, and coffee enthusiasts.
+
+### Sticker 05: "SLA Incident Firefighter" (Emergency Incident Response)
+* **File:** `assets/svg/tixdesk-sticker-05-tixie-sla-firefighter.svg`
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Dynamic Anime Chibi Emergency
+* **Refined Anatomy:**
+  * **Panic Mode Expression:** High-urgency anime `> <` eyes, flying sweat beads, and a rotating red emergency beacon on the antenna with flash bursts.
+  * **Zero Downtime Extinguisher:** Crimson canister holding a crisp white label with bold red/slate text: `ZERO DOWNTIME`. Discharge nozzle releases fluffy blue/white cooling foam clouds.
+  * **Clean Side Grip:** Chibi robot hands grip the extinguisher strictly from the outer edges, ensuring the central `ZERO DOWNTIME` label is 100% unobstructed.
+* **Target Audience:** Incident response commanders, on-call teams, sysadmins, and production engineers.
+
+### Sticker 06: "Holographic Cyber Neon Decal" (Carbon Synthwave)
+* **File:** `assets/svg/tixdesk-sticker-06-cyber-neon-decal.svg`
+* **Target Size:** $\approx 7.2 \times 6.5\text{ cm}$
+* **Style:** High-Tech Cyberpunk HUD / Circuit Decal
+* **Refined Anatomy:**
+  * **Dark Carbon Cyberplate:** Deep slate-black brushed composite finish with subtle isometric grid traces and corner bracket accents.
+  * **Neon PCB Traces & Glowing Core:** Intersecting `#00F0FF` cyan and `#FF007F` magenta circuitry leading into a multi-layered glowing "T" glyph.
+  * **Unobstructed Stencil Telemetry:** Top terminal reads `SYS: NOMINAL // SLA: 100%`. The bottom terminal reads `UNIT-016 // CORE-OK` in neon pink monospace, positioned with generous clearance below the central "T" stem.
+  * **Material Optimization:** Engineered specifically for physical printing on holographic foil/chrome vinyl.
+* **Target Audience:** Cyberpunk fans, mechanical keyboard builders, Linux rice enthusiasts, and hardware modders.
+
+### Sticker 07: "Vintage Postal Stamp Badge" (Official 200 OK Dispatch)
+* **File:** `assets/svg/tixdesk-sticker-07-vintage-postal-stamp.svg`
+* **Target Size:** $\approx 6.8 \times 7.8\text{ cm}$
+* **Style:** Vintage Banknote Security Engraving & Postmark
+* **Refined Anatomy:**
+  * **Perforated Stamp Border:** Scalloped postage perforation teeth ($R = 6\text{ px}$) framing a deep navy dispatch canvas.
+  * **24K Golden Wreath & CSAT:** Symmetrical golden laurel wreath framing the TixDesk logo mark, anchored by 5 golden CSAT rating stars and `100% CSAT SATISFACTION`.
+  * **Authentic Red Postmark Stamp:** Tilted ($-13^\circ$) crimson rubber ink stamp reading `★ TICKET RESOLVED ★ STATUS: 200 OK` with wavy postal cancellation lines.
+  * **Compliance Footer:** `BUSINESS SLA • MET / ISO/IEC 20000 SERVICE DESK COMPLIANT`.
+* **Target Audience:** ITIL/ISO managers, enterprise support leads, quality assurance teams, and vintage stamp collectors.
 
 ---
 

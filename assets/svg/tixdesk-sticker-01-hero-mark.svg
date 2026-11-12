@@ -8,7 +8,6 @@
   </defs>
 
   <g id="Artwork" transform="translate(220, 195)">
-    <!-- 1. White die-cut contour that closely follows design curves & tail -->
     <path id="WhiteBorder" d="
   M 0 -105
   L 120 -105
@@ -30,8 +29,6 @@
   A 28 28 0 0 1 -120 -105
   Z
 " fill="#FFFFFF" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round" />
-    
-    <!-- 2. Official Blue/Cyan Gradient body (tail is gradient) -->
     <path id="TicketBody" d="
   M 0 -105
   L 120 -105
@@ -59,8 +56,6 @@
   A 28 28 0 0 1 -120 -105
   Z
 " fill="url(#tixdeskGrad)" />
-
-    <!-- 3. SOLID WHITE SYMMETRICAL 'T' GLYPH (100% solid white, stem = bar = 40px) -->
     <path id="TGlyph" d="
   M -66 -64
   L 66 -64
