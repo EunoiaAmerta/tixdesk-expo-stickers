@@ -20,40 +20,48 @@ tixdesk-expo-stickers/
 ├── assets/
 │   ├── svg/                                     # Source Vector Art (RGB Web & Screen)
 │   │   ├── tixdesk-sticker-01-hero-mark.svg
-│   │   ├── tixdesk-sticker-02-support-hero-badge.svg
-│   │   └── tixdesk-sticker-03-brand-lockup.svg
+│   │   ├── tixdesk-sticker-02-mascot-tixie.svg
+│   │   ├── tixdesk-sticker-03-cyber-mecha-decal.svg
+│   │   └── tixdesk-sticker-04-retro-pixel-arcade.svg
 │   │
 │   ├── png/                                     # 300 DPI Transparent Previews (CMYK Ready)
 │   │   ├── tixdesk-sticker-01-hero-mark-300dpi.png
-│   │   ├── tixdesk-sticker-02-support-hero-badge-300dpi.png
-│   │   └── tixdesk-sticker-03-brand-lockup-300dpi.png
+│   │   ├── tixdesk-sticker-02-mascot-tixie-300dpi.png
+│   │   ├── tixdesk-sticker-03-cyber-mecha-decal-300dpi.png
+│   │   └── tixdesk-sticker-04-retro-pixel-arcade-300dpi.png
 │   │
 │   └── print-ready-cutlines/                    # 100% Magenta (#FF00FF) Vector Die-Cut Lines
 │       ├── tixdesk-sticker-01-hero-mark-cutline.svg
-│       ├── tixdesk-sticker-02-support-hero-badge-cutline.svg
-│       └── tixdesk-sticker-03-brand-lockup-cutline.svg
+│       ├── tixdesk-sticker-02-mascot-tixie-cutline.svg
+│       ├── tixdesk-sticker-03-cyber-mecha-decal-cutline.svg
+│       └── tixdesk-sticker-04-retro-pixel-arcade-cutline.svg
 │
 └── print-pdfs/ (in root for direct vendor delivery)
     ├── tixdesk-sticker-01-hero-mark-print.pdf   # Vector PDF 1.7
-    ├── tixdesk-sticker-02-support-hero-badge-print.pdf
-    └── tixdesk-sticker-03-brand-lockup-print.pdf
+    ├── tixdesk-sticker-02-mascot-tixie-print.pdf
+    ├── tixdesk-sticker-03-cyber-mecha-decal-print.pdf
+    └── tixdesk-sticker-04-retro-pixel-arcade-print.pdf
 ```
 
 ---
 
-## 🎨 The 3 Sticker Concepts
+## 🎨 The 4 Distinct Art Styles
 
-### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`)
+### 1. The Pure Hero Mark (`~7.0 × 6.1 cm`) — Minimalist Die-Cut
 * **Concept:** Standalone TixDesk logo mark with the signature Royal Blue to Cyan gradient (`#3B82F6` → `#06B6D4`), inner light sheen, and a $2.5\text{ mm}$ solid white die-cut border.
 * **Audience:** Universal (smartphones, iPads, MacBook lids, tumblers).
 
-### 2. Support Hero Dev Badge (`~6.8 × 7.8 cm`)
-* **Concept:** Hexagonal engineering badge on dark slate backdrop (`#0B132B`), glowing cyan perimeter, status badge `ZERO OVERDUE SLAs`, feature pills (`Ticket` • `SLA` • `KB`), and `200 OK — TICKET RESOLVED`.
-* **Audience:** Developers, DevOps/Sysadmin engineers, students (SMA/SMK/Mahasiswa).
+### 2. Tixie • The Cyber-Bot Mascot (`~7.2 × 7.2 cm`) — Kawaii 2D Vector
+* **Concept:** The official TixDesk AI support bot mascot. Ticket/chat-bubble head with OLED screen, sparkling anime eyes, cat-smile (`ω`), customer support headset, and holding the Golden Resolved Ticket (`✓`).
+* **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
-### 3. Executive Brand Lockup (`~9.6 × 3.9 cm`)
-* **Concept:** Stadium/pill horizontal lockup featuring the logo mark, bold brand title `TixDesk`, subtext `Helpdesk & Ticketing Platform`, and 3 metadata chips on pure white card.
-* **Audience:** Enterprise attendees, B2B partners, seminar notebooks.
+### 3. Cyber Mecha Decal // Unit-016 (`~7.5 × 7.5 cm`) — Anime Sci-Fi HUD
+* **Concept:** High-tech tactical mecha decal (Gundam/Evangelion HUD style). Chamfered heavy octagonal shield, circuit nodes, optical crosshairs, `UNIT-016 // TIM-A3`, `PROTOCOL: RESOLVED [200 OK]`, and `SLA: ZERO OVERDUE`.
+* **Audience:** DevOps, backend engineers, Linux users, and anime mecha enthusiasts.
+
+### 4. Retro 16-Bit Arcade Gamer (`~7.0 × 7.0 cm`) — Pixel Art Quest
+* **Concept:** Nostalgic 8-bit / 16-bit arcade video game sprite. Pixelated ticket character wearing pixel sunglasses ("Deal With It"), full 3 health hearts, and bottom banner: `★ SLA SAVED: 100% ★`.
+* **Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
 
 ---
 

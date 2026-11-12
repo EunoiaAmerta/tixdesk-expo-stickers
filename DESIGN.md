@@ -109,22 +109,44 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 
 ---
 
-## 6. Official Expo Sticker Trio
+## 6. Official Expo Sticker Quartet (4 Distinct Art Styles)
 
-### Sticker 01: "The Pure Hero Die-Cut"
+### Sticker 01: "The Pure Hero Die-Cut" (Approved Master Mark)
 * **File:** `assets/svg/tixdesk-sticker-01-hero-mark.svg`
 * **Target Size:** $\approx 7.0 \times 6.1\text{ cm}$
-* **Concept:** The standalone brand mark with generous white die-cut border. Highly versatile, clean, and minimalist.
+* **Style:** Pure Minimalist Geometric Die-Cut
+* **Target Audience:** Universal (laptops, phones, tumblers). High contrast, iconic brand identity.
 
-### Sticker 02: "Support Hero / SLA Guard" (Dev & Student Badge)
-* **File:** `assets/svg/tixdesk-sticker-02-support-hero-badge.svg`
-* **Target Size:** $\approx 6.8 \times 7.8\text{ cm}$
-* **Concept:** Developer-culture hexagonal badge with cyber dark background, glowing cyan accents, feature pill dots, and bold engineering badges (`ZERO OVERDUE SLAs` / `200 OK — TICKET RESOLVED`).
+### Sticker 02: "Tixie • The Cyber-Bot" (Official Mascot Edition)
+* **File:** `assets/svg/tixdesk-sticker-02-mascot-tixie.svg`
+* **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
+* **Style:** Kawaii Chibi Vector Mascot
+* **Anatomy:**
+  * **Head:** TixDesk ticket/speech-bubble silhouette with deep navy curved OLED visor screen.
+  * **Expression:** Sparkling anime eyes, cat-smile (`ω`), soft coral blush, and signal status antenna (`#10B981`).
+  * **Accessories:** Integrated support agent headset with boom microphone.
+  * **Prop:** Holding the Golden Resolved Ticket with a green checkmark (`✓`).
+* **Target Audience:** Designers, students, customer support teams, and anyone who loves cute tech companions.
 
-### Sticker 03: "Executive Brand Lockup" (Corporate Capsule)
-* **File:** `assets/svg/tixdesk-sticker-03-brand-lockup.svg`
-* **Target Size:** $\approx 9.6 \times 3.9\text{ cm}$
-* **Concept:** Horizontal capsule lockup with logo mark, bold brand title, official descriptor, and the three feature badges. Designed for notebooks, iPads, and B2B swag bags.
+### Sticker 03: "Cyber Mecha Decal // Unit-016" (Anime Tactical HUD)
+* **File:** `assets/svg/tixdesk-sticker-03-cyber-mecha-decal.svg`
+* **Target Size:** $\approx 7.5 \times 7.5\text{ cm}$
+* **Style:** High-Tech Sci-Fi / Mecha Decal (Gundam & Evangelion aesthetic)
+* **Anatomy:**
+  * **Plate:** Chamfered heavy octagonal tactical plate in dark carbon navy.
+  * **Emblem:** TixDesk ticket emblem inside optical targeting reticles and circuit nodes.
+  * **Telemetry:** `UNIT-016 // TIM-A3`, `PROTOCOL: RESOLVED [200 OK]`, `SLA: ZERO OVERDUE`, hazard caution stripes.
+* **Target Audience:** DevOps, backend engineers, Linux users, mechanical keyboard enthusiasts, and anime fans.
+
+### Sticker 04: "Retro 16-Bit Arcade Gamer" (Pixel Art Quest)
+* **File:** `assets/svg/tixdesk-sticker-04-retro-pixel-arcade.svg`
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
+* **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
+* **Anatomy:**
+  * **Sprite:** Pixel-block TixDesk ticket character with split-tone blue/cyan shading.
+  * **Attitude:** Pixel sunglasses ("Deal With It" vibe), retro blush, and green status smile.
+  * **HUD Elements:** 3 floating red 8-bit hearts (100% full health) and retro banner: `★ SLA SAVED: 100% ★`.
+* **Target Audience:** Gamers, indie hackers, CS students, and retro tech nostalgia collectors.
 
 ---
 
