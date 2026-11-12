@@ -138,7 +138,7 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
 * **Style:** Narrative Chibi Detective Mascot
 * **Refined Anatomy:**
-  * **Sherlock Holmes Aesthetic:** Classic tweed deerstalker cap with brim and top ribbon tie.
+  * **Sherlock Holmes Aesthetic:** Classic tweed deerstalker cap with brim, top ribbon tie, and neatly clipped curved stitching that follows the 3D spherical dome of the cap.
   * **Magnifying Glass Inspection:** Angled brass magnifying glass focusing on an illuminated captured green bug.
   * **Analytical Expression:** Focused yet adorable eyes, pink blush, and cute mouth.
   * **Bottom Tagline Badge:** Golden alert banner reading `🔍 BUG HUNTER`.
@@ -189,8 +189,8 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Target Size:** $\approx 7.2 \times 7.2\text{ cm}$
 * **Style:** Dynamic High-Speed Mascot Action
 * **Refined Anatomy:**
-  * **Orbital Rocket Thruster:** Tixie dynamically angled at $25^\circ$ ascent riding a high-speed orbital rocket with orange/yellow propulsion flames.
-  * **Wink & Thumbs-Up:** Confident winking anime expression and a distinct robotic thumbs-up hand gesture.
+  * **Dynamic Speed Rocket & Orbit Trail:** Rocket positioned in the top-right corner with blazing exhaust plume, leaving a sweeping circular orbital smoke trail that dynamically encircles Tixie.
+  * **Super Happy & Excited Expression:** Wide sparkling anime eyes with multi-layer catchlights, bright flushed cheeks, open beaming smile (:D), and confident thumbs-up hand gesture.
   * **Bottom Emerald Banner:** Emerald green banner stamped with `🚀 LGTM // SHIP IT!`.
 * **Target Audience:** CI/CD engineers, release engineers, fullstack developers, and DevOps leads.
 

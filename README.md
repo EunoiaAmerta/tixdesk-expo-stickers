@@ -78,7 +78,7 @@ tixdesk-expo-stickers/
    * **Audience:** Designers, students, customer support teams, and kawaii tech fans.
 
 3. **Detective Tixie • Bug Hunter (`~7.0 × 7.0 cm`) — QA & Debugging Edition**
-   * **Concept:** Sherlock Holmes deerstalker cap with tweed patterns, magnifying glass focusing on an illuminated captured green bug, analytical facial expression, and a golden bottom banner reading `🔍 BUG HUNTER`.
+   * **Concept:** Sherlock Holmes deerstalker cap with neatly clipped curved stitching clinging to the hat surface, magnifying glass focusing on an illuminated captured green bug, analytical facial expression, and a golden bottom banner reading `🔍 BUG HUNTER`.
    * **Audience:** QA engineers, software testers, bug hunters, and security researchers.
 
 ### Incident & Ops Pack (Stickers 04–06)
@@ -96,7 +96,7 @@ tixdesk-expo-stickers/
 
 ### Dev Culture & Operations (Stickers 07–09)
 7. **Rocket Tixie • LGTM // SHIP IT! (`~7.2 × 7.2 cm`) — Deployment Speed Edition**
-   * **Concept:** Tixie riding an accelerating orbital rocket tilted at $25^\circ$ with vibrant flame thrust, giving a confident wink and an assertive robotic thumbs-up hand gesture, anchored by an emerald banner reading `🚀 LGTM // SHIP IT!`.
+   * **Concept:** Tixie with super happy and excited anime eyes and open smile (:D), cheering with thumbs-up while surrounded by a billowing orbital smoke trail from the speed rocket ascending in the top-right corner, anchored by an emerald banner reading `🚀 LGTM // SHIP IT!`.
    * **Audience:** DevOps, CI/CD engineers, release managers, and developers shipping PRs to production.
 
 8. **IT Support Tixie • Off & On (`~7.0 × 7.0 cm`) — The Universal Helpdesk Meme Edition**

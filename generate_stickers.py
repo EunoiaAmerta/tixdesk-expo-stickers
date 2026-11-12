@@ -167,14 +167,23 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     </linearGradient>
 
     <linearGradient id="capGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#A16207" />
-      <stop offset="50%" stop-color="#78350F" />
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="40%" stop-color="#78350F" />
       <stop offset="100%" stop-color="#451A03" />
     </linearGradient>
 
+    <linearGradient id="capBrimGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400E" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+
+    <clipPath id="capDomeClip">
+      <path d="M -105 10 C -115 -75, 115 -75, 105 10 Z" />
+    </clipPath>
+
     <linearGradient id="lensGlass3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.75" />
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.4" />
     </linearGradient>
   </defs>
 
@@ -223,11 +232,10 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
       <ellipse cx="0" cy="0" rx="18" ry="24" fill="#0284C7" />
       <circle cx="-6" cy="-8" r="7" fill="#FFFFFF" />
       <circle cx="6" cy="8" r="4" fill="#FFFFFF" />
-      <!-- Analytical Brow Line -->
       <path d="M -22 -22 Q 0 -26 22 -16" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
     </g>
 
-    <!-- Right Eye (Slightly larger, peering at the bug) -->
+    <!-- Right Eye (Peering at the bug) -->
     <g transform="translate(55, -45)">
       <ellipse cx="0" cy="0" rx="25" ry="31" fill="#38BDF8" />
       <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
@@ -241,19 +249,46 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <!-- Clever Detective Smirk (:3) -->
     <path d="M -16 -4 Q -8 7 0 0 Q 8 7 16 -4" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 
-    <!-- 6. Detective Deerstalker Cap (Sherlock Hat) on Head -->
+    <!-- 6. Detective Deerstalker Cap (Sherlock Hat) with Perfectly Attached & Clipped Seams -->
     <g transform="translate(0, -155)">
       <!-- Main Cap Dome -->
       <path d="M -105 10 C -115 -75, 115 -75, 105 10 Z" fill="url(#capGrad3)" stroke="#292524" stroke-width="3" />
-      <!-- Tweed Houndstooth / Plaid Lines -->
-      <path d="M -60 10 C -65 -50, -35 -65, 0 -70 C 35 -65, 65 -50, 60 10" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="6,4" opacity="0.7" />
-      <line x1="-90" y1="-25" x2="90" y2="-25" stroke="#D97706" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7" />
-      <line x1="-70" y1="-50" x2="70" y2="-50" stroke="#D97706" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7" />
-      <!-- Front Visor Brim -->
-      <path d="M -125 10 Q 0 -10 125 10 Q 135 22 115 22 L -115 22 Q -135 22 -125 10 Z" fill="#78350F" stroke="#292524" stroke-width="2.5" />
-      <!-- Ribbon Bow at the peak -->
-      <circle cx="0" cy="-68" r="8" fill="#B45309" stroke="#292524" stroke-width="2" />
-      <path d="M -14 -64 Q 0 -75 14 -64 Q 0 -58 -14 -64 Z" fill="#F59E0B" />
+
+      <!-- Clipped Internal Seams & Stitching: 100% strictly adhering to cap shape -->
+      <g clip-path="url(#capDomeClip)">
+        <!-- Vertical Panel Seams -->
+        <!-- Center seam -->
+        <path d="M 0 -70 L 0 10" stroke="#292524" stroke-width="2.5" />
+        <path d="M -2 -70 L -2 10" stroke="#FDE68A" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.65" />
+        <!-- Left panel curve -->
+        <path d="M 0 -70 C -35 -40, -55 -10, -55 10" fill="none" stroke="#292524" stroke-width="2.5" />
+        <path d="M -2 -70 C -37 -40, -57 -10, -57 10" fill="none" stroke="#FDE68A" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.65" />
+        <!-- Right panel curve -->
+        <path d="M 0 -70 C 35 -40, 55 -10, 55 10" fill="none" stroke="#292524" stroke-width="2.5" />
+        <path d="M 2 -70 C 37 -40, 57 -10, 57 10" fill="none" stroke="#FDE68A" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.65" />
+
+        <!-- Contour-hugging horizontal stitching arcs (following cap curvature) -->
+        <path d="M -110 -15 Q 0 -38 110 -15" fill="none" stroke="#FDE68A" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.75" />
+        <path d="M -90 -40 Q 0 -58 90 -40" fill="none" stroke="#FDE68A" stroke-width="1.3" stroke-dasharray="4,3" opacity="0.7" />
+
+        <!-- Cap Crown Shading & Highlight -->
+        <path d="M -70 -50 Q 0 -72 70 -50 Q 0 -62 -70 -50 Z" fill="#FEF08A" opacity="0.18" />
+      </g>
+
+      <!-- Front Visor Brim (Curved forward brim) -->
+      <path d="M -125 10 Q 0 -12 125 10 Q 135 24 115 24 L -115 24 Q -135 24 -125 10 Z" fill="#6B2F10" stroke="#292524" stroke-width="2.8" />
+      <!-- Neat stitching along visor brim curve -->
+      <path d="M -115 17 Q 0 -4 115 17" fill="none" stroke="#FDE68A" stroke-width="1.4" stroke-dasharray="4,3" opacity="0.8" />
+
+      <!-- Earflap folded up on side -->
+      <path d="M -75 10 C -80 -25, -45 -45, 0 -48 C 45 -45, 80 -25, 75 10 Z" fill="#58240C" stroke="#292524" stroke-width="2" opacity="0.35" />
+
+      <!-- Top Ribbon Bow / Peak Knob -->
+      <circle cx="0" cy="-68" r="8" fill="#B45309" stroke="#292524" stroke-width="2.2" />
+      <path d="M -15 -64 Q 0 -76 15 -64 Q 0 -56 -15 -64 Z" fill="#F59E0B" stroke="#292524" stroke-width="1.5" />
+      <!-- Hanging Ribbon Ties -->
+      <path d="M -8 -60 C -12 -50, -18 -45, -15 -35" fill="none" stroke="#D97706" stroke-width="3" stroke-linecap="round" />
+      <path d="M 8 -60 C 12 -50, 18 -45, 15 -35" fill="none" stroke="#D97706" stroke-width="3" stroke-linecap="round" />
     </g>
 
     <!-- 7. Headset (Continuous headband with dark mic joint) -->
@@ -273,54 +308,43 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
       <!-- Handle -->
       <path d="M 40 40 L 78 82" stroke="#78350F" stroke-width="16" stroke-linecap="round" />
       <path d="M 40 40 L 78 82" stroke="#B45309" stroke-width="10" stroke-linecap="round" />
-      <circle cx="82" cy="86" r="6" fill="#F59E0B" />
+      <circle cx="80" cy="84" r="6" fill="#F59E0B" />
 
-      <!-- Chibi Hand Gripping Handle -->
-      <circle cx="50" cy="52" r="14" fill="#3877F6" stroke="#FFFFFF" stroke-width="3.5" />
+      <!-- Outer Brass Lens Rim -->
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#F59E0B" stroke-width="9" />
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#78350F" stroke-width="2" />
+      <!-- Glass Lens -->
+      <circle cx="0" cy="0" r="43.5" fill="url(#lensGlass3)" />
 
-      <!-- Metallic Lens Frame -->
-      <circle cx="0" cy="0" r="54" fill="none" stroke="#D97706" stroke-width="9" />
-      <circle cx="0" cy="0" r="54" fill="none" stroke="#FEF08A" stroke-width="3" />
-
-      <!-- Glass Circle -->
-      <circle cx="0" cy="0" r="49" fill="url(#lensGlass3)" stroke="#E0F2FE" stroke-width="1.5" />
-
-      <!-- THE CUTE BUG (Inside the lens focus!) -->
-      <g transform="translate(0, 4) scale(1.15)">
-        <!-- Bug Legs -->
-        <path d="M -16 -6 L -24 -12 M 16 -6 L 24 -12" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
-        <path d="M -18 2 L -26 2 M 18 2 L 26 2" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
-        <path d="M -16 10 L -24 16 M 16 10 L 24 16" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
-
-        <!-- Ladybug / Tech Bug Shell (Emerald-Lime Green // 200 OK Bug!) -->
-        <ellipse cx="0" cy="4" rx="18" ry="16" fill="#10B981" stroke="#064E3B" stroke-width="2" />
-        <line x1="0" y1="-12" x2="0" y2="20" stroke="#064E3B" stroke-width="2" />
-        <circle cx="-8" cy="-2" r="3" fill="#047857" />
-        <circle cx="8" cy="-2" r="3" fill="#047857" />
-        <circle cx="-7" cy="10" r="2.5" fill="#047857" />
-        <circle cx="7" cy="10" r="2.5" fill="#047857" />
-
-        <!-- Bug Head & Cute Eyes -->
-        <ellipse cx="0" cy="-12" rx="10" ry="7" fill="#064E3B" />
-        <circle cx="-4" cy="-13" r="2.2" fill="#FFFFFF" />
-        <circle cx="4" cy="-13" r="2.2" fill="#FFFFFF" />
-        <circle cx="-4" cy="-13" r="1.1" fill="#000000" />
-        <circle cx="4" cy="-13" r="1.1" fill="#000000" />
-
-        <!-- Antennas with curly tips -->
-        <path d="M -4 -18 Q -10 -26 -14 -22" fill="none" stroke="#064E3B" stroke-width="2" stroke-linecap="round" />
-        <path d="M 4 -18 Q 10 -26 14 -22" fill="none" stroke="#064E3B" stroke-width="2" stroke-linecap="round" />
+      <!-- Cute Bug Trapped Under Lens -->
+      <g transform="translate(0, 0)">
+        <ellipse cx="-16" cy="-12" rx="10" ry="5" fill="#E0F2FE" opacity="0.7" transform="rotate(-25 -16 -12)" />
+        <ellipse cx="16" cy="-12" rx="10" ry="5" fill="#E0F2FE" opacity="0.7" transform="rotate(25 16 -12)" />
+        <path d="M -4 -16 Q -12 -28 -18 -26" fill="none" stroke="#14532D" stroke-width="2" stroke-linecap="round" />
+        <path d="M 4 -16 Q 12 -28 18 -26" fill="none" stroke="#14532D" stroke-width="2" stroke-linecap="round" />
+        <ellipse cx="0" cy="4" rx="15" ry="18" fill="#22C55E" stroke="#15803D" stroke-width="2" />
+        <line x1="0" y1="-10" x2="0" y2="20" stroke="#15803D" stroke-width="1.5" />
+        <circle cx="-5" cy="0" r="2.5" fill="#166534" />
+        <circle cx="5" cy="0" r="2.5" fill="#166534" />
+        <circle cx="-5" cy="10" r="2.5" fill="#166534" />
+        <circle cx="5" cy="10" r="2.5" fill="#166534" />
+        <circle cx="0" cy="-12" r="10" fill="#16A34A" stroke="#15803D" stroke-width="2" />
+        <circle cx="-4" cy="-14" r="3.5" fill="#FFFFFF" />
+        <circle cx="-3.5" cy="-14" r="1.8" fill="#052E16" />
+        <circle cx="4" cy="-14" r="3.5" fill="#FFFFFF" />
+        <circle cx="4.5" cy="-14" r="1.8" fill="#052E16" />
+        <path d="M -3 -8 Q 0 -5 3 -8" fill="none" stroke="#052E16" stroke-width="1.2" stroke-linecap="round" />
       </g>
 
-      <!-- Glass Glare Reflex -->
-      <path d="M -30 -30 A 42 42 0 0 1 25 -36" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" opacity="0.8" />
-      <circle cx="32" cy="-25" r="3.5" fill="#FFFFFF" opacity="0.8" />
+      <!-- Glass Specular Curved Glare -->
+      <path d="M -30 -25 A 38 38 0 0 1 25 -30" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
+      <circle cx="30" cy="-15" r="3" fill="#FFFFFF" opacity="0.6" />
     </g>
 
-    <!-- 9. Tagline Banner: BUG HUNTER -->
+    <!-- 9. Badge: BUG HUNTER -->
     <g transform="translate(0, 65)">
-      <rect x="-80" y="-13" width="160" height="26" rx="13" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5" />
-      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="10" font-weight="900" fill="#FDE047" letter-spacing="2" text-anchor="middle">🔍 BUG HUNTER</text>
+      <rect x="-85" y="-13" width="170" height="26" rx="13" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5" />
+      <text y="4" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="900" letter-spacing="1.5" fill="#FBBF24" text-anchor="middle">🔍 BUG HUNTER</text>
     </g>
   </g>
 </svg>"""
@@ -329,6 +353,7 @@ cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" w
   {svg_03.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540">', '').replace('</svg>', '')}
   <g id="CutContour" transform="translate(270, 275)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
     <path d="M -115 -145 C -120 -235, 120 -235, 115 -145 Z" stroke-width="26" />
+    <path d="M -135 -145 Q 0 -170 135 -145 Q 145 -135 125 -135 L -125 -135 Q -145 -135 -135 -145 Z" stroke-width="24" />
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
@@ -336,6 +361,7 @@ cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" w
     <circle cx="85" cy="40" r="58" stroke-width="24" />
     <path d="M 125 80 L 165 125" stroke-width="38" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
+    <rect x="-85" y="52" width="170" height="26" rx="13" stroke-width="24" />
   </g>
 </svg>"""
 
@@ -795,161 +821,302 @@ cutline_06 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
 # ------------------------------------------------------------------------------
 svg_07 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
   <defs>
-    <linearGradient id="rocketBody7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="60%" stop-color="#E2E8F0" />
-      <stop offset="100%" stop-color="#CBD5E1" />
-    </linearGradient>
-
-    <linearGradient id="rocketCone7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#EF4444" />
-      <stop offset="100%" stop-color="#B91C1C" />
-    </linearGradient>
-
-    <linearGradient id="rocketFlame7" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FDE047" />
-      <stop offset="50%" stop-color="#F97316" />
-      <stop offset="100%" stop-color="#EF4444" />
-    </linearGradient>
-
+    <!-- Background & Head Gradients -->
     <linearGradient id="headGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3877F6" />
       <stop offset="50%" stop-color="#4CA2EA" />
       <stop offset="100%" stop-color="#5AC1C4" />
     </linearGradient>
+
+    <linearGradient id="screenGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080E1E" />
+      <stop offset="100%" stop-color="#111C35" />
+    </linearGradient>
+
+    <!-- Rocket Material Gradients -->
+    <linearGradient id="rocketBody7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <linearGradient id="rocketCone7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+
+    <linearGradient id="rocketFlame7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="40%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+
+    <!-- Smoke Trail Gradient -->
+    <linearGradient id="smokeGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="50%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#7DD3FC" />
+    </linearGradient>
   </defs>
 
-  <g id="Artwork" transform="translate(280, 275) rotate(-15)">
-    <!-- 1. White Die-Cut Contour -->
+  <g id="Artwork">
+    <!-- =======================================================================
+         1. SOLID WHITE DIE-CUT BASE CONTOUR
+         Encompasses: Tixie, Top-Right Rocket, Swirling Orbit Trail, and Badge
+         ======================================================================= -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
-      <!-- Big Rocket Booster Flame Contour -->
-      <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
-      <!-- Rocket Fins -->
-      <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
-      <polygon points="75,100 120,135 65,70" stroke-width="24" />
-      <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
-      <path d="M -60 -30 Q 0 -130 60 -30 Z" stroke-width="26" />
+      <!-- A. Rocket in Top-Right Corner Contour -->
+      <g transform="translate(425, 115) rotate(42)">
+        <path d="M 0 -48 Q 22 0 16 35 L -16 35 Q -22 0 0 -48 Z" stroke-width="26" />
+        <polygon points="-16,22 -36,42 -14,35" stroke-width="24" />
+        <polygon points="16,22 36,42 14,35" stroke-width="24" />
+        <!-- Flame exhaust -->
+        <path d="M -12 35 C -25 85, 25 85, 12 35 Z" stroke-width="24" />
+      </g>
 
-      <!-- Tixie Head & Headset Contour -->
-      <circle cx="0" cy="-240" r="22" stroke-width="24" />
-      <line x1="0" y1="-160" x2="0" y2="-240" stroke-width="32" />
-      <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke-width="46" />
-      <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
-      <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
-      <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke-width="26" />
-      <circle cx="-70" cy="63" r="14" stroke-width="24" />
+      <!-- B. Swirling Orbital Smoke Trail Contour (Circling Tixie) -->
+      <!-- Right descending swoosh -->
+      <path d="M 400 150 C 475 220, 465 370, 370 420 C 270 470, 100 450, 75 350 C 50 250, 100 160, 160 140" fill="none" stroke-width="52" />
+      <!-- Extra cloud puffs along the trail for organic cartoon smoke -->
+      <circle cx="435" cy="235" r="28" stroke-width="20" />
+      <circle cx="440" cy="320" r="32" stroke-width="20" />
+      <circle cx="390" cy="395" r="34" stroke-width="20" />
+      <circle cx="280" cy="435" r="36" stroke-width="20" />
+      <circle cx="150" cy="425" r="32" stroke-width="20" />
+      <circle cx="75" cy="340" r="32" stroke-width="20" />
+      <circle cx="95" cy="230" r="28" stroke-width="20" />
 
-      <!-- Thumbs Up Hand Contour -->
-      <circle cx="160" cy="-20" r="28" stroke-width="24" />
-      <!-- Pill Tag Contour -->
-      <rect x="-85" y="80" width="170" height="28" rx="14" stroke-width="24" />
+      <!-- C. Central Tixie Head & Headset Contour -->
+      <g transform="translate(265, 275)">
+        <circle cx="0" cy="-185" r="22" stroke-width="24" />
+        <line x1="0" y1="-120" x2="0" y2="-185" stroke-width="32" />
+        <path d="M -155 -35 C -170 -185, 170 -185, 155 -35" fill="none" stroke-width="46" />
+        <rect x="-190" y="-70" width="45" height="75" rx="18" stroke-width="24" />
+        <rect x="145" y="-70" width="45" height="75" rx="18" stroke-width="24" />
+        <path d="M -145 -125 Q -145 -135, -125 -135 L 125 -135 Q 145 -135 145 -125 L 145 -35 A 22 22 0 0 0 145 10 L 145 40 Q 145 55, 125 55 L -80 55 L -145 100 L -145 10 A 22 22 0 0 0 -145 -35 Z" stroke-width="24" />
+        <!-- Boom Mic -->
+        <path d="M -170 -5 C -170 55, -100 80, -65 65" fill="none" stroke-width="24" />
+        <circle cx="-62" cy="62" r="14" stroke-width="24" />
+
+        <!-- Cheering Thumbs-Up Robot Hand on Right -->
+        <circle cx="160" cy="15" r="26" stroke-width="22" />
+        <rect x="150" y="-15" width="22" height="35" rx="10" stroke-width="20" />
+
+        <!-- Cheering Hand on Left -->
+        <circle cx="-150" cy="20" r="22" stroke-width="20" />
+
+        <!-- Bottom Tag Pill Contour -->
+        <rect x="-95" y="70" width="190" height="28" rx="14" stroke-width="24" />
+      </g>
     </g>
 
-    <path d="M 160 -50 A 25 25 0 0 0 160 0 L 175 0 L 175 -50 Z" fill="#FFFFFF" stroke="none" />
-    <path d="M -160 -50 A 25 25 0 0 1 -160 0 L -175 0 L -175 -50 Z" fill="#FFFFFF" stroke="none" />
-
-    <!-- 2. Rocket Flame Blast -->
-    <path d="M -40 105 C -75 190, -10 240, 0 260 C 10 240, 75 190, 40 105 Z" fill="url(#rocketFlame7)" />
-    <path d="M -25 105 C -45 160, -5 195, 0 215 C 5 195, 45 160, 25 105 Z" fill="#FEF08A" />
-
-    <!-- 3. Rocket Body & Fins -->
-    <!-- Left & Right Fins -->
-    <polygon points="-55,90 -115,125 -55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
-    <polygon points="55,90 115,125 55,45" fill="#EF4444" stroke="#B91C1C" stroke-width="3" />
-    <!-- Main Cylinder -->
-    <rect x="-55" y="-30" width="110" height="135" rx="30" fill="url(#rocketBody7)" stroke="#475569" stroke-width="3" />
-    <!-- Rocket Exhaust Nozzle -->
-    <polygon points="-35,105 35,105 25,122 -25,122" fill="#334155" />
-    <line x1="-55" y1="35" x2="55" y2="35" stroke="#38BDF8" stroke-width="5" />
-    
-    <!-- Rocket Porthole Window with TixDesk 'T' -->
-    <circle cx="0" cy="55" r="22" fill="#0F172A" stroke="#38BDF8" stroke-width="4" />
-    <text x="0" y="63" font-family="'Noto Sans', sans-serif" font-size="20" font-weight="900" fill="#38BDF8" text-anchor="middle">T</text>
-
-    <!-- 4. Mascot Tixie Riding Rocket -->
-    <!-- Antenna -->
-    <path d="M 0 -160 L 0 -230" stroke="#334155" stroke-width="12" stroke-linecap="round" />
-    <circle cx="0" cy="-240" r="20" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
-    <!-- Speed streaks on antenna -->
-    <line x1="-12" y1="-265" x2="-22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
-    <line x1="12" y1="-265" x2="22" y2="-245" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
-
-    <!-- Head Ticket Shell -->
-    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" fill="url(#headGrad7)" stroke="#1D4ED8" stroke-width="2.5" />
-
-    <!-- Visor -->
-    <rect x="-125" y="-135" width="250" height="160" rx="35" fill="#080E1E" stroke="#38BDF8" stroke-width="4" />
-    <path d="M -115 -115 Q 0 -135 115 -115 L 115 -100 Q 0 -120 -115 -100 Z" fill="#FFFFFF" opacity="0.22" />
-
-    <!-- Super Happy Proud Expression: Left Wink, Right Sparkling Anime Eye -->
-    <!-- Left Eye (Playful Confident Wink ;) -->
-    <path d="M -70 -55 Q -55 -40 -40 -55" fill="none" stroke="#38BDF8" stroke-width="6.5" stroke-linecap="round" />
-
-    <!-- Right Eye (Sparkling Giant Eye) -->
-    <g transform="translate(55, -55)">
-      <ellipse cx="0" cy="0" rx="25" ry="31" fill="#38BDF8" />
-      <ellipse cx="0" cy="0" rx="20" ry="26" fill="#0284C7" />
-      <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#FFFFFF" transform="translate(-6, -7) scale(0.65)" />
-      <circle cx="-6" cy="-8" r="7" fill="#FFFFFF" />
-      <circle cx="7" cy="9" r="4.5" fill="#FFFFFF" />
+    <!-- Solid White Gap Fills behind earcups -->
+    <g transform="translate(265, 275)">
+      <path d="M 145 -35 A 22 22 0 0 0 145 10 L 155 10 L 155 -35 Z" fill="#FFFFFF" stroke="none" />
+      <path d="M -145 -35 A 22 22 0 0 1 -145 10 L -155 10 L -155 -35 Z" fill="#FFFFFF" stroke="none" />
     </g>
 
-    <!-- Rosy Cheeks -->
-    <ellipse cx="-75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
-    <ellipse cx="75" cy="-15" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+    <!-- =======================================================================
+         2. SWIRLING ORBITAL ROCKET SMOKE TRAIL (BEHIND TIXIE)
+         ======================================================================= -->
+    <g id="RocketTrail">
+      <!-- Main dynamic swirling ribbon -->
+      <path d="M 390 145 C 475 220, 465 370, 360 415 C 265 455, 115 440, 85 345 C 60 250, 110 165, 175 145" fill="none" stroke="url(#smokeGrad7)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M 390 145 C 475 220, 465 370, 360 415 C 265 455, 115 440, 85 345 C 60 250, 110 165, 175 145" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
 
-    <!-- Big Ecstatic Open Mouth (:D) -->
-    <path d="M -18 -18 Q 0 -26 18 -18 Q 20 6 0 10 Q -20 6 -18 -18 Z" fill="#F43F5E" stroke="#38BDF8" stroke-width="3" stroke-linejoin="round" />
-    <ellipse cx="0" cy="4" rx="9" ry="4" fill="#9F1239" />
+      <!-- Stylized Puffy Smoke Clouds along the trajectory -->
+      <circle cx="420" cy="220" r="18" fill="#E0F2FE" />
+      <circle cx="435" cy="305" r="22" fill="#BAE6FD" />
+      <circle cx="410" cy="325" r="16" fill="#FFFFFF" />
+      <circle cx="375" cy="385" r="24" fill="#E0F2FE" />
+      <circle cx="340" cy="405" r="20" fill="#BAE6FD" />
+      <circle cx="270" cy="425" r="24" fill="#E0F2FE" />
+      <circle cx="220" cy="425" r="18" fill="#FFFFFF" />
+      <circle cx="155" cy="410" r="22" fill="#BAE6FD" />
+      <circle cx="95" cy="340" r="24" fill="#E0F2FE" />
+      <circle cx="85" cy="285" r="18" fill="#FFFFFF" />
+      <circle cx="105" cy="220" r="18" fill="#BAE6FD" />
 
-    <!-- Headset (with black mic joint ring) -->
-    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#1E293B" stroke-width="22" stroke-linecap="round" />
-    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" />
-    <rect x="-210" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="-200" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
-    <rect x="165" y="-95" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
-    <rect x="175" y="-80" width="25" height="55" rx="12" fill="#1E293B" />
-    
-    <!-- Boom mic with dark slate joint ring -->
-    <path d="M -190 -20 C -190 60, -110 85, -75 65" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="63" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
+      <!-- Speed Motion Streaks & Cosmic Sparkles -->
+      <path d="M 410 190 Q 435 240 435 280" fill="none" stroke="#38BDF8" stroke-width="4" stroke-dasharray="8,6" stroke-linecap="round" />
+      <path d="M 125 170 Q 85 220 75 280" fill="none" stroke="#38BDF8" stroke-width="4" stroke-dasharray="8,6" stroke-linecap="round" />
 
-    
-    <!-- 5. Thumbs Up Hand (Prominently extended forward!) -->
-    <g id="ThumbsUp" transform="translate(95, -20) rotate(15)">
-      <!-- Big White Die-Cut Backing for Hand -->
-      <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" />
-      <path d="M 0 0 L 0 -26 A 10 10 0 0 1 20 -26 L 20 0 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
-
-      <!-- Glove Body -->
-      <circle cx="0" cy="0" r="18" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" />
-      <!-- Extended Thumbs Up -->
-      <path d="M -5 -8 L -5 -28 A 9 9 0 0 1 14 -28 L 14 -6 Z" fill="#3877F6" stroke="#1D4ED8" stroke-width="3" stroke-linejoin="round" />
-      <line x1="4" y1="-24" x2="4" y2="-12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Golden Launch Stars & Sparkles -->
+      <!-- Sparkle 1 (Near rocket) -->
+      <polygon points="450,90 453,97 460,100 453,103 450,110 447,103 440,100 447,97" fill="#FDE047" />
+      <!-- Sparkle 2 (Right trail) -->
+      <polygon points="465,245 467,251 473,253 467,255 465,261 463,255 457,253 463,251" fill="#38BDF8" />
+      <!-- Sparkle 3 (Bottom) -->
+      <polygon points="210,450 213,456 219,458 213,460 210,466 207,460 201,458 207,456" fill="#FDE047" />
+      <!-- Sparkle 4 (Left) -->
+      <polygon points="60,260 62,265 67,267 62,269 60,274 58,269 53,267 58,265" fill="#38BDF8" />
     </g>
 
+    <!-- =======================================================================
+         3. MASCOT TIXIE (CENTERED, HAPPY & EXCITED)
+         ======================================================================= -->
+    <g id="MascotTixie" transform="translate(265, 275)">
+      <!-- Antenna -->
+      <path d="M 0 -130 L 0 -185" stroke="#334155" stroke-width="10" stroke-linecap="round" />
+      <circle cx="0" cy="-190" r="16" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+      <!-- Antenna excitement energy rings -->
+      <path d="M -16 -205 Q 0 -218 16 -205" fill="none" stroke="#FDE047" stroke-width="3" stroke-linecap="round" />
+      <path d="M -12 -214 Q 0 -224 12 -214" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round" />
 
-    <!-- 6. Tagline Banner: LGTM // SHIP IT! -->
-    <g transform="translate(0, 95)">
-      <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#0F172A" stroke="#10B981" stroke-width="2.5" />
-      <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="11" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">🚀 LGTM // SHIP IT!</text>
+      <!-- Head Ticket Shell -->
+      <path d="M -145 -125 Q -145 -135, -125 -135 L 125 -135 Q 145 -135 145 -125 L 145 -35 A 22 22 0 0 0 145 10 L 145 40 Q 145 55, 125 55 L -80 55 L -145 100 L -145 10 A 22 22 0 0 0 -145 -35 Z" fill="url(#headGrad7)" stroke="#1D4ED8" stroke-width="2.5" />
+
+      <!-- Screen Visor -->
+      <rect x="-115" y="-110" width="230" height="145" rx="30" fill="url(#screenGrad7)" stroke="#38BDF8" stroke-width="3.5" />
+      <path d="M -105 -90 Q 0 -108 105 -90 L 105 -78 Q 0 -95 -105 -78 Z" fill="#FFFFFF" opacity="0.22" />
+
+      <!-- EXCITED & SUPER HAPPY ANIME FACE! -->
+      <!-- Both Eyes: Big, glowing, sparkling anime eyes with star glints -->
+      <!-- Left Eye -->
+      <g transform="translate(-50, -45)">
+        <ellipse cx="0" cy="0" rx="23" ry="28" fill="#38BDF8" />
+        <ellipse cx="0" cy="0" rx="18.5" ry="23.5" fill="#0284C7" />
+        <!-- 4-point star catchlight -->
+        <polygon points="0,-11 2.5,-2.5 11,0 2.5,2.5 0,11 -2.5,2.5 -11,0 -2.5,-2.5" fill="#FFFFFF" transform="translate(-4, -6) scale(0.7)" />
+        <circle cx="-5" cy="-7" r="6.5" fill="#FFFFFF" />
+        <circle cx="6" cy="7" r="3.8" fill="#FFFFFF" />
+        <!-- Happy arched brow -->
+        <path d="M -18 -22 Q 0 -28 18 -20" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" />
+      </g>
+
+      <!-- Right Eye -->
+      <g transform="translate(50, -45)">
+        <ellipse cx="0" cy="0" rx="23" ry="28" fill="#38BDF8" />
+        <ellipse cx="0" cy="0" rx="18.5" ry="23.5" fill="#0284C7" />
+        <!-- 4-point star catchlight -->
+        <polygon points="0,-11 2.5,-2.5 11,0 2.5,2.5 0,11 -2.5,2.5 -11,0 -2.5,-2.5" fill="#FFFFFF" transform="translate(-4, -6) scale(0.7)" />
+        <circle cx="-5" cy="-7" r="6.5" fill="#FFFFFF" />
+        <circle cx="6" cy="7" r="3.8" fill="#FFFFFF" />
+        <!-- Happy arched brow -->
+        <path d="M -18 -20 Q 0 -28 18 -22" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" />
+      </g>
+
+      <!-- Bright Cheerful Rosy Cheeks with anime blush stripes -->
+      <ellipse cx="-68" cy="-10" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+      <line x1="-74" y1="-12" x2="-68" y2="-6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+      <line x1="-68" y1="-14" x2="-62" y2="-8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+
+      <ellipse cx="68" cy="-10" rx="15" ry="9" fill="#F43F5E" opacity="0.85" />
+      <line x1="62" y1="-12" x2="68" y2="-6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+      <line x1="68" y1="-14" x2="74" y2="-8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.8" />
+
+      <!-- Big Ecstatic Open Mouth (:D) with cute tongue -->
+      <path d="M -20 -15 Q 0 -24 20 -15 Q 22 10 0 14 Q -22 10 -20 -15 Z" fill="#F43F5E" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M -12 2 Q 0 -4 12 2 Q 8 10 0 12 Q -8 10 -12 2 Z" fill="#FDA4AF" />
+
+      <!-- Headset (Continuous Headband with Dark Mic Joint Ring) -->
+      <path d="M -155 -35 C -170 -185, 170 -185, 155 -35" fill="none" stroke="#1E293B" stroke-width="18" stroke-linecap="round" />
+      <path d="M -155 -35 C -170 -185, 170 -185, 155 -35" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+      <!-- Left Earcup -->
+      <rect x="-190" y="-70" width="45" height="75" rx="18" fill="#0F172A" stroke="#38BDF8" stroke-width="5" />
+      <rect x="-180" y="-56" width="25" height="48" rx="10" fill="#1E293B" />
+      <!-- Right Earcup -->
+      <rect x="145" y="-70" width="45" height="75" rx="18" fill="#0F172A" stroke="#38BDF8" stroke-width="5" />
+      <rect x="155" y="-56" width="25" height="48" rx="10" fill="#1E293B" />
+      
+      <!-- Boom Mic (Slate joint ring matching boom arm) -->
+      <path d="M -170 -5 C -170 55, -100 80, -65 65" fill="none" stroke="#1E293B" stroke-width="9" stroke-linecap="round" />
+      <circle cx="-62" cy="62" r="13" fill="#10B981" stroke="#1E293B" stroke-width="3.5" />
+
+      <!-- Cheering Hands! -->
+      <!-- Left Hand: Raised cheering fist/palm -->
+      <g transform="translate(-145, 15)">
+        <ellipse cx="0" cy="0" rx="18" ry="16" fill="#F8FAFC" stroke="#334155" stroke-width="3" />
+        <path d="M -6 -10 Q 0 -15 6 -10" fill="none" stroke="#94A3B8" stroke-width="2" />
+      </g>
+
+      <!-- Right Hand: Assertive Thumbs-Up Gesture -->
+      <g transform="translate(150, 10)">
+        <!-- Arm cuff -->
+        <rect x="-14" y="-8" width="16" height="24" rx="6" fill="#0284C7" stroke="#1E293B" stroke-width="2" />
+        <!-- Fist -->
+        <ellipse cx="10" cy="5" rx="18" ry="15" fill="#FFFFFF" stroke="#334155" stroke-width="3" />
+        <!-- Big Thumb pointing straight up! -->
+        <path d="M 5 -2 C 2 -20, 18 -24, 20 -6 L 18 5 Z" fill="#FFFFFF" stroke="#334155" stroke-width="3" stroke-linejoin="round" />
+        <!-- Finger crease details -->
+        <line x1="2" y1="2" x2="16" y2="2" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+        <line x1="4" y1="8" x2="16" y2="8" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+        <!-- Sparkle on the thumbs-up thumb tip -->
+        <polygon points="17,-22 18.5,-17 23.5,-15.5 18.5,-14 17,-9 15.5,-14 10.5,-15.5 15.5,-17" fill="#FDE047" />
+      </g>
+    </g>
+
+    <!-- =======================================================================
+         4. THE SPEED ROCKET IN THE TOP-RIGHT CORNER (↗)
+         ======================================================================= -->
+    <g id="CornerRocket" transform="translate(425, 115) rotate(42)">
+      <!-- Blazing Rocket Exhaust Plume -->
+      <path d="M -14 32 C -28 90, 0 115, 0 125 C 0 115, 28 90, 14 32 Z" fill="url(#rocketFlame7)" />
+      <path d="M -8 32 C -16 68, 0 88, 0 95 C 0 88, 16 68, 8 32 Z" fill="#FEF08A" />
+
+      <!-- Left & Right Stabilizer Fins -->
+      <polygon points="-16,18 -38,40 -14,32" fill="#EF4444" stroke="#991B1B" stroke-width="2.5" />
+      <polygon points="16,18 38,40 14,32" fill="#EF4444" stroke="#991B1B" stroke-width="2.5" />
+
+      <!-- Aerodynamic Fuselage Body -->
+      <path d="M 0 -48 Q 20 0 16 34 L -16 34 Q -20 0 0 -48 Z" fill="url(#rocketBody7)" stroke="#334155" stroke-width="2.8" />
+      
+      <!-- Red Nose Cone Tip -->
+      <path d="M 0 -48 Q 12 -22 14 -12 L -14 -12 Q -12 -22 0 -48 Z" fill="url(#rocketCone7)" stroke="#991B1B" stroke-width="2" />
+
+      <!-- Exhaust Nozzle Ring -->
+      <polygon points="-11,34 11,34 8,40 -8,40" fill="#1E293B" />
+
+      <!-- Porthole Window with TixDesk 'T' -->
+      <circle cx="0" cy="10" r="9" fill="#0F172A" stroke="#38BDF8" stroke-width="2.2" />
+      <text x="0" y="14" font-family="'Noto Sans', sans-serif" font-size="9" font-weight="900" fill="#38BDF8" text-anchor="middle">T</text>
+
+      <!-- Speed Motion Streaks around rocket -->
+      <line x1="-28" y1="-10" x2="-38" y2="10" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="28" y1="-10" x2="38" y2="10" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="-36" y1="-30" x2="-44" y2="-15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- =======================================================================
+         5. BOTTOM BADGE: 🚀 LGTM // SHIP IT!
+         ======================================================================= -->
+    <g transform="translate(265, 360)">
+      <rect x="-95" y="-14" width="190" height="28" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="2.5" />
+      <text y="4.5" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="900" letter-spacing="1.5" fill="#34D399" text-anchor="middle">🚀 LGTM // SHIP IT!</text>
     </g>
   </g>
 </svg>"""
 
 cutline_07 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
   {svg_07.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">', '').replace('</svg>', '')}
-  <g id="CutContour" transform="translate(280, 275) rotate(-15)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M -45 110 C -70 200, 70 200, 45 110 Z" stroke-width="26" />
-    <polygon points="-75,100 -120,135 -65,70" stroke-width="24" />
-    <polygon points="75,100 120,135 65,70" stroke-width="24" />
-    <rect x="-60" y="-30" width="120" height="150" rx="35" stroke-width="26" />
-    <path d="M -175 -60 C -190 -230, 190 -230, 175 -60" stroke-width="46" />
-    <rect x="-210" y="-95" width="45" height="85" rx="20" stroke-width="24" />
-    <rect x="165" y="-95" width="45" height="85" rx="20" stroke-width="24" />
-    <path d="M -160 -160 Q -160 -170, -140 -170 L 140 -170 Q 160 -170, 160 -150 L 160 -50 A 25 25 0 0 0 160 0 L 160 40 Q 160 60, 140 60 L -90 60 L -160 110 L -160 0 A 25 25 0 0 0 -160 -50 Z" stroke-width="24" />
-    <circle cx="-70" cy="63" r="14" stroke-width="24" />
+  <g id="CutContour" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(425, 115) rotate(42)">
+      <path d="M 0 -48 Q 22 0 16 35 L -16 35 Q -22 0 0 -48 Z" stroke-width="26" />
+      <polygon points="-16,22 -36,42 -14,35" stroke-width="24" />
+      <polygon points="16,22 36,42 14,35" stroke-width="24" />
+      <path d="M -12 35 C -25 85, 25 85, 12 35 Z" stroke-width="24" />
+    </g>
+    <path d="M 400 150 C 475 220, 465 370, 370 420 C 270 470, 100 450, 75 350 C 50 250, 100 160, 160 140" stroke-width="52" />
+    <circle cx="435" cy="235" r="28" stroke-width="20" />
+    <circle cx="440" cy="320" r="32" stroke-width="20" />
+    <circle cx="390" cy="395" r="34" stroke-width="20" />
+    <circle cx="280" cy="435" r="36" stroke-width="20" />
+    <circle cx="150" cy="425" r="32" stroke-width="20" />
+    <circle cx="75" cy="340" r="32" stroke-width="20" />
+    <circle cx="95" cy="230" r="28" stroke-width="20" />
+    <g transform="translate(265, 275)">
+      <circle cx="0" cy="-185" r="22" stroke-width="24" />
+      <line x1="0" y1="-120" x2="0" y2="-185" stroke-width="32" />
+      <path d="M -155 -35 C -170 -185, 170 -185, 155 -35" stroke-width="46" />
+      <rect x="-190" y="-70" width="45" height="75" rx="18" stroke-width="24" />
+      <rect x="145" y="-70" width="45" height="75" rx="18" stroke-width="24" />
+      <path d="M -145 -125 Q -145 -135, -125 -135 L 125 -135 Q 145 -135 145 -125 L 145 -35 A 22 22 0 0 0 145 10 L 145 40 Q 145 55, 125 55 L -80 55 L -145 100 L -145 10 A 22 22 0 0 0 -145 -35 Z" stroke-width="24" />
+      <circle cx="-62" cy="62" r="14" stroke-width="24" />
+      <circle cx="160" cy="15" r="26" stroke-width="22" />
+      <rect x="150" y="-15" width="22" height="35" rx="10" stroke-width="20" />
+      <circle cx="-150" cy="20" r="22" stroke-width="20" />
+      <rect x="-95" y="70" width="190" height="28" rx="14" stroke-width="24" />
+    </g>
   </g>
 </svg>"""
 
