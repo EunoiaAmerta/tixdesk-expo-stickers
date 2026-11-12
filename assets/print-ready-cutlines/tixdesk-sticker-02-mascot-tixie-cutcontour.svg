@@ -19,7 +19,7 @@
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
       <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
     </g>
@@ -30,7 +30,7 @@
     <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
 
     <!-- Head Ticket Shell -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
     <!-- Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
@@ -71,7 +71,7 @@
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>

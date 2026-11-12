@@ -125,10 +125,12 @@ cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" w
 </svg>"""
 
 # ==============================================================================
-# 2. STICKER 02: KAWAII CHIBI MASCOT HEAD (PURE ICONIC FACE EDITION)
+# 2. STICKER 02: KAWAII CHIBI MASCOT HEAD (SEAMLESS INTEGRATED HEADSET EDITION)
 # - Floating robot body removed for iconic focus on the character face!
+# - Dark gaps near the headset/notches eliminated completely:
+#   Head contour extends smoothly behind earcups with 100% solid white border.
 # - Thinned-down white die-cut border closely hugging the antenna, headset,
-#   earcups, mic, ticket notches, and speech tail (matching Sticker 01 thinness).
+#   earcups, mic, and speech tail (matching Sticker 01 thinness).
 # ==============================================================================
 svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520">
   <defs>
@@ -145,14 +147,14 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
   </defs>
 
   <g id="Artwork" transform="translate(260, 275)">
-    <!-- 1. Tight White Die-Cut Contour matching Sticker 01 thinness (stroke-width=24) -->
+    <!-- 1. Seamless White Die-Cut Contour (Zero Gaps, bridges solidly behind earcups) -->
     <g id="WhiteBorder" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round" stroke-linecap="round">
       <circle cx="0" cy="-230" r="22" stroke-width="24" />
       <line x1="0" y1="-150" x2="0" y2="-230" stroke-width="32" />
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
       <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
     </g>
@@ -162,8 +164,8 @@ svg_02 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
     <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
 
-    <!-- 3. Head Ticket Shell -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+    <!-- 3. Head Ticket Shell (Clean seamless connection behind earcups) -->
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
     <!-- 4. Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
@@ -219,7 +221,7 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
       <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" fill="none" stroke-width="46" />
       <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
       <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+      <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
       <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke-width="26" />
       <circle cx="-70" cy="73" r="14" stroke-width="24" />
     </g>
@@ -230,7 +232,7 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <circle cx="0" cy="-230" r="11" fill="#6EE7B7" />
 
     <!-- Head Ticket Shell -->
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" fill="url(#headGrad)" stroke="#1D4ED8" stroke-width="2.5" />
 
     <!-- Screen Visor -->
     <rect x="-125" y="-125" width="250" height="160" rx="35" fill="url(#screenGrad)" stroke="#38BDF8" stroke-width="4" />
@@ -271,165 +273,106 @@ cutline_02 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" w
     <path d="M -175 -50 C -190 -220, 190 -220, 175 -50" stroke-width="46" />
     <rect x="-210" y="-85" width="45" height="85" rx="20" stroke-width="24" />
     <rect x="165" y="-85" width="45" height="85" rx="20" stroke-width="24" />
-    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 -40 A 25 25 0 0 0 160 10 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 10 A 25 25 0 0 0 -160 -40 Z" stroke-width="24" />
+    <path d="M -160 -150 Q -160 -160, -140 -160 L 140 -160 Q 160 -160, 160 -140 L 160 50 Q 160 70, 140 70 L -90 70 L -160 120 L -160 -140 Z" stroke-width="24" />
     <circle cx="-70" cy="73" r="14" stroke-width="24" />
   </g>
 </svg>"""
 
 # ==============================================================================
-# 3. STICKER 03: RETRO PIXEL ART ARCADE (TOP BANNER & ATTACHED HEART CROWN)
-# - Top floating achievement banner: "★ SLA SAVED: 100% ★"
-# - 3-Heart Crown physically attached directly ON TOP of the head line (Y = -160)
-# - Clean 50/50 royal blue & cyan split face
-# - Distinct chin baseline & stepped dialogue tail at bottom
-# - Symmetrical, thin, uniform white die-cut contour matching Sticker 01
+# 3. STICKER 03: RETRO PIXEL ART ARCADE (PURE RETRO CHARACTER EDITION)
+# - Extraneous gaming overlays (hearts, SLA text banner, green HP bar) REMOVED!
+# - Pure focus on the cool retro pixel arcade ticket mascot:
+#   * Symmetrical 50/50 royal blue & cyan split face
+#   * 8-bit black sunglasses with specular white catchlights
+#   * Pixel blush, centered cat mouth, and stepped dialogue tail
+#   * Sleek, contour-hugging white die-cut border with rounded corners
 # ==============================================================================
-path_contour_03 = """
-  M -160 -256
-  L 160 -256
-  A 18 18 0 0 1 178 -238
-  L 178 -212
-  A 18 18 0 0 1 160 -194
-  L 125 -194
-  Q 185 -172, 192 -130
-  L 192 -48
-  Q 165 -15, 192 18
-  L 192 110
-  A 18 18 0 0 1 174 128
-  L -85 128
-  L -155 188
-  A 12 12 0 0 1 -175 180
-  L -175 110
-  L -192 110
-  L -192 18
-  Q -165 -15, -192 -48
-  L -192 -130
-  Q -185 -172, -125 -194
-  L -160 -194
-  A 18 18 0 0 1 -178 -212
-  L -178 -238
-  A 18 18 0 0 1 -160 -256
+path_contour_03_clean = """
+  M -145 -165
+  L 145 -165
+  A 20 20 0 0 1 165 -145
+  L 165 -45
+  Q 142 -12, 165 20
+  L 165 85
+  A 20 20 0 0 1 145 105
+  L -85 105
+  L -155 165
+  A 12 12 0 0 1 -175 155
+  L -175 105
+  L -165 20
+  Q -142 -12, -165 -45
+  L -165 -145
+  A 20 20 0 0 1 -145 -165
   Z
 """
 
-svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 540" width="520" height="540">
-  <g id="Artwork" transform="translate(260, 295)">
+svg_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <g id="Artwork" transform="translate(230, 220)">
     <!-- 1. White die-cut contour -->
-    <path id="WhiteBorder" d="{path_contour_03}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
+    <path id="WhiteBorder" d="{path_contour_03_clean}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
 
-    <!-- 2. Floating SLA SAVED Banner at Top -->
-    <g transform="translate(0, -225)">
-      <rect x="-155" y="-19" width="310" height="38" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
-      <text x="0" y="8" font-family="'Noto Sans Mono', monospace" font-size="18" font-weight="900" letter-spacing="2.5" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
-    </g>
-
-    <!-- 3. Ticket Body (Crisp 50/50 Blue/Cyan Split) -->
-    <rect x="-175" y="-160" width="175" height="270" fill="#3877F6" />
-    <rect x="0" y="-160" width="175" height="270" fill="#5AC1C4" />
+    <!-- 2. Ticket Body (Clean 50/50 Split) -->
+    <rect x="-160" y="-145" width="160" height="250" fill="#3877F6" />
+    <rect x="0" y="-145" width="160" height="250" fill="#5AC1C4" />
     
     <!-- Ticket Notches -->
-    <rect x="-195" y="-35" width="35" height="45" fill="#FFFFFF" />
-    <rect x="160" y="-35" width="35" height="45" fill="#FFFFFF" />
+    <rect x="-180" y="-35" width="30" height="45" fill="#FFFFFF" />
+    <rect x="150" y="-35" width="30" height="45" fill="#FFFFFF" />
 
     <!-- Stepped Tail at bottom-left -->
-    <polygon points="-160,110 -160,165 -100,110" fill="#3877F6" />
-    <polygon points="-135,110 -160,165 -115,110" fill="#2563EB" />
+    <polygon points="-150,105 -150,150 -95,105" fill="#3877F6" />
+    <polygon points="-128,105 -150,150 -110,105" fill="#2563EB" />
 
-    <!-- 4. Heart Crown Attached directly ON TOP of the head line (Y = -160) -->
-    <!-- Left Heart -->
-    <g transform="translate(-80, -170) scale(4.0)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <!-- Center Heart (Taller Crown Jewel) -->
-    <g transform="translate(0, -173) scale(4.8)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <!-- Right Heart -->
-    <g transform="translate(80, -170) scale(4.0)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-
-    <!-- 5. Pixel Sunglasses & Face -->
-    <g transform="translate(0, -45)">
-      <rect x="-125" y="-20" width="105" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="105" height="45" fill="#0F172A" />
+    <!-- 3. Pixel Sunglasses & Face -->
+    <g transform="translate(0, -25)">
+      <rect x="-120" y="-20" width="100" height="45" fill="#0F172A" />
+      <rect x="20" y="-20" width="100" height="45" fill="#0F172A" />
       <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-110" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-92" y="4" width="14" height="14" fill="#FFFFFF" />
+      <rect x="-105" y="-10" width="18" height="14" fill="#FFFFFF" />
+      <rect x="-87" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
       <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
       <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-80" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="56" y="38" width="24" height="12" fill="#F43F5E" />
-    </g>
-
-    <!-- 6. XP Bar -->
-    <g transform="translate(0, 80)">
-      <rect x="-85" y="0" width="170" height="12" fill="#0F172A" />
-      <rect x="-82" y="2" width="164" height="8" fill="#22C55E" />
+      <rect x="-78" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="54" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
   </g>
 </svg>"""
 
-cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 540" width="520" height="540">
-  <g id="Artwork" transform="translate(260, 295)">
-    <path id="WhiteBorder" d="{path_contour_03}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" />
-
-    <!-- Floating SLA SAVED Banner at Top -->
-    <g transform="translate(0, -225)">
-      <rect x="-155" y="-19" width="310" height="38" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3" />
-      <text x="0" y="8" font-family="'Noto Sans Mono', monospace" font-size="18" font-weight="900" letter-spacing="2.5" fill="#38BDF8" text-anchor="middle">★ SLA SAVED: 100% ★</text>
-    </g>
+cutline_03 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <g id="Artwork" transform="translate(230, 220)">
+    <path id="WhiteBorder" d="{path_contour_03_clean}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="22" stroke-linejoin="round" stroke-linecap="round" />
 
     <!-- Ticket Body -->
-    <rect x="-175" y="-160" width="175" height="270" fill="#3877F6" />
-    <rect x="0" y="-160" width="175" height="270" fill="#5AC1C4" />
-    <rect x="-195" y="-35" width="35" height="45" fill="#FFFFFF" />
-    <rect x="160" y="-35" width="35" height="45" fill="#FFFFFF" />
-    <polygon points="-160,110 -160,165 -100,110" fill="#3877F6" />
-    <polygon points="-135,110 -160,165 -115,110" fill="#2563EB" />
+    <rect x="-160" y="-145" width="160" height="250" fill="#3877F6" />
+    <rect x="0" y="-145" width="160" height="250" fill="#5AC1C4" />
+    <rect x="-180" y="-35" width="30" height="45" fill="#FFFFFF" />
+    <rect x="150" y="-35" width="30" height="45" fill="#FFFFFF" />
 
-    <!-- Heart Crown -->
-    <g transform="translate(-80, -170) scale(4.0)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <g transform="translate(0, -173) scale(4.8)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
-    <g transform="translate(80, -170) scale(4.0)">
-      <path d="M -4 -2 H -1 V 1 H -4 Z M 1 -2 H 4 V 1 H 1 Z M -3 1 H 3 V 3 H -3 Z M -2 3 H 2 V 4 H -2 Z M -1 4 H 1 V 5 H -1 Z" fill="#EF4444" />
-      <rect x="-3" y="-1" width="1" height="1" fill="#FECACA" />
-    </g>
+    <!-- Stepped Tail -->
+    <polygon points="-150,105 -150,150 -95,105" fill="#3877F6" />
+    <polygon points="-128,105 -150,150 -110,105" fill="#2563EB" />
 
-    <!-- Sunglasses & XP Bar -->
-    <g transform="translate(0, -45)">
-      <rect x="-125" y="-20" width="105" height="45" fill="#0F172A" />
-      <rect x="20" y="-20" width="105" height="45" fill="#0F172A" />
+    <!-- Sunglasses & Face -->
+    <g transform="translate(0, -25)">
+      <rect x="-120" y="-20" width="100" height="45" fill="#0F172A" />
+      <rect x="20" y="-20" width="100" height="45" fill="#0F172A" />
       <rect x="-20" y="-10" width="40" height="18" fill="#0F172A" />
-      <rect x="-110" y="-10" width="18" height="14" fill="#FFFFFF" />
-      <rect x="-92" y="4" width="14" height="14" fill="#FFFFFF" />
+      <rect x="-105" y="-10" width="18" height="14" fill="#FFFFFF" />
+      <rect x="-87" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="35" y="-10" width="18" height="14" fill="#FFFFFF" />
       <rect x="53" y="4" width="14" height="14" fill="#FFFFFF" />
       <rect x="-20" y="58" width="40" height="12" fill="#0F172A" />
       <rect x="-12" y="70" width="24" height="12" fill="#0F172A" />
-      <rect x="-80" y="38" width="24" height="12" fill="#F43F5E" />
-      <rect x="56" y="38" width="24" height="12" fill="#F43F5E" />
-    </g>
-    <g transform="translate(0, 80)">
-      <rect x="-85" y="0" width="170" height="12" fill="#0F172A" />
-      <rect x="-82" y="2" width="164" height="8" fill="#22C55E" />
+      <rect x="-78" y="38" width="24" height="12" fill="#F43F5E" />
+      <rect x="54" y="38" width="24" height="12" fill="#F43F5E" />
     </g>
   </g>
 
   <!-- Technical Die-Cut Layer: Spot Magenta 100% 0.5pt -->
-  <g id="CutContour" transform="translate(260, 295)">
-    <path d="{path_contour_03}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+  <g id="CutContour" transform="translate(230, 220)">
+    <path d="{path_contour_03_clean}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>"""
 
@@ -458,4 +401,4 @@ for base_name, svg_content, cutline_content in items:
     pdf_file = os.path.join(PDF_DIR, f"{base_name}-print.pdf")
     subprocess.run(["rsvg-convert", "-f", "pdf", cutline_file, "-o", pdf_file], check=True)
 
-print("Official 3-sticker pack generated successfully with permanent Sticker 01, Mascot Head Sticker 02, and Top-Banner Crown Sticker 03!")
+print("Generated full pack with permanent Sticker 01, seamless Mascot Head Sticker 02, and pure Retro Arcade Sticker 03!")

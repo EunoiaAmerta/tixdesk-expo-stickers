@@ -126,22 +126,22 @@ For the upcoming **Tech Expo (November 17–18, 2026)**, TixDesk merchandise adh
 * **Style:** Kawaii Chibi 2D Vector IP Mascot Head
 * **Refined Anatomy:**
   * **Iconic Head-Only Focus:** The floating robot body, limbs, and thruster have been completely removed to provide an ultra-clean, high-recognition portrait of Tixie.
+  * **Seamless Side Connection:** Zero dark gaps near the headset. The ticket body contour extends cleanly behind both earcups, creating an unbroken solid silhouette.
   * **Ticket Head:** Seamless ticket-shaped head with curved dark OLED screen visor.
   * **Expressive Anime Face:** Sparkling eyes with multi-layer glint highlights, coral blush, and cheerful cat-smile (`ω`).
   * **Hardware:** Helpdesk customer support headset with glowing mint-green boom mic and connectivity antenna.
-  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, ticket notches, and bottom-left speech tail.
+  * **Thinned Uniform Die-Cut Contour:** Precision white outer border engineered with an offset identical to Sticker 01 ($\approx 2.5\text{ mm}$ / $24\text{ px}$ stroke). Tightly hugs the antenna, arched headset band, earcups, boom mic, and bottom-left speech tail.
 * **Target Audience:** Designers, students, support teams, community members, and kawaii tech collectors.
 
-### Sticker 03: "Retro 16-Bit Arcade Gamer" (Crowned Achievement Edition)
+### Sticker 03: "Retro 16-Bit Arcade Gamer" (Pure Retro Ticket Edition)
 * **File:** `assets/svg/tixdesk-sticker-03-retro-pixel-arcade.svg`
-* **Target Size:** $\approx 7.0 \times 7.2\text{ cm}$
+* **Target Size:** $\approx 7.0 \times 7.0\text{ cm}$
 * **Style:** Nostalgic 8-Bit / 16-Bit Arcade Pixel Art
 * **Refined Anatomy:**
-  * **Top Floating SLA Banner:** The achievement capsule `★ SLA SAVED: 100% ★` floats cleanly above the mascot's head, serving as a regal arcade banner.
-  * **Physically Attached Heart Crown:** The 3 red 8-bit hearts are docked directly on top of the mascot's head baseline ($Y = -160$), forming an authentic crown that sits solidly on the character with zero floating gap. Center heart is enlarged as the primary crown jewel.
-  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches, cool 8-bit sunglasses with white specular catchlights, blush, and full health XP bar.
-  * **Clean Baseline & Stepped Tail:** The lower portion is clean with no bottom banner crowding, showcasing the retro ticket chin and stepped dialogue tail.
-  * **Contour-Hugging Die-Cut Base:** Uniform white die-cut margin cleanly bridging the top banner into the crown and ticket body into a single tear-resistant, durable vinyl sticker.
+  * **Pure Character Focus:** All extraneous gaming HUD/overlays (floating hearts, SLA text banner, and bottom green HP bar) have been eliminated for a clean, bold retro arcade character.
+  * **Pixel Sprite:** Split-tone blue/cyan pixel ticket with pixel notches, cool 8-bit sunglasses with white specular catchlights, coral blush, and centered pixel snout.
+  * **Clean Baseline & Stepped Tail:** Retro ticket chin and stepped dialogue tail on the bottom-left with dimensional shadow accent.
+  * **Contour-Hugging Die-Cut Base:** Uniform white die-cut margin cleanly outlining the retro pixel ticket with smooth rounded corners, perfectly matching Sticker 01.
 * **Target Audience:** Gamers, CS students, indie hackers, and retro computing collectors.
 
 ---
