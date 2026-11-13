@@ -299,9 +299,6 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
-    <!-- Boom Mic (Dark slate joint ring like boom arm) -->
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
 
     <!-- 8. Magnifying Glass & Trapped Cute Bug -->
     <g transform="translate(85, 38)">
@@ -346,6 +343,10 @@ svg_03 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
       <rect x="-85" y="-13" width="170" height="26" rx="13" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5" />
       <text y="4" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="900" letter-spacing="1.5" fill="#FBBF24" text-anchor="middle">🔍 BUG HUNTER</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -441,8 +442,6 @@ svg_04 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
     <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
 
     <!-- Steaming Coffee Mug -->
     <path d="M -18 22 C -23 10, -13 -2, -18 -15" fill="none" stroke="#E2E8F0" stroke-width="4.5" stroke-linecap="round" opacity="0.75" />
@@ -460,6 +459,10 @@ svg_04 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width=
 
     <circle cx="-42" cy="72" r="13" fill="#3877F6" stroke="#FFFFFF" stroke-width="3" />
     <circle cx="42" cy="72" r="13" fill="#5AC1C4" stroke="#FFFFFF" stroke-width="3" />
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -643,14 +646,16 @@ svg_05 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#78350F" />
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#EA580C" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#78350F" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#1E293B" stroke-width="4" />
 
     <!-- 8. Bottom Alert Pill: "PROD ON FIRE" -->
     <g transform="translate(0, 62)">
       <rect x="-70" y="-12" width="140" height="24" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="2" />
       <text y="4.5" font-family="'Noto Sans', monospace, sans-serif" font-size="9.5" font-weight="900" fill="#FEF08A" letter-spacing="2" text-anchor="middle">🔥 PROD ON FIRE</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -990,25 +995,25 @@ svg_07 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
-    <!-- Boom Mic (Dark slate joint ring) -->
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
 
-    <!-- 8. BADGE: CRISP VECTOR ROCKET + LGTM // SHIP IT! -->
+    <!-- 8. BADGE: BALANCED (Text Centered + Rocket Glyph on Right) -->
     <g transform="translate(0, 78)">
-      <rect x="-105" y="-15" width="210" height="30" rx="15" fill="#064E3B" stroke="#10B981" stroke-width="2.8" />
+      <rect x="-95" y="-15" width="215" height="30" rx="15" fill="#064E3B" stroke="#10B981" stroke-width="2.8" />
+      <text x="12" y="4.8" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="900" letter-spacing="1.2" fill="#34D399" text-anchor="middle">LGTM // SHIP IT!</text>
       
-      <!-- Crisp Vector Rocket Glyph -->
-      <g transform="translate(-76, 0) scale(0.72) rotate(45)">
+      <!-- Crisp Vector Rocket Glyph on Right end -->
+      <g transform="translate(86, 0) scale(0.68) rotate(45)">
         <path d="M 0 -12 Q 5 0 4 8 L -4 8 Q -5 0 0 -12 Z" fill="#FFFFFF" />
         <path d="M 0 -12 Q 3 -6 3 -3 L -3 -3 Q -3 -6 0 -12 Z" fill="#EF4444" />
         <polygon points="-4,5 -9,10 -3,8" fill="#EF4444" />
         <polygon points="4,5 9,10 3,8" fill="#EF4444" />
         <path d="M -3 8 Q 0 15 3 8 Z" fill="#FDE047" />
       </g>
-      
-      <text x="14" y="5" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="900" letter-spacing="1.5" fill="#34D399" text-anchor="middle">LGTM // SHIP IT!</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -1130,8 +1135,6 @@ svg_08 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
     <!-- Boom mic with dark slate joint ring -->
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
 
     <!-- 7. Disconnected AC Power Cable & Plug (With Sparks!) -->
     <!-- Heavy Rubber Cable curving from behind Tixie -->
@@ -1158,6 +1161,10 @@ svg_08 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
       <rect x="-105" y="-13" width="210" height="26" rx="13" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5" />
       <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="8.8" font-weight="900" fill="#38BDF8" letter-spacing="1" text-anchor="middle">🔌 TRY TURNING IT OFF &amp; ON?</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#F59E0B" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 
@@ -1259,9 +1266,6 @@ svg_09 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#10B981" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
-    <!-- Boom mic with dark slate joint ring -->
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
 
     
     <!-- 6. Mechanical Keyboard & High-Speed Typing Action -->
@@ -1317,6 +1321,10 @@ svg_09 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
       <rect x="-80" y="-13" width="160" height="26" rx="13" fill="#022C22" stroke="#10B981" stroke-width="2.5" />
       <text y="5" font-family="'Noto Sans', monospace, sans-serif" font-size="10.5" font-weight="900" fill="#34D399" letter-spacing="2" text-anchor="middle">⚡ SUDO RESOLVE</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>"""
 

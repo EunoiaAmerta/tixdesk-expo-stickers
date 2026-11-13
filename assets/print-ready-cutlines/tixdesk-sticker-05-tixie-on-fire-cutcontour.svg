@@ -162,14 +162,16 @@
     <rect x="-200" y="-70" width="25" height="55" rx="12" fill="#78350F" />
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#EA580C" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#78350F" />
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#1E293B" stroke-width="4" />
 
     <!-- 8. Bottom Alert Pill: "PROD ON FIRE" -->
     <g transform="translate(0, 62)">
       <rect x="-70" y="-12" width="140" height="24" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="2" />
       <text y="4.5" font-family="'Noto Sans', monospace, sans-serif" font-size="9.5" font-weight="900" fill="#FEF08A" letter-spacing="2" text-anchor="middle">🔥 PROD ON FIRE</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#EF4444" stroke="#1E293B" stroke-width="4" />
   </g>
 
   <g id="CutContour" transform="translate(270, 375)" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">

@@ -144,9 +144,6 @@
     <rect x="165" y="-85" width="45" height="85" rx="20" fill="#0F172A" stroke="#38BDF8" stroke-width="6" />
     <rect x="175" y="-70" width="25" height="55" rx="12" fill="#1E293B" />
     
-    <!-- Boom Mic (Dark slate joint ring like boom arm) -->
-    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
-    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
 
     <!-- 8. Magnifying Glass & Trapped Cute Bug -->
     <g transform="translate(85, 38)">
@@ -191,5 +188,9 @@
       <rect x="-85" y="-13" width="170" height="26" rx="13" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5" />
       <text y="4" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="900" letter-spacing="1.5" fill="#FBBF24" text-anchor="middle">🔍 BUG HUNTER</text>
     </g>
+
+    <!-- Outermost Layer: Boom Mic (Nothing covers the mic!) -->
+    <path d="M -190 -10 C -190 70, -110 95, -75 75" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round" />
+    <circle cx="-70" cy="73" r="14" fill="#10B981" stroke="#1E293B" stroke-width="4" />
   </g>
 </svg>
