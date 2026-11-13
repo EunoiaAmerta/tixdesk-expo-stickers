@@ -131,10 +131,10 @@ svg_content = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1620"
         <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.2" />
         <text y="4" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="800" fill="#34D399" text-anchor="middle">EXPANSION 07</text>
       </g>
-      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">ROCKET TIXIE (LGTM)</text>
-      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Happy &amp; Excited • Rocket Top-Right • Orbit Trail</text>
+      <text x="260" y="66" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">FESTIVE TIXIE (LGTM)</text>
+      <text x="260" y="86" font-family="'Noto Sans', sans-serif" font-size="11.5" font-weight="500" fill="#64748B" text-anchor="middle">Happy &amp; Excited • Festive Confetti Paper • LGTM // SHIP IT!</text>
       <g transform="translate(260, 280) scale(0.72)" filter="url(#stickerShadow)">
-        <image href="assets/png/tixdesk-sticker-07-tixie-rocket-lgtm-300dpi.png" x="-280" y="-280" width="560" height="560" />
+        <image href="assets/png/tixdesk-sticker-07-tixie-rocket-lgtm-300dpi.png" x="-270" y="-270" width="540" height="540" />
       </g>
     </g>
 

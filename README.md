@@ -95,8 +95,8 @@ tixdesk-expo-stickers/
    * **Audience:** Cyberpunk lovers, synthwave fans, hardware hackers, and frontend developers.
 
 ### Dev Culture & Operations (Stickers 07–09)
-7. **Rocket Tixie • LGTM // SHIP IT! (`~7.2 × 7.2 cm`) — Deployment Speed Edition**
-   * **Concept:** Tixie with super happy and excited anime eyes and open smile (:D), cheering with thumbs-up while surrounded by a billowing orbital smoke trail from the speed rocket ascending in the top-right corner, anchored by an emerald banner reading `🚀 LGTM // SHIP IT!`.
+7. **Festive Tixie • LGTM // SHIP IT! (`~7.2 × 7.2 cm`) — Deployment Celebration Edition**
+   * **Concept:** Tixie with super happy and excited anime eyes and open smile (:D), surrounded by an energetic flurry of colorful confetti paper strips, streamers, and celebration sparkles, anchored by an emerald banner stamped with a crisp vector rocket glyph: `LGTM // SHIP IT!`. Solid contiguous die-cut contour ensures zero disconnected islands.
    * **Audience:** DevOps, CI/CD engineers, release managers, and developers shipping PRs to production.
 
 8. **IT Support Tixie • Off & On (`~7.0 × 7.0 cm`) — The Universal Helpdesk Meme Edition**
