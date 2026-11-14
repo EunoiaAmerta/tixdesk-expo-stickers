@@ -1246,6 +1246,10 @@ svg_09 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width=
     <path d="M 160 -40 A 25 25 0 0 0 160 10 L 175 10 L 175 -40 Z" fill="#FFFFFF" stroke="none" />
     <path d="M -160 -40 A 25 25 0 0 1 -160 10 L -175 10 L -175 -40 Z" fill="#FFFFFF" stroke="none" />
 
+    <!-- Left headset-to-boom internal bridge: fill-only backing closes the tiny dark slit. -->
+    <!-- It stays behind the chassis, earcup, and foreground boom mic. -->
+    <path d="M -177 -40 L -151 -40 L -151 58 C -166 55 -180 45 -185 30 C -190 14 -187 0 -180 -12 Z" fill="#FFFFFF" stroke="none" />
+
     <!-- 2. Antenna with Terminal Green Node -->
     <path d="M 0 -150 L 0 -220" stroke="#334155" stroke-width="12" stroke-linecap="round" />
     <circle cx="0" cy="-230" r="22" fill="#10B981" stroke="#FFFFFF" stroke-width="5" />
