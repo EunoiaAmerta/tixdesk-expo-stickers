@@ -53,6 +53,26 @@ path_01_t = """
   A 20 20 0 0 1 -66 -64
   Z
 """
+path_01_white_border = """
+  M 0 -105
+  L 120 -105
+  A 28 28 0 0 1 148 -77
+  L 148 -35
+  A 20 20 0 0 0 148 5
+  L 148 52
+  A 28 28 0 0 1 120 80
+  L -20 80
+  L -70 140
+  A 10 10 0 0 1 -80 135
+  L -80 80
+  L -120 80
+  A 28 28 0 0 1 -148 52
+  L -148 5
+  A 20 20 0 0 0 -148 -35
+  L -148 -77
+  A 28 28 0 0 1 -120 -105
+  Z
+"""
 svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
     <linearGradient id="blueCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -62,7 +82,7 @@ svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width
     </linearGradient>
   </defs>
   <g id="Artwork" transform="translate(200, 195)">
-    <path id="WhiteBorder" d="{path_01_body}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
+    <path id="WhiteBorder" d="{path_01_white_border}" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
     <path id="LogoBody" d="{path_01_body}" fill="url(#blueCyanGrad)" />
     <path id="LetterT" d="{path_01_t}" fill="#FFFFFF" />
   </g>
@@ -71,7 +91,7 @@ svg_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width
 cutline_01 = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   {svg_01.replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">', '').replace('</svg>', '')}
   <g id="CutContour" transform="translate(200, 195)">
-    <path d="{path_01_body}" fill="none" stroke="#FF00FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="{path_01_white_border}" fill="none" stroke="#FF00FF" stroke-width="28" stroke-linejoin="round" stroke-linecap="round" />
   </g>
 </svg>"""
 
